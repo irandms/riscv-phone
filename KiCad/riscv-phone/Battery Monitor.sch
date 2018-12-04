@@ -1,10 +1,9 @@
 EESchema Schematic File Version 4
-LIBS:riscv-phone-cache
 EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 9 9
+Sheet 6 9
 Title ""
 Date ""
 Rev ""
@@ -14,12 +13,116 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Text HLabel 4400 3500 0    50   Input ~ 0
+Text HLabel 3700 2900 0    50   Input ~ 0
 VBAT
-Wire Wire Line
-	4400 3500 4550 3500
-Text HLabel 5650 3550 0    50   Input ~ 0
+Text HLabel 5650 3750 2    50   Input ~ 0
 SCL
-Text HLabel 5650 3750 0    50   BiDi ~ 0
+Text HLabel 5650 3600 2    50   BiDi ~ 0
 SDA
+$Comp
+L riscv-phone:MAX17043 U?
+U 1 1 5C06BCC0
+P 4700 3550
+F 0 "U?" H 4700 4065 50  0000 C CNN
+F 1 "MAX17043" H 4700 3974 50  0000 C CNN
+F 2 "" H 4700 3550 50  0001 C CNN
+F 3 "" H 4700 3550 50  0001 C CNN
+	1    4700 3550
+	1    0    0    -1  
+$EndComp
+NoConn ~ 5100 3450
+$Comp
+L Device:R R?
+U 1 1 5C06BD0F
+P 4000 3050
+F 0 "R?" H 4070 3096 50  0000 L CNN
+F 1 "1K" H 4070 3005 50  0000 L CNN
+F 2 "" V 3930 3050 50  0001 C CNN
+F 3 "~" H 4000 3050 50  0001 C CNN
+	1    4000 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5C06BD74
+P 4000 3450
+F 0 "C?" H 4115 3496 50  0000 L CNN
+F 1 "1uF" H 4115 3405 50  0000 L CNN
+F 2 "" H 4038 3300 50  0001 C CNN
+F 3 "~" H 4000 3450 50  0001 C CNN
+	1    4000 3450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4000 3300 4300 3300
+Wire Wire Line
+	4000 3300 4000 3200
+Connection ~ 4000 3300
+Wire Wire Line
+	4300 3450 4300 3600
+Wire Wire Line
+	4300 3750 4300 3600
+Connection ~ 4300 3600
+Wire Wire Line
+	4300 3750 4000 3750
+Wire Wire Line
+	4000 3750 4000 3600
+Connection ~ 4300 3750
+$Comp
+L power:GND #PWR?
+U 1 1 5C06BE31
+P 4700 4150
+F 0 "#PWR?" H 4700 3900 50  0001 C CNN
+F 1 "GND" H 4705 3977 50  0000 C CNN
+F 2 "" H 4700 4150 50  0001 C CNN
+F 3 "" H 4700 4150 50  0001 C CNN
+	1    4700 4150
+	1    0    0    -1  
+$EndComp
+Connection ~ 4000 3750
+Wire Wire Line
+	4000 2900 3700 2900
+Wire Wire Line
+	4000 2900 5250 2900
+Connection ~ 4000 2900
+$Comp
+L Device:R R?
+U 1 1 5C06BF25
+P 5250 3050
+F 0 "R?" H 5320 3096 50  0000 L CNN
+F 1 "150" H 5320 3005 50  0000 L CNN
+F 2 "" V 5180 3050 50  0001 C CNN
+F 3 "~" H 5250 3050 50  0001 C CNN
+	1    5250 3050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5100 3300 5250 3300
+Wire Wire Line
+	5250 3300 5250 3200
+$Comp
+L Device:C C?
+U 1 1 5C06C013
+P 5250 4000
+F 0 "C?" H 5365 4046 50  0000 L CNN
+F 1 "10nF" H 5365 3955 50  0000 L CNN
+F 2 "" H 5288 3850 50  0001 C CNN
+F 3 "~" H 5250 4000 50  0001 C CNN
+	1    5250 4000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5250 3850 5250 3300
+Connection ~ 5250 3300
+Wire Wire Line
+	5100 3600 5650 3600
+Wire Wire Line
+	5100 3750 5650 3750
+Wire Wire Line
+	4000 3750 4000 4150
+Wire Wire Line
+	4000 4150 4700 4150
+Wire Wire Line
+	5250 4150 4700 4150
+Connection ~ 4700 4150
 $EndSCHEMATC
