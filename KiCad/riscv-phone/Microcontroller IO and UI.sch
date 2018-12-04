@@ -146,7 +146,7 @@ Wire Wire Line
 	8300 4500 8500 4500
 Text HLabel 1700 1400 0    50   Input ~ 0
 VDD_3V3
-Text Notes 1950 750  0    50   ~ 0
+Text Notes 5050 650  0    50   ~ 0
 TODO: Consider using VDD_3V3_MOFF
 Text HLabel 1750 3600 0    50   Input ~ 0
 GND
@@ -565,7 +565,7 @@ Connection ~ 4650 4750
 Wire Wire Line
 	4650 5200 4650 5400
 Connection ~ 4650 5200
-Text Notes 4700 1100 0    50   ~ 0
+Text Notes 2750 1400 0    50   ~ 0
 TODO: Consider 1 pin on MCP23S17 per button
 Connection ~ 6300 4100
 Wire Wire Line
@@ -736,4 +736,8 @@ NoConn ~ 3050 4900
 NoConn ~ 3050 5100
 Text HLabel 8550 1950 2    50   Input ~ 0
 LCD_DC
+Text Notes 3350 5500 2    50   ~ 0
+TODO: Consider moving nonessential signals to these GPIO
+Text Notes 8650 1250 2    50   ~ 0
+TODO: Replace this symbol with a KiCad one
 $EndSCHEMATC

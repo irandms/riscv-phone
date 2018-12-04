@@ -228,6 +228,8 @@ $Comp
 L riscv-phone:NAU8810 U?
 U 1 1 5C06FB81
 P 5700 3000
+AR Path="/5C06FB81" Ref="U?"  Part="1" 
+AR Path="/5C50E8FC/5C06FB81" Ref="U?"  Part="1" 
 F 0 "U?" H 5700 3675 50  0000 C CNN
 F 1 "NAU8810" H 5700 3584 50  0000 C CNN
 F 2 "" H 5700 2950 50  0001 C CNN
@@ -594,4 +596,6 @@ Wire Wire Line
 	7550 4950 7550 4800
 Text Notes 8700 5350 2    50   ~ 0
 Verify functionality of switch logic level changing
+Text Notes 7700 4450 0    50   ~ 0
+TODO: Consider using a mono audio jack\n (check if driving stereo impedance with MOUT is fine)
 $EndSCHEMATC

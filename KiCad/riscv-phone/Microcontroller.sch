@@ -258,7 +258,7 @@ Wire Wire Line
 	3650 6300 4300 6300
 Text Label 4300 6300 0    50   ~ 0
 VDD_3V3_MOFF
-Text Notes 1350 650  0    50   ~ 0
+Text Notes 4500 850  0    50   ~ 0
 TODO: Change 3V3 rails to 3V3_MOFF (mostly off)
 $Comp
 L Device:D_TVS D?

@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:riscv-phone-cache
 EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
@@ -59,15 +60,9 @@ Wire Wire Line
 	4000 3300 4000 3200
 Connection ~ 4000 3300
 Wire Wire Line
-	4300 3450 4300 3600
-Wire Wire Line
-	4300 3750 4300 3600
-Connection ~ 4300 3600
-Wire Wire Line
 	4300 3750 4000 3750
 Wire Wire Line
 	4000 3750 4000 3600
-Connection ~ 4300 3750
 $Comp
 L power:GND #PWR?
 U 1 1 5C06BE31
@@ -125,4 +120,6 @@ Wire Wire Line
 Wire Wire Line
 	5250 4150 4700 4150
 Connection ~ 4700 4150
+Wire Wire Line
+	4300 3450 4300 3750
 $EndSCHEMATC

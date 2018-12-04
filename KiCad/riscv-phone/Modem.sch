@@ -351,8 +351,8 @@ Wire Wire Line
 	3500 3850 3600 3850
 Text Notes 5250 2950 0    50   ~ 0
 NOTE: M10 is being replaced with\neither the EC21, also by Quectel,\nor the  ublox Toby R200
-Text Notes 3900 6800 0    50   ~ 0
-The newer modems will have PCM audio interface, to work with the audio block.
+Text Notes 3750 6850 0    50   ~ 0
+The newer modem will have PCM audio interface, to work with the audio block.
 Wire Wire Line
 	3200 5450 3600 5450
 $Comp
@@ -366,4 +366,36 @@ F 3 "" H 3200 5950 50  0001 C CNN
 	1    3200 5950
 	1    0    0    -1  
 $EndComp
+Text HLabel 5950 950  0    50   Output ~ 0
+RI
+Text HLabel 5150 650  0    50   Input ~ 0
+DTR
+Wire Wire Line
+	6000 1150 6000 950 
+Wire Wire Line
+	6000 950  5950 950 
+Wire Wire Line
+	5200 1150 5200 650 
+Wire Wire Line
+	5200 650  5150 650 
+NoConn ~ 3600 3250
+NoConn ~ 5400 1150
+NoConn ~ 5600 1150
+NoConn ~ 5800 1150
+NoConn ~ 6400 1150
+NoConn ~ 7800 4250
+Text Notes 7950 4250 0    50   ~ 0
+Buzzer moved to FE310
+Text HLabel 5050 7050 0    50   Input ~ 0
+PCM_IN
+Text HLabel 5050 7150 0    50   Output ~ 0
+PCM_OUT
+Text HLabel 5050 7250 0    50   BiDi ~ 0
+PCM_CLK
+Text HLabel 5050 7350 0    50   BiDi ~ 0
+PCM_SYNC
+Text Notes 2650 600  0    50   ~ 0
+NOTE: Verify that the UART on the modem is 3.3V tolerant
+Text HLabel 8100 2050 2    50   Input ~ 0
+GND
 $EndSCHEMATC
