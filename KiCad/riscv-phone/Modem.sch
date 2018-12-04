@@ -14,10 +14,6 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Text Label 4800 1150 1    50   ~ 0
-MODEM_RX
-Text Label 5000 1150 1    50   ~ 0
-MODEM_TX
 NoConn ~ 4400 1150
 NoConn ~ 4600 1150
 NoConn ~ 4200 1150
@@ -25,13 +21,13 @@ NoConn ~ 3600 4450
 NoConn ~ 3600 4250
 NoConn ~ 3600 4050
 $Comp
-L DIY-Cellphone-eagle-import:GND #GND?
+L power:GNDA #GND?
 U 1 1 5C50D487
 P 3500 3850
 AR Path="/5C50D487" Ref="#GND?"  Part="1" 
 AR Path="/5C508A16/5C50D487" Ref="#GND?"  Part="1" 
 F 0 "#GND?" H 3500 3850 50  0001 C CNN
-F 1 "GND" V 3500 3781 59  0000 R CNN
+F 1 "GNDA" V 3500 3781 59  0000 R CNN
 F 2 "" H 3500 3850 50  0001 C CNN
 F 3 "" H 3500 3850 50  0001 C CNN
 	1    3500 3850
@@ -70,93 +66,6 @@ F 2 "" V 3280 4850 50  0001 C CNN
 F 3 "~" H 3350 4850 50  0001 C CNN
 	1    3350 4850
 	0    1    1    0   
-$EndComp
-Wire Wire Line
-	8800 4850 8800 4950
-$Comp
-L power:GND #PWR?
-U 1 1 5C50D4B7
-P 8800 4950
-AR Path="/5C50D4B7" Ref="#PWR?"  Part="1" 
-AR Path="/5C508A16/5C50D4B7" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 8800 4700 50  0001 C CNN
-F 1 "GND" H 8805 4777 50  0000 C CNN
-F 2 "" H 8800 4950 50  0001 C CNN
-F 3 "" H 8800 4950 50  0001 C CNN
-	1    8800 4950
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	8300 4650 8500 4650
-Wire Wire Line
-	8300 4550 8300 4650
-Wire Wire Line
-	7800 4250 8300 4250
-$Comp
-L Device:R R?
-U 1 1 5C50D4C0
-P 8300 4400
-AR Path="/5C50D4C0" Ref="R?"  Part="1" 
-AR Path="/5C508A16/5C50D4C0" Ref="R?"  Part="1" 
-F 0 "R?" H 8230 4354 50  0000 R CNN
-F 1 "4.7k" H 8230 4445 50  0000 R CNN
-F 2 "" V 8230 4400 50  0001 C CNN
-F 3 "~" H 8300 4400 50  0001 C CNN
-	1    8300 4400
-	-1   0    0    1   
-$EndComp
-$Comp
-L Transistor_FET:2N7000 Q?
-U 1 1 5C50D4C7
-P 8700 4650
-AR Path="/5C50D4C7" Ref="Q?"  Part="1" 
-AR Path="/5C508A16/5C50D4C7" Ref="Q?"  Part="1" 
-F 0 "Q?" H 8905 4696 50  0000 L CNN
-F 1 "2N7000" H 8905 4605 50  0000 L CNN
-F 2 "Package_TO_SOT_THT:TO-92_Inline" H 8900 4575 50  0001 L CIN
-F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7000.pdf" H 8700 4650 50  0001 L CNN
-	1    8700 4650
-	1    0    0    -1  
-$EndComp
-Text Label 8800 4050 0    50   ~ 0
-VCC
-Wire Wire Line
-	8800 4150 8800 4050
-Wire Wire Line
-	9050 4450 9050 4400
-Wire Wire Line
-	8800 4450 9050 4450
-Wire Wire Line
-	9050 4150 9050 4200
-Wire Wire Line
-	8800 4150 9050 4150
-Connection ~ 8800 4450
-Connection ~ 8800 4150
-$Comp
-L Device:D D?
-U 1 1 5C50D4D6
-P 8800 4300
-AR Path="/5C50D4D6" Ref="D?"  Part="1" 
-AR Path="/5C508A16/5C50D4D6" Ref="D?"  Part="1" 
-F 0 "D?" V 8754 4379 50  0000 L CNN
-F 1 "D" V 8845 4379 50  0000 L CNN
-F 2 "" H 8800 4300 50  0001 C CNN
-F 3 "~" H 8800 4300 50  0001 C CNN
-	1    8800 4300
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:Buzzer BZ?
-U 1 1 5C50D4DD
-P 9150 4300
-AR Path="/5C50D4DD" Ref="BZ?"  Part="1" 
-AR Path="/5C508A16/5C50D4DD" Ref="BZ?"  Part="1" 
-F 0 "BZ?" H 9303 4329 50  0000 L CNN
-F 1 "Buzzer" H 9303 4238 50  0000 L CNN
-F 2 "" V 9125 4400 50  0001 C CNN
-F 3 "~" V 9125 4400 50  0001 C CNN
-	1    9150 4300
-	1    0    0    -1  
 $EndComp
 NoConn ~ 7800 4450
 NoConn ~ 7800 4650
@@ -245,7 +154,7 @@ F 3 " ~" H 1550 5100 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L DIY-Cellphone-eagle-import:M10_HDWITHOUT_EXCLUSION U?
+L DIY-Cellphone-cache:DIY-Cellphone-eagle-import_M10_HDWITHOUT_EXCLUSION U?
 U 1 1 5C50D517
 P 5700 3750
 AR Path="/5C50D517" Ref="U?"  Part="1" 
@@ -271,9 +180,9 @@ F 3 "~" H 2850 5250 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 NoConn ~ 2100 5200
-Text HLabel 2700 900  2    50   Input ~ 0
+Text HLabel 4300 900  0    50   Input ~ 0
 MODEM_RX
-Text HLabel 2700 750  2    50   Output ~ 0
+Text HLabel 4300 750  0    50   Output ~ 0
 MODEM_TX
 Text Label 2100 5100 0    50   ~ 0
 GND
@@ -308,7 +217,7 @@ Wire Wire Line
 Text Notes 1000 5600 0    50   ~ 0
 Make NANO sim card
 $Comp
-L DIY-Cellphone-eagle-import:SUPERCAP U?
+L DIY-Cellphone-cache:DIY-Cellphone-eagle-import_SUPERCAPPAS U?
 U 1 1 5C054C6A
 P 3200 5750
 F 0 "U?" H 3250 5800 50  0001 C CNN
@@ -318,6 +227,143 @@ F 3 "" H 3200 5750 50  0001 C CNN
 	1    3200 5750
 	1    0    0    -1  
 $EndComp
-Text HLabel 1900 1950 0    50   Input ~ 0
+Text HLabel 6550 950  0    50   Input ~ 0
 VBAT
+Wire Wire Line
+	4300 900  4800 900 
+Wire Wire Line
+	4800 900  4800 1150
+Wire Wire Line
+	4300 750  5000 750 
+Wire Wire Line
+	5000 750  5000 1150
+$Comp
+L Device:LED D?
+U 1 1 5C07732E
+P 6350 800
+F 0 "D?" H 6342 545 50  0000 C CNN
+F 1 "LED" H 6342 636 50  0000 C CNN
+F 2 "" H 6350 800 50  0001 C CNN
+F 3 "~" H 6350 800 50  0001 C CNN
+	1    6350 800 
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5C077420
+P 6800 800
+F 0 "R?" V 6593 800 50  0000 C CNN
+F 1 "R" V 6684 800 50  0000 C CNN
+F 2 "" V 6730 800 50  0001 C CNN
+F 3 "~" H 6800 800 50  0001 C CNN
+	1    6800 800 
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5C0774CE
+P 7100 800
+F 0 "#PWR?" H 7100 550 50  0001 C CNN
+F 1 "GND" H 7105 627 50  0000 C CNN
+F 2 "" H 7100 800 50  0001 C CNN
+F 3 "" H 7100 800 50  0001 C CNN
+	1    7100 800 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6950 800  7100 800 
+Wire Wire Line
+	6500 800  6650 800 
+Wire Wire Line
+	6200 800  6200 1150
+$Comp
+L power:GNDA #PWR?
+U 1 1 5C0786EA
+P 8100 2050
+F 0 "#PWR?" H 8100 1800 50  0001 C CNN
+F 1 "GNDA" H 8105 1877 50  0000 C CNN
+F 2 "" H 8100 2050 50  0001 C CNN
+F 3 "" H 8100 2050 50  0001 C CNN
+	1    8100 2050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7200 1150 7950 1150
+Wire Wire Line
+	7950 1150 7950 2050
+Wire Wire Line
+	8100 2050 7950 2050
+Wire Wire Line
+	7950 2050 7800 2050
+Connection ~ 7950 2050
+Wire Wire Line
+	7950 2050 7950 2250
+Wire Wire Line
+	7950 2250 7800 2250
+Wire Wire Line
+	7950 2450 7800 2450
+Connection ~ 7950 2250
+Wire Wire Line
+	7800 2650 7950 2650
+Wire Wire Line
+	7950 2250 7950 2450
+Connection ~ 7950 2450
+Wire Wire Line
+	7950 2450 7950 2650
+Wire Wire Line
+	7800 2850 7950 2850
+Wire Wire Line
+	7950 2850 7950 2650
+Connection ~ 7950 2650
+Wire Wire Line
+	7800 3250 7950 3250
+Wire Wire Line
+	7950 3250 7950 2850
+Connection ~ 7950 2850
+$Comp
+L Device:Antenna AE?
+U 1 1 5C07C6BF
+P 8950 2850
+F 0 "AE?" H 9030 2841 50  0000 L CNN
+F 1 "Antenna" H 9030 2750 50  0000 L CNN
+F 2 "" H 8950 2850 50  0001 C CNN
+F 3 "~" H 8950 2850 50  0001 C CNN
+	1    8950 2850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7800 3050 8950 3050
+Wire Wire Line
+	6550 950  6600 950 
+Wire Wire Line
+	6600 950  6600 1150
+Wire Wire Line
+	6600 950  6800 950 
+Wire Wire Line
+	6800 950  6800 1150
+Connection ~ 6600 950 
+Wire Wire Line
+	6800 950  7000 950 
+Wire Wire Line
+	7000 950  7000 1150
+Connection ~ 6800 950 
+Wire Wire Line
+	3500 3850 3600 3850
+Text Notes 5250 2950 0    50   ~ 0
+NOTE: M10 is being replaced with\neither the EC21, also by Quectel,\nor the  ublox Toby R200
+Text Notes 3900 6800 0    50   ~ 0
+The newer modems will have PCM audio interface, to work with the audio block.
+Wire Wire Line
+	3200 5450 3600 5450
+$Comp
+L power:GND #PWR?
+U 1 1 5C08143F
+P 3200 5950
+F 0 "#PWR?" H 3200 5700 50  0001 C CNN
+F 1 "GND" H 3205 5777 50  0000 C CNN
+F 2 "" H 3200 5950 50  0001 C CNN
+F 3 "" H 3200 5950 50  0001 C CNN
+	1    3200 5950
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

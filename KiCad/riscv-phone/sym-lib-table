@@ -1,4 +1,5 @@
 (sym_lib_table
-  (lib (name DIY-Cellphone-cache)(type Legacy)(uri /home/irandms/Nextcloud/work/Eagle/DIY-Cellphone.pretty/DIY-Cellphone-cache.lib)(options "")(descr ""))
-  (lib (name riscv-phone)(type Legacy)(uri /home/irandms/Nextcloud/school/ece44x/riscv-phone/riscv-phone.lib)(options "")(descr ""))
+  (lib (name DIY-Cellphone-cache)(type Legacy)(uri /home/irandms/git/RISCV-Dumbphone/KiCad/riscv-phone/DIY-Cellphone-cache.lib)(options "")(descr ""))
+  (lib (name riscv-phone)(type Legacy)(uri /home/irandms/git/RISCV-Dumbphone/KiCad/riscv-phone/riscv-phone.lib)(options "")(descr ""))
+  (lib (name SJ-2524-SMT)(type Legacy)(uri /home/irandms/git/RISCV-Dumbphone/KiCad/riscv-phone/SJ-2524-SMT.lib)(options "")(descr ""))
 )
