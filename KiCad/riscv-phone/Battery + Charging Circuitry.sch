@@ -15,7 +15,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L DIY-Cellphone-eagle-import:M02-JST-2MM-SMT JP?
+L DIY-Cellphone-cache:DIY-Cellphone-eagle-import_M02-JST-2MM-SMT JP?
 U 1 1 5C0581B4
 P 3250 3300
 F 0 "JP?" H 3356 3686 59  0000 C CNN

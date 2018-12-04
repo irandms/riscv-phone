@@ -106,7 +106,7 @@ F 3 "" H 2450 5200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L DIY-Cellphone-eagle-import:NOKIA_5100 U?
+L DIY-Cellphone-cache:DIY-Cellphone-eagle-import_NOKIA_5100 U?
 U 1 1 5C80F395
 P 7950 1950
 F 0 "U?" V 7303 1950 42  0000 C CNN

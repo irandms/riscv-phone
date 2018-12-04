@@ -831,9 +831,9 @@ Text HLabel 6400 3850 2    50   Output ~ 0
 SCK
 Text HLabel 6400 3950 2    50   Output ~ 0
 EXPANDER_CS
-Text HLabel 6400 4250 2    50   Output ~ 0
+Text HLabel 6400 4150 2    50   Output ~ 0
 SD_CS
-Text HLabel 6400 4150 2    50   Input ~ 0
+Text HLabel 6400 4250 2    50   Input ~ 0
 EXPANDER_INTA
 Text HLabel 7900 6350 2    50   Output ~ 0
 DEBUG_RX
@@ -951,8 +951,6 @@ Text HLabel 6400 4350 2    50   Output ~ 0
 BUZZER
 Wire Wire Line
 	6300 4350 6400 4350
-Text HLabel 6400 5050 2    50   Output ~ 0
-MODEM_STATUS
 Wire Wire Line
 	6300 5050 6400 5050
 Text Label 3750 4050 2    50   ~ 0
@@ -1140,8 +1138,8 @@ Wire Notes Line
 	2650 1250 2650 2950
 Wire Notes Line
 	2650 2950 550  2950
-Text HLabel 7800 4150 2    50   Input ~ 0
-EXPANDER_INTB
-Text HLabel 8300 4500 2    50   Input ~ 0
+Text HLabel 6400 5050 2    50   Input ~ 0
 BRIDGE_INT
+Text HLabel 6400 4950 2    50   Input ~ 0
+HEADPHONE_DETECT
 $EndSCHEMATC
