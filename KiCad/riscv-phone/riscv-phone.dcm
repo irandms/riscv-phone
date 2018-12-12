@@ -1,3 +1,15 @@
 EESchema-DOCLIB  Version 2.0
 #
+$CMP Q_DUAL_NMOS_S1G1D2S2G2D1
+D Dual NMOS transistor, 6 pin package
+K transistor NMOS N-MOS N-MOSFET
+F ~
+$ENDCMP
+#
+$CMP SiT1533
+D 20 ppm, Ultra-Low Power 32.768 kHz Quartz XTAL Replacement
+K Crystal Clock Oscillator
+F https://www.sitime.com/datasheet/SiT1532
+$ENDCMP
+#
 #End Doc Library

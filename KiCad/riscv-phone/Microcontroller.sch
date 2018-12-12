@@ -4,7 +4,7 @@ EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 4 9
+Sheet 3 9
 Title ""
 Date ""
 Rev ""
@@ -19,8 +19,8 @@ L MCU_SiFive:FE310-G000 U?
 U 1 1 5C10854F
 P 5100 4250
 AR Path="/5C10854F" Ref="U?"  Part="1" 
-AR Path="/5C1083B4/5C10854F" Ref="U?"  Part="1" 
-F 0 "U?" H 5100 2864 50  0000 C CNN
+AR Path="/5C1083B4/5C10854F" Ref="U1"  Part="1" 
+F 0 "U1" H 5100 2864 50  0000 C CNN
 F 1 "FE310-G000" H 5100 2773 50  0000 C CNN
 F 2 "Package_DFN_QFN:QFN-48-1EP_6x6mm_P0.4mm_EP4.66x4.66mm_ThermalVias" H 4050 5700 50  0001 L CNN
 F 3 "https://static.dev.sifive.com/SiFive-FE310-G000-datasheet-v1p5.pdf" H 4050 5500 50  0001 C CNN
@@ -38,16 +38,14 @@ L power:+1V8 #PWR?
 U 1 1 5C108565
 P 5300 1650
 AR Path="/5C108565" Ref="#PWR?"  Part="1" 
-AR Path="/5C1083B4/5C108565" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 5300 1500 50  0001 C CNN
+AR Path="/5C1083B4/5C108565" Ref="#PWR029"  Part="1" 
+F 0 "#PWR029" H 5300 1500 50  0001 C CNN
 F 1 "+1V8" H 5315 1823 50  0000 C CNN
 F 2 "" H 5300 1650 50  0001 C CNN
 F 3 "" H 5300 1650 50  0001 C CNN
 	1    5300 1650
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	5700 2850 5700 2950
 Wire Wire Line
 	4850 2850 4800 2850
 Wire Wire Line
@@ -71,35 +69,18 @@ Wire Wire Line
 $Comp
 L power:GND #PWR?
 U 1 1 5C108592
-P 4700 5550
+P 3900 5550
 AR Path="/5C108592" Ref="#PWR?"  Part="1" 
-AR Path="/5C1083B4/5C108592" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 4700 5300 50  0001 C CNN
-F 1 "GND" H 4705 5377 50  0000 C CNN
-F 2 "" H 4700 5550 50  0001 C CNN
-F 3 "" H 4700 5550 50  0001 C CNN
-	1    4700 5550
+AR Path="/5C1083B4/5C108592" Ref="#PWR028"  Part="1" 
+F 0 "#PWR028" H 3900 5300 50  0001 C CNN
+F 1 "GND" H 3905 5377 50  0000 C CNN
+F 2 "" H 3900 5550 50  0001 C CNN
+F 3 "" H 3900 5550 50  0001 C CNN
+	1    3900 5550
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	5400 5550 5500 5550
-$Comp
-L 74xGxx:74LVC1G18 U?
-U 1 1 5C10859A
-P 7700 6300
-AR Path="/5C10859A" Ref="U?"  Part="1" 
-AR Path="/5C1083B4/5C10859A" Ref="U?"  Part="1" 
-F 0 "U?" H 7700 6567 50  0000 C CNN
-F 1 "74LVC1G18" H 7700 6476 50  0000 C CNN
-F 2 "" H 7700 6300 50  0001 C CNN
-F 3 "http://www.ti.com/lit/sg/scyt129e/scyt129e.pdf" H 7700 6300 50  0001 C CNN
-	1    7700 6300
-	1    0    0    -1  
-$EndComp
-Text Label 7500 6450 2    50   ~ 0
-MUXSEL
-Text Label 7500 6300 2    50   ~ 0
-UART0_TX
 Wire Wire Line
 	6300 3350 6400 3350
 Wire Wire Line
@@ -116,25 +97,6 @@ Wire Wire Line
 	6300 3950 6400 3950
 Wire Wire Line
 	6300 4050 6400 4050
-Wire Wire Line
-	6300 4150 6400 4150
-Wire Wire Line
-	3300 3450 3900 3450
-Wire Wire Line
-	3300 3150 3900 3150
-$Comp
-L Device:Crystal Y?
-U 1 1 5C1085B1
-P 3300 3300
-AR Path="/5C1085B1" Ref="Y?"  Part="1" 
-AR Path="/5C1083B4/5C1085B1" Ref="Y?"  Part="1" 
-F 0 "Y?" V 3346 3169 50  0000 R CNN
-F 1 "Crystal" V 3255 3169 50  0000 R CNN
-F 2 "" H 3300 3300 50  0001 C CNN
-F 3 "~" H 3300 3300 50  0001 C CNN
-	1    3300 3300
-	0    -1   -1   0   
-$EndComp
 Text HLabel 3250 1700 0    50   Input ~ 0
 VDD_1V8
 Text HLabel 1050 1700 0    50   Input ~ 0
@@ -153,28 +115,15 @@ Wire Wire Line
 	3750 4850 3900 4850
 Wire Wire Line
 	3750 4750 3900 4750
-$Comp
-L Oscillator:ACO-xxxMHz X?
-U 1 1 5C10E277
-P 6150 6700
-F 0 "X?" H 5810 6746 50  0000 R CNN
-F 1 "ACO-xxxMHz" H 5810 6655 50  0000 R CNN
-F 2 "Oscillator:Oscillator_DIP-14" H 6600 6350 50  0001 C CNN
-F 3 "http://www.conwin.com/datasheets/cx/cx030.pdf" H 6050 6700 50  0001 C CNN
-	1    6150 6700
-	1    0    0    -1  
-$EndComp
-Text Notes 5350 7550 0    50   ~ 0
-TODO: Replace with SiT1533\nLofreq RTC
 Wire Wire Line
 	5300 1700 5300 1650
 Wire Wire Line
 	6150 6400 6150 6350
 $Comp
-L power:+1V8 #PWR?
+L power:+1V8 #PWR030
 U 1 1 5C11AF2E
 P 6150 6350
-F 0 "#PWR?" H 6150 6200 50  0001 C CNN
+F 0 "#PWR030" H 6150 6200 50  0001 C CNN
 F 1 "+1V8" H 6165 6523 50  0000 C CNN
 F 2 "" H 6150 6350 50  0001 C CNN
 F 3 "" H 6150 6350 50  0001 C CNN
@@ -182,10 +131,10 @@ F 3 "" H 6150 6350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR?
+L power:GND #PWR031
 U 1 1 5C11CACC
 P 6150 7100
-F 0 "#PWR?" H 6150 6850 50  0001 C CNN
+F 0 "#PWR031" H 6150 6850 50  0001 C CNN
 F 1 "GND" H 6155 6927 50  0000 C CNN
 F 2 "" H 6150 7100 50  0001 C CNN
 F 3 "" H 6150 7100 50  0001 C CNN
@@ -194,23 +143,8 @@ F 3 "" H 6150 7100 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	6150 7100 6150 7000
-Text HLabel 900  700  0    50   Input ~ 0
+Text HLabel 3850 5550 0    50   Input ~ 0
 GND
-Wire Wire Line
-	900  700  1050 700 
-$Comp
-L power:GND #PWR?
-U 1 1 5C11DF3C
-P 1050 800
-F 0 "#PWR?" H 1050 550 50  0001 C CNN
-F 1 "GND" H 1055 627 50  0000 C CNN
-F 2 "" H 1050 800 50  0001 C CNN
-F 3 "" H 1050 800 50  0001 C CNN
-	1    1050 800 
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1050 700  1050 800 
 Wire Wire Line
 	3600 3550 3900 3550
 Wire Wire Line
@@ -220,95 +154,45 @@ Wire Wire Line
 Wire Wire Line
 	3600 3850 3900 3850
 $Comp
-L Memory_Flash:AT25SF081-SSHD-X U?
-U 1 1 5C1228C5
-P 3650 6800
-F 0 "U?" H 3650 7478 50  0000 C CNN
-F 1 "AT25SF081-SSHD-X" H 3650 7387 50  0000 C CNN
-F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 3650 6200 50  0001 C CNN
-F 3 "https://www.adestotech.com/wp-content/uploads/DS-AT25SF081_045.pdf" H 3650 6800 50  0001 C CNN
-	1    3650 6800
-	-1   0    0    -1  
-$EndComp
-Text Notes 3750 7300 0    50   ~ 0
-TODO: Replace with IS25Lp128
-$Comp
-L power:GND #PWR?
+L power:GND #PWR027
 U 1 1 5C12DBE1
-P 3650 7400
-F 0 "#PWR?" H 3650 7150 50  0001 C CNN
-F 1 "GND" H 3655 7227 50  0000 C CNN
-F 2 "" H 3650 7400 50  0001 C CNN
-F 3 "" H 3650 7400 50  0001 C CNN
-	1    3650 7400
+P 3800 7400
+F 0 "#PWR027" H 3800 7150 50  0001 C CNN
+F 1 "GND" H 3805 7227 50  0000 C CNN
+F 2 "" H 3800 7400 50  0001 C CNN
+F 3 "" H 3800 7400 50  0001 C CNN
+	1    3800 7400
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C?
+L Device:C C8
 U 1 1 5C12EB05
-P 2800 6800
-F 0 "C?" H 2915 6846 50  0000 L CNN
-F 1 "0.1uF" H 2915 6755 50  0000 L CNN
-F 2 "" H 2838 6650 50  0001 C CNN
-F 3 "~" H 2800 6800 50  0001 C CNN
-	1    2800 6800
+P 2800 7150
+F 0 "C8" H 2915 7196 50  0000 L CNN
+F 1 "0.1uF" H 2915 7105 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 2838 7000 50  0001 C CNN
+F 3 "~" H 2800 7150 50  0001 C CNN
+	1    2800 7150
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	3650 6300 4300 6300
-Text Label 4300 6300 0    50   ~ 0
-VDD_3V3_MOFF
 Text Notes 4500 850  0    50   ~ 0
 TODO: Change 3V3 rails to 3V3_MOFF (mostly off)
 $Comp
-L Device:D_TVS D?
-U 1 1 5C13D8C5
-P 1300 7200
-F 0 "D?" V 1254 7279 50  0000 L CNN
-F 1 "D_TVS" V 1345 7279 50  0000 L CNN
-F 2 "" H 1300 7200 50  0001 C CNN
-F 3 "~" H 1300 7200 50  0001 C CNN
-	1    1300 7200
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:D D?
-U 1 1 5C149B35
-P 1300 6850
-F 0 "D?" V 1346 6771 50  0000 R CNN
-F 1 "D" V 1255 6771 50  0000 R CNN
-F 2 "" H 1300 6850 50  0001 C CNN
-F 3 "~" H 1300 6850 50  0001 C CNN
-	1    1300 6850
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Device:R R?
+L Device:R R8
 U 1 1 5C149BFB
 P 1000 6450
-F 0 "R?" H 1070 6496 50  0000 L CNN
+F 0 "R8" H 1070 6496 50  0000 L CNN
 F 1 "100k" H 1070 6405 50  0000 L CNN
-F 2 "" V 930 6450 50  0001 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 930 6450 50  0001 C CNN
 F 3 "~" H 1000 6450 50  0001 C CNN
 	1    1000 6450
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:R R?
-U 1 1 5C149C64
-P 1000 7000
-F 0 "R?" H 1070 7046 50  0000 L CNN
-F 1 "100k" H 1070 6955 50  0000 L CNN
-F 2 "" V 930 7000 50  0001 C CNN
-F 3 "~" H 1000 7000 50  0001 C CNN
-	1    1000 7000
-	0    -1   -1   0   
-$EndComp
-$Comp
-L power:+1V8 #PWR?
+L power:+1V8 #PWR018
 U 1 1 5C149D4F
 P 800 6350
-F 0 "#PWR?" H 800 6200 50  0001 C CNN
+F 0 "#PWR018" H 800 6200 50  0001 C CNN
 F 1 "+1V8" H 815 6523 50  0000 C CNN
 F 2 "" H 800 6350 50  0001 C CNN
 F 3 "" H 800 6350 50  0001 C CNN
@@ -317,255 +201,153 @@ F 3 "" H 800 6350 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	850  6450 800  6450
-Wire Wire Line
-	850  7000 800  7000
-$Comp
-L power:+3V3 #PWR?
-U 1 1 5C16A147
-P 800 6900
-F 0 "#PWR?" H 800 6750 50  0001 C CNN
-F 1 "+3V3" H 815 7073 50  0000 C CNN
-F 2 "" H 800 6900 50  0001 C CNN
-F 3 "" H 800 6900 50  0001 C CNN
-	1    800  6900
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 5C16EEDF
-P 1300 7400
-F 0 "#PWR?" H 1300 7150 50  0001 C CNN
-F 1 "GND" H 1305 7227 50  0000 C CNN
-F 2 "" H 1300 7400 50  0001 C CNN
-F 3 "" H 1300 7400 50  0001 C CNN
-	1    1300 7400
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 5C16EF05
-P 1950 7250
-F 0 "#PWR?" H 1950 7000 50  0001 C CNN
-F 1 "GND" H 1955 7077 50  0000 C CNN
-F 2 "" H 1950 7250 50  0001 C CNN
-F 3 "" H 1950 7250 50  0001 C CNN
-	1    1950 7250
-	1    0    0    -1  
-$EndComp
-Connection ~ 1300 7000
-$Comp
-L Switch:SW_Push SW?
-U 1 1 5C173D8F
-P 1750 7000
-F 0 "SW?" H 1750 7285 50  0000 C CNN
-F 1 "SW_Push" H 1750 7194 50  0000 C CNN
-F 2 "" H 1750 7200 50  0001 C CNN
-F 3 "" H 1750 7200 50  0001 C CNN
-	1    1750 7000
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1300 7000 1550 7000
-Wire Wire Line
-	1950 7000 1950 7250
-Text Notes 1500 6600 0    50   ~ 0
-FE310 Wakeup Button
+Text Notes 1100 7550 0    50   ~ 0
+Wakeup from Keypad Interrupt
 Wire Wire Line
 	3900 5250 3900 5550
-Wire Wire Line
-	3900 5550 4700 5550
 $Comp
-L Device:R R?
+L Device:R R6
 U 1 1 5C1A0216
-P 1150 4900
-F 0 "R?" H 1220 4946 50  0000 L CNN
-F 1 "100k" H 1220 4855 50  0000 L CNN
-F 2 "" V 1080 4900 50  0001 C CNN
-F 3 "~" H 1150 4900 50  0001 C CNN
-	1    1150 4900
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+1V8 #PWR?
-U 1 1 5C1A02DC
-P 1150 4650
-F 0 "#PWR?" H 1150 4500 50  0001 C CNN
-F 1 "+1V8" H 1165 4823 50  0000 C CNN
-F 2 "" H 1150 4650 50  0001 C CNN
-F 3 "" H 1150 4650 50  0001 C CNN
-	1    1150 4650
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1150 4750 1150 4700
-$Comp
-L Device:D D?
-U 1 1 5C1A5E4F
-P 1500 4900
-F 0 "D?" V 1454 4979 50  0000 L CNN
-F 1 "D" V 1545 4979 50  0000 L CNN
-F 2 "" H 1500 4900 50  0001 C CNN
-F 3 "~" H 1500 4900 50  0001 C CNN
-	1    1500 4900
-	0    1    1    0   
-$EndComp
-Connection ~ 1150 4700
-Wire Wire Line
-	1150 4700 1150 4650
-Connection ~ 1150 5050
-$Comp
-L Device:C C?
-U 1 1 5C1ABFAC
-P 1150 5250
-F 0 "C?" H 1265 5296 50  0000 L CNN
-F 1 "C" H 1265 5205 50  0000 L CNN
-F 2 "" H 1188 5100 50  0001 C CNN
-F 3 "~" H 1150 5250 50  0001 C CNN
-	1    1150 5250
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1150 5100 1150 5050
-$Comp
-L power:GND #PWR?
-U 1 1 5C1AF235
-P 1150 5450
-F 0 "#PWR?" H 1150 5200 50  0001 C CNN
-F 1 "GND" H 1155 5277 50  0000 C CNN
-F 2 "" H 1150 5450 50  0001 C CNN
-F 3 "" H 1150 5450 50  0001 C CNN
-	1    1150 5450
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1150 5450 1150 5400
-$Comp
-L Device:D D?
-U 1 1 5C1B24AD
-P 1750 5050
-F 0 "D?" H 1750 5266 50  0000 C CNN
-F 1 "D" H 1750 5175 50  0000 C CNN
-F 2 "" H 1750 5050 50  0001 C CNN
-F 3 "~" H 1750 5050 50  0001 C CNN
-	1    1750 5050
-	-1   0    0    -1  
-$EndComp
-Wire Wire Line
-	1600 5050 1500 5050
-Text Label 2400 5050 0    50   ~ 0
-RESET
-$Comp
-L Device:R R?
-U 1 1 5C1B8C5F
-P 2000 4900
-F 0 "R?" H 2070 4946 50  0000 L CNN
-F 1 "100k" H 2070 4855 50  0000 L CNN
-F 2 "" V 1930 4900 50  0001 C CNN
-F 3 "~" H 2000 4900 50  0001 C CNN
-	1    2000 4900
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+3V3 #PWR?
-U 1 1 5C1C5E23
-P 2000 4750
-F 0 "#PWR?" H 2000 4600 50  0001 C CNN
-F 1 "+3V3" H 2015 4923 50  0000 C CNN
-F 2 "" H 2000 4750 50  0001 C CNN
-F 3 "" H 2000 4750 50  0001 C CNN
-	1    2000 4750
-	1    0    0    -1  
-$EndComp
-Connection ~ 1500 5050
-Wire Wire Line
-	1150 5050 1500 5050
-Wire Wire Line
-	1500 4700 1500 4750
-Wire Wire Line
-	1150 4700 1500 4700
-Connection ~ 2000 5050
-Text HLabel 2750 5050 2    50   BiDi ~ 0
-RESET
-$Comp
-L Switch:SW_Push SW?
-U 1 1 5C1E6B06
-P 2000 5400
-F 0 "SW?" V 2046 5352 50  0000 R CNN
-F 1 "SW_Push" V 1955 5352 50  0000 R CNN
-F 2 "" H 2000 5600 50  0001 C CNN
-F 3 "" H 2000 5600 50  0001 C CNN
-	1    2000 5400
+P 950 4750
+F 0 "R6" H 1020 4796 50  0000 L CNN
+F 1 "100k" H 1020 4705 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 880 4750 50  0001 C CNN
+F 3 "~" H 950 4750 50  0001 C CNN
+	1    950  4750
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:D_TVS D?
+L power:+1V8 #PWR016
+U 1 1 5C1A02DC
+P 700 4400
+F 0 "#PWR016" H 700 4250 50  0001 C CNN
+F 1 "+1V8" H 715 4573 50  0000 C CNN
+F 2 "" H 700 4400 50  0001 C CNN
+F 3 "" H 700 4400 50  0001 C CNN
+	1    700  4400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C7
+U 1 1 5C1ABFAC
+P 1450 4750
+F 0 "C7" H 1565 4796 50  0000 L CNN
+F 1 "10nF" H 1565 4705 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 1488 4600 50  0001 C CNN
+F 3 "~" H 1450 4750 50  0001 C CNN
+	1    1450 4750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR020
+U 1 1 5C1AF235
+P 1450 4950
+F 0 "#PWR020" H 1450 4700 50  0001 C CNN
+F 1 "GND" H 1455 4777 50  0000 C CNN
+F 2 "" H 1450 4950 50  0001 C CNN
+F 3 "" H 1450 4950 50  0001 C CNN
+	1    1450 4950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1450 4950 1450 4900
+Text Label 2350 5000 0    50   ~ 0
+RESET
+$Comp
+L Device:R R7
+U 1 1 5C1B8C5F
+P 950 5600
+F 0 "R7" H 1020 5646 50  0000 L CNN
+F 1 "100k" H 1020 5555 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 880 5600 50  0001 C CNN
+F 3 "~" H 950 5600 50  0001 C CNN
+	1    950  5600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:+3V3 #PWR017
+U 1 1 5C1C5E23
+P 700 5400
+F 0 "#PWR017" H 700 5250 50  0001 C CNN
+F 1 "+3V3" H 715 5573 50  0000 C CNN
+F 2 "" H 700 5400 50  0001 C CNN
+F 3 "" H 700 5400 50  0001 C CNN
+	1    700  5400
+	1    0    0    -1  
+$EndComp
+Connection ~ 1950 5000
+Text HLabel 2700 5000 2    50   BiDi ~ 0
+RESET
+$Comp
+L Device:D_TVS D4
 U 1 1 5C1E6B9A
-P 2600 5400
-F 0 "D?" V 2554 5479 50  0000 L CNN
-F 1 "D_TVS" V 2645 5479 50  0000 L CNN
-F 2 "" H 2600 5400 50  0001 C CNN
-F 3 "~" H 2600 5400 50  0001 C CNN
-	1    2600 5400
+P 2550 5350
+F 0 "D4" V 2504 5429 50  0000 L CNN
+F 1 "D_TVS" V 2595 5429 50  0000 L CNN
+F 2 "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 2550 5350 50  0001 C CNN
+F 3 "http://www.littelfuse.com/data/en/data_sheets/littelfuse_pulseguard-esd_pgb1.pdf" H 2550 5350 50  0001 C CNN
+F 4 " F4239CT-ND " V 2550 5350 50  0001 C CNN "DigiKey Part Number"
+	1    2550 5350
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	2600 5050 2600 5250
+	2550 5000 2550 5200
 Wire Wire Line
-	2000 5050 2600 5050
+	1950 5000 2550 5000
 Wire Wire Line
-	2600 5050 2750 5050
-Connection ~ 2600 5050
+	2550 5000 2700 5000
+Connection ~ 2550 5000
 Wire Wire Line
-	2000 5200 2000 5050
+	1950 5150 1950 5000
 Wire Wire Line
-	2600 5550 2600 5650
+	2550 5500 2550 5600
 Wire Wire Line
-	2600 5650 2000 5650
+	2550 5600 1950 5600
 Wire Wire Line
-	2000 5650 2000 5600
+	1950 5600 1950 5550
 $Comp
-L power:GND #PWR?
+L power:GND #PWR024
 U 1 1 5C1F80A5
-P 2600 5650
-F 0 "#PWR?" H 2600 5400 50  0001 C CNN
-F 1 "GND" H 2605 5477 50  0000 C CNN
-F 2 "" H 2600 5650 50  0001 C CNN
-F 3 "" H 2600 5650 50  0001 C CNN
-	1    2600 5650
+P 2550 5600
+F 0 "#PWR024" H 2550 5350 50  0001 C CNN
+F 1 "GND" H 2555 5427 50  0000 C CNN
+F 2 "" H 2550 5600 50  0001 C CNN
+F 3 "" H 2550 5600 50  0001 C CNN
+	1    2550 5600
 	1    0    0    -1  
 $EndComp
-Connection ~ 2600 5650
-Text Notes 3150 4500 2    50   ~ 0
+Connection ~ 2550 5600
+Text Notes 3150 4150 2    50   ~ 0
 TODO: Evaluate if this reset circuit is necessary
 $Comp
-L Device:C C?
+L Device:C C9
 U 1 1 5C1F8269
 P 2850 3150
-F 0 "C?" V 3102 3150 50  0000 C CNN
-F 1 "C" V 3011 3150 50  0000 C CNN
-F 2 "12pF" H 2888 3000 50  0001 C CNN
+F 0 "C9" V 3102 3150 50  0000 C CNN
+F 1 "12pF" V 3011 3150 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 2888 3000 50  0001 C CNN
 F 3 "~" H 2850 3150 50  0001 C CNN
+F 4 "490-5924-1-ND" V 2850 3150 50  0001 C CNN "DigiKey Part Number"
 	1    2850 3150
 	0    -1   -1   0   
 $EndComp
-Connection ~ 3300 3150
 $Comp
-L Device:C C?
+L Device:C C10
 U 1 1 5C1FBE08
 P 2850 3450
-F 0 "C?" V 2598 3450 50  0000 C CNN
-F 1 "C" V 2689 3450 50  0000 C CNN
-F 2 "12pF" H 2888 3300 50  0001 C CNN
-F 3 "~" H 2850 3450 50  0001 C CNN
+F 0 "C10" V 2598 3450 50  0000 C CNN
+F 1 "12pF" V 2689 3450 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 2888 3300 50  0001 C CNN
+F 3 "" H 2850 3450 50  0001 C CNN
+F 4 "490-5924-1-ND" V 2850 3450 50  0001 C CNN "DigiKey Part Number"
 	1    2850 3450
-	0    1    1    0   
+	0    1    -1   0   
 $EndComp
-Connection ~ 3300 3450
 $Comp
-L power:GND #PWR?
+L power:GND #PWR023
 U 1 1 5C20E865
 P 2500 3450
-F 0 "#PWR?" H 2500 3200 50  0001 C CNN
+F 0 "#PWR023" H 2500 3200 50  0001 C CNN
 F 1 "GND" H 2505 3277 50  0000 C CNN
 F 2 "" H 2500 3450 50  0001 C CNN
 F 3 "" H 2500 3450 50  0001 C CNN
@@ -573,47 +355,45 @@ F 3 "" H 2500 3450 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2500 3450 2700 3450
+	2500 3450 2600 3450
 Wire Wire Line
-	2500 3450 2500 3150
+	2500 3450 2500 3300
 Wire Wire Line
 	2500 3150 2700 3150
 Connection ~ 2500 3450
 $Comp
-L Device:R R?
+L Device:R R12
 U 1 1 5C2165BD
-P 5850 1700
-F 0 "R?" V 5643 1700 50  0000 C CNN
-F 1 "100" V 5734 1700 50  0000 C CNN
-F 2 "" V 5780 1700 50  0001 C CNN
-F 3 "~" H 5850 1700 50  0001 C CNN
-	1    5850 1700
-	0    1    1    0   
+P 5500 1700
+F 0 "R12" V 5293 1700 50  0000 C CNN
+F 1 "100" V 5384 1700 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 5430 1700 50  0001 C CNN
+F 3 "~" H 5500 1700 50  0001 C CNN
+	1    5500 1700
+	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:C C?
+L Device:C C19
 U 1 1 5C216639
 P 6300 1850
-F 0 "C?" H 6415 1896 50  0000 L CNN
+F 0 "C19" H 6415 1896 50  0000 L CNN
 F 1 "0.1uF" H 6415 1805 50  0000 L CNN
-F 2 "" H 6338 1700 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 6338 1700 50  0001 C CNN
 F 3 "~" H 6300 1850 50  0001 C CNN
 	1    6300 1850
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C?
+L Device:C C20
 U 1 1 5C21688B
 P 6800 1850
-F 0 "C?" H 6915 1896 50  0000 L CNN
-F 1 "0.1uF" H 6915 1805 50  0000 L CNN
-F 2 "" H 6838 1700 50  0001 C CNN
+F 0 "C20" H 6915 1896 50  0000 L CNN
+F 1 "1uF" H 6915 1805 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 6838 1700 50  0001 C CNN
 F 3 "~" H 6800 1850 50  0001 C CNN
 	1    6800 1850
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	6000 1700 6100 1700
 Connection ~ 6300 1700
 Wire Wire Line
 	6300 2000 6300 2050
@@ -626,46 +406,34 @@ Wire Wire Line
 Connection ~ 6550 2050
 Wire Wire Line
 	6300 1700 6800 1700
-Wire Wire Line
-	6100 2850 5700 2850
-Connection ~ 6100 1700
-Wire Wire Line
-	6100 1700 6300 1700
-Text Label 6100 2850 2    50   ~ 0
+Text Label 6100 1700 2    50   ~ 0
 PLL_AVDD
-Wire Wire Line
-	6100 1700 6100 2850
 Wire Wire Line
 	5200 2950 5300 2950
 Wire Wire Line
 	5400 2950 5300 2950
 Connection ~ 5300 2950
 Connection ~ 5300 1700
-Wire Wire Line
-	5300 1700 5700 1700
-Connection ~ 4700 5550
-Wire Wire Line
-	4700 5550 5200 5550
 Text Label 6550 2100 3    50   ~ 0
 PLL_AVSS
 Text Label 5500 5550 0    50   ~ 0
 PLL_AVSS
 $Comp
-L Device:C C?
+L Device:C C11
 U 1 1 5C29096E
 P 3550 1850
-F 0 "C?" H 3665 1896 50  0000 L CNN
+F 0 "C11" H 3665 1896 50  0000 L CNN
 F 1 "0.1uF" H 3665 1805 50  0000 L CNN
-F 2 "" H 3588 1700 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 3588 1700 50  0001 C CNN
 F 3 "~" H 3550 1850 50  0001 C CNN
 	1    3550 1850
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR?
+L power:GND #PWR025
 U 1 1 5C290A61
 P 3550 2050
-F 0 "#PWR?" H 3550 1800 50  0001 C CNN
+F 0 "#PWR025" H 3550 1800 50  0001 C CNN
 F 1 "GND" H 3555 1877 50  0000 C CNN
 F 2 "" H 3550 2050 50  0001 C CNN
 F 3 "" H 3550 2050 50  0001 C CNN
@@ -688,12 +456,12 @@ Connection ~ 3550 1700
 Wire Wire Line
 	3550 1700 4000 1700
 $Comp
-L Device:C C?
+L Device:C C13
 U 1 1 5C2DC0AB
 P 4000 1850
-F 0 "C?" H 4115 1896 50  0000 L CNN
+F 0 "C13" H 4115 1896 50  0000 L CNN
 F 1 "0.1uF" H 4115 1805 50  0000 L CNN
-F 2 "" H 4038 1700 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 4038 1700 50  0001 C CNN
 F 3 "~" H 4000 1850 50  0001 C CNN
 	1    4000 1850
 	1    0    0    -1  
@@ -702,12 +470,12 @@ Connection ~ 4000 1700
 Wire Wire Line
 	4000 1700 4450 1700
 $Comp
-L Device:C C?
+L Device:C C15
 U 1 1 5C2DC105
 P 4450 1850
-F 0 "C?" H 4565 1896 50  0000 L CNN
+F 0 "C15" H 4565 1896 50  0000 L CNN
 F 1 "0.1uF" H 4565 1805 50  0000 L CNN
-F 2 "" H 4488 1700 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 4488 1700 50  0001 C CNN
 F 3 "~" H 4450 1850 50  0001 C CNN
 	1    4450 1850
 	1    0    0    -1  
@@ -716,12 +484,12 @@ Connection ~ 4450 1700
 Wire Wire Line
 	4450 1700 4900 1700
 $Comp
-L Device:C C?
+L Device:C C17
 U 1 1 5C2DC161
 P 4900 1850
-F 0 "C?" H 5015 1896 50  0000 L CNN
-F 1 "0.1uF" H 5015 1805 50  0000 L CNN
-F 2 "" H 4938 1700 50  0001 C CNN
+F 0 "C17" H 5015 1896 50  0000 L CNN
+F 1 "1uF" H 5015 1805 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 4938 1700 50  0001 C CNN
 F 3 "~" H 4900 1850 50  0001 C CNN
 	1    4900 1850
 	1    0    0    -1  
@@ -739,12 +507,12 @@ Wire Wire Line
 Connection ~ 4450 2000
 Connection ~ 3550 2000
 $Comp
-L Device:C C?
+L Device:C C12
 U 1 1 5C2FF6C8
 P 3550 2550
-F 0 "C?" H 3665 2596 50  0000 L CNN
+F 0 "C12" H 3665 2596 50  0000 L CNN
 F 1 "0.1uF" H 3665 2505 50  0000 L CNN
-F 2 "" H 3588 2400 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 3588 2400 50  0001 C CNN
 F 3 "~" H 3550 2550 50  0001 C CNN
 	1    3550 2550
 	1    0    0    -1  
@@ -755,23 +523,23 @@ Wire Wire Line
 Text Notes 3500 1650 0    50   ~ 0
 Place 3 near VDD, one near AON_IVDD
 $Comp
-L Device:C C?
+L Device:C C14
 U 1 1 5C308B74
 P 4000 2550
-F 0 "C?" H 4115 2596 50  0000 L CNN
+F 0 "C14" H 4115 2596 50  0000 L CNN
 F 1 "0.1uF" H 4115 2505 50  0000 L CNN
-F 2 "" H 4038 2400 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 4038 2400 50  0001 C CNN
 F 3 "~" H 4000 2550 50  0001 C CNN
 	1    4000 2550
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C?
+L Device:C C16
 U 1 1 5C308BCC
 P 4450 2550
-F 0 "C?" H 4565 2596 50  0000 L CNN
-F 1 "0.1uF" H 4565 2505 50  0000 L CNN
-F 2 "" H 4488 2400 50  0001 C CNN
+F 0 "C16" H 4565 2596 50  0000 L CNN
+F 1 "1uF" H 4565 2505 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 4488 2400 50  0001 C CNN
 F 3 "~" H 4450 2550 50  0001 C CNN
 	1    4450 2550
 	1    0    0    -1  
@@ -792,10 +560,10 @@ Wire Wire Line
 	4000 2700 4450 2700
 Connection ~ 4000 2700
 $Comp
-L power:GND #PWR?
+L power:GND #PWR026
 U 1 1 5C32042E
 P 3550 2700
-F 0 "#PWR?" H 3550 2450 50  0001 C CNN
+F 0 "#PWR026" H 3550 2450 50  0001 C CNN
 F 1 "GND" H 3555 2527 50  0000 C CNN
 F 2 "" H 3550 2700 50  0001 C CNN
 F 3 "" H 3550 2700 50  0001 C CNN
@@ -829,53 +597,14 @@ Text HLabel 6400 3750 2    50   Input ~ 0
 MISO
 Text HLabel 6400 3850 2    50   Output ~ 0
 SCK
-Text HLabel 6400 3950 2    50   Output ~ 0
-EXPANDER_CS
-Text HLabel 6400 4150 2    50   Output ~ 0
+Text HLabel 6400 4050 2    50   Output ~ 0
 SD_CS
 Text HLabel 6400 4250 2    50   Input ~ 0
-EXPANDER_INTA
-Text HLabel 7900 6350 2    50   Output ~ 0
-DEBUG_RX
-Text HLabel 7900 6250 2    50   Output ~ 0
-MODEM_RX
-$Comp
-L 74xGxx:74LVC2G157 U?
-U 1 1 5C37996B
-P 10100 5850
-F 0 "U?" H 10100 6217 50  0000 C CNN
-F 1 "74LVC2G157" H 10100 6126 50  0000 C CNN
-F 2 "" H 10100 5850 50  0001 C CNN
-F 3 "http://www.ti.com/lit/sg/scyt129e/scyt129e.pdf" H 10100 5850 50  0001 C CNN
-	1    10100 5850
-	1    0    0    -1  
-$EndComp
-Text Label 10350 5750 0    50   ~ 0
-UART0_RX
-NoConn ~ 10350 5950
-$Comp
-L power:GND #PWR?
-U 1 1 5C389F08
-P 10100 6250
-F 0 "#PWR?" H 10100 6000 50  0001 C CNN
-F 1 "GND" H 10105 6077 50  0000 C CNN
-F 2 "" H 10100 6250 50  0001 C CNN
-F 3 "" H 10100 6250 50  0001 C CNN
-	1    10100 6250
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	10100 6250 10100 6150
-Text HLabel 9400 5800 0    50   Input ~ 0
+KEYPAD_INT
+Text HLabel 10350 3500 2    50   Input ~ 0
 DEBUG_TX
-Text HLabel 9400 5700 0    50   Input ~ 0
+Text HLabel 10350 3300 2    50   Input ~ 0
 MODEM_TX
-Wire Wire Line
-	9400 5700 9850 5700
-Wire Wire Line
-	9400 5800 9850 5800
-Text Notes 7450 5900 0    50   ~ 0
-NOTE: ENSURE THESE MATCH\n(Modem tx and rx on MUXSEL=0)\nCheck datasheets. \nMUXSEL must PAIR RX/TX correctly.
 Text HLabel 6400 4750 2    50   Output ~ 0
 LCD_LED_PWM
 Text HLabel 6400 4850 2    50   Output ~ 0
@@ -883,34 +612,23 @@ LCD_DC
 Text HLabel 6400 5150 2    50   Output ~ 0
 BRIDGE_WAKEUP
 $Comp
-L Device:R R?
+L Device:R R10
 U 1 1 5C3ED6BC
 P 1100 1850
-F 0 "R?" H 1170 1896 50  0000 L CNN
+F 0 "R10" H 1170 1896 50  0000 L CNN
 F 1 "100k" H 1170 1805 50  0000 L CNN
-F 2 "" V 1030 1850 50  0001 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 1030 1850 50  0001 C CNN
 F 3 "~" H 1100 1850 50  0001 C CNN
 	1    1100 1850
-	1    0    0    -1  
-$EndComp
-$Comp
-L Transistor_FET:2N7000 Q?
-U 1 1 5C3ED8EC
-P 1400 2300
-F 0 "Q?" H 1605 2346 50  0000 L CNN
-F 1 "2N7000" H 1605 2255 50  0000 L CNN
-F 2 "Package_TO_SOT_THT:TO-92_Inline" H 1600 2225 50  0001 L CIN
-F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7000.pdf" H 1400 2300 50  0001 L CNN
-	1    1400 2300
 	1    0    0    -1  
 $EndComp
 Text Label 1050 2300 2    50   ~ 0
 VDD_PAD_EN
 $Comp
-L power:GND #PWR?
+L power:GND #PWR021
 U 1 1 5C40EFC0
 P 1500 2600
-F 0 "#PWR?" H 1500 2350 50  0001 C CNN
+F 0 "#PWR021" H 1500 2350 50  0001 C CNN
 F 1 "GND" H 1505 2427 50  0000 C CNN
 F 2 "" H 1500 2600 50  0001 C CNN
 F 3 "" H 1500 2600 50  0001 C CNN
@@ -919,31 +637,18 @@ F 3 "" H 1500 2600 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	1500 2600 1500 2500
-$Comp
-L Transistor_FET:BS250 Q?
-U 1 1 5C46B5C3
-P 1500 1800
-F 0 "Q?" V 1843 1800 50  0000 C CNN
-F 1 "BS250" V 1752 1800 50  0000 C CNN
-F 2 "Package_TO_SOT_THT:TO-92_Inline" H 1700 1725 50  0001 L CIN
-F 3 "http://www.vishay.com/docs/70209/70209.pdf" H 1500 1800 50  0001 L CNN
-	1    1500 1800
-	0    1    -1   0   
-$EndComp
 Text HLabel 2000 1700 2    50   Output ~ 0
 VDD_3V3_MOFF
 Text Label 3750 4850 2    50   ~ 0
 VDD_PAD_EN
 Text Label 3250 2400 2    50   ~ 0
 VDD_3V3_MOFF
-Text Notes 2050 1350 2    50   ~ 0
-TODO: Spec these transistors
+Text Notes 2400 2500 2    50   ~ 0
+TODO: Spec the Q?A
 Wire Wire Line
 	4900 2850 5000 2850
 Connection ~ 4900 2850
-Text Label 9850 5900 2    50   ~ 0
-MUXSEL
-Text HLabel 6400 4050 2    50   Output ~ 0
+Text HLabel 6400 3950 2    50   Output ~ 0
 BRIDGE_CS
 Wire Wire Line
 	6300 4250 6400 4250
@@ -989,43 +694,23 @@ Wire Wire Line
 	1500 2100 1500 2050
 Connection ~ 1500 2050
 Wire Wire Line
-	1700 1700 2000 1700
-Wire Wire Line
-	3050 6600 3000 6600
-Text Label 3000 6600 2    50   ~ 0
+	1700 1700 1900 1700
+Text Label 3000 6800 2    50   ~ 0
 IO1
-Text Label 4350 6600 0    50   ~ 0
-IO1
-Text Label 4350 6700 0    50   ~ 0
+Text Label 3000 6700 2    50   ~ 0
+IO0
+Text Label 4550 6900 0    50   ~ 0
 QSPI_SCK
-Text Label 4350 6800 0    50   ~ 0
+Text Label 4550 6800 0    50   ~ 0
 QSPI_CS
-Text Label 4350 6900 0    50   ~ 0
+Text Label 3000 6900 2    50   ~ 0
 IO2
-Text Label 4350 7000 0    50   ~ 0
+Text Label 3000 7000 2    50   ~ 0
 IO3
 Wire Wire Line
-	4250 7000 4350 7000
+	3800 7300 3800 7350
 Wire Wire Line
-	4250 6900 4350 6900
-Wire Wire Line
-	4250 6800 4350 6800
-Wire Wire Line
-	4250 6700 4350 6700
-Wire Wire Line
-	4250 6600 4350 6600
-Wire Wire Line
-	3650 7300 3650 7400
-Wire Wire Line
-	2800 6950 2800 7300
-Wire Wire Line
-	2800 7300 3650 7300
-Connection ~ 3650 7300
-Wire Wire Line
-	2800 6650 2800 6300
-Wire Wire Line
-	2800 6300 3650 6300
-Connection ~ 3650 6300
+	2800 7350 3800 7350
 Text Label 3750 4950 2    50   ~ 0
 WAKEUP_N
 Wire Wire Line
@@ -1037,20 +722,16 @@ LFALTCLK
 Wire Wire Line
 	3750 5150 3900 5150
 Text Label 6500 6700 0    50   ~ 0
-LFLALTCLK
+LFALTCLK
 Wire Wire Line
 	6450 6700 6500 6700
 Text Label 3750 5050 2    50   ~ 0
-AON_RST_N
+RESET_N_1V8
 Wire Wire Line
 	3750 5050 3900 5050
-Text Label 1000 5050 2    50   ~ 0
-AON_RST_N
-Wire Notes Line
-	7050 6500 10900 6500
-Wire Notes Line
-	10900 6500 10900 5300
-Text Notes 7100 5400 0    50   ~ 0
+Text Label 1250 4550 0    50   ~ 0
+RESET_N_1V8
+Text Notes 7600 3000 0    50   ~ 0
 UART Multiplexing
 Wire Notes Line
 	6900 7650 6900 6100
@@ -1074,19 +755,6 @@ Text Notes 2700 6100 0    50   ~ 0
 Program Flash
 Text Notes 600  6100 0    50   ~ 0
 AON Wakeup from Sleep
-Wire Wire Line
-	1300 6700 1300 6450
-Wire Wire Line
-	1300 6450 1400 6450
-Wire Wire Line
-	1150 7000 1300 7000
-Wire Wire Line
-	1150 6450 1300 6450
-Connection ~ 1300 6450
-Wire Wire Line
-	1300 7050 1300 7000
-Wire Wire Line
-	1300 7400 1300 7350
 Wire Notes Line
 	550  6000 550  7650
 Wire Notes Line
@@ -1097,32 +765,14 @@ Wire Notes Line
 	2500 6000 550  6000
 Wire Wire Line
 	800  6350 800  6450
-Wire Wire Line
-	800  6900 800  7000
-Text Notes 600  4500 0    50   ~ 0
-AON Reset
-Wire Wire Line
-	1000 5050 1150 5050
-Wire Wire Line
-	1900 5050 2000 5050
+Text Notes 600  4150 0    50   ~ 0
+System Reset
 Wire Notes Line
-	550  5900 550  4400
-Wire Notes Line
-	550  4400 3200 4400
-Wire Notes Line
-	3200 4400 3200 5900
+	550  4050 3200 4050
 Wire Notes Line
 	3200 5900 550  5900
 Wire Wire Line
 	6800 2050 6800 2000
-Wire Notes Line
-	10900 5300 7050 5300
-Wire Notes Line
-	7050 5300 7050 6500
-Wire Wire Line
-	3000 3450 3300 3450
-Wire Wire Line
-	3000 3150 3300 3150
 Text Notes 700  2900 0    50   ~ 0
 Disable 3.3V rail when in sleep mode
 Wire Wire Line
@@ -1142,4 +792,446 @@ Text HLabel 6400 5050 2    50   Input ~ 0
 BRIDGE_INT
 Text HLabel 6400 4950 2    50   Input ~ 0
 HEADPHONE_DETECT
+Text Notes 8600 2950 0    50   ~ 0
+TODO: Use pullup on RX lines so they do not float if deselected?
+Text Notes 850  4000 0    50   ~ 0
+TODO: Evaluate if this resets whole system\nHow does RESET reach AON_RST_N?
+$Comp
+L riscv-phone:IS25LP128 U2
+U 1 1 5C0AE8A7
+P 3800 6850
+F 0 "U2" H 3800 7478 50  0000 C CNN
+F 1 "IL25LP128" H 3800 7387 50  0000 C CNN
+F 2 "Package_SO:SOIJ-8_5.3x5.3mm_P1.27mm" H 3800 6550 50  0001 C CNN
+F 3 "" H 3800 6550 50  0001 C CNN
+	1    3800 6850
+	1    0    0    -1  
+$EndComp
+Text Label 4150 6400 0    50   ~ 0
+VDD_3V3_MOFF
+Wire Wire Line
+	3800 7350 3800 7400
+Connection ~ 3800 7350
+Connection ~ 3800 6400
+Wire Wire Line
+	3800 6400 4150 6400
+Wire Wire Line
+	2800 6400 3800 6400
+Wire Wire Line
+	2800 6400 2800 7000
+Wire Wire Line
+	2800 7300 2800 7350
+Wire Wire Line
+	3000 7000 3100 7000
+Wire Wire Line
+	3000 6900 3100 6900
+Wire Wire Line
+	3000 6800 3100 6800
+Wire Wire Line
+	3000 6700 3100 6700
+Wire Wire Line
+	4500 6800 4550 6800
+Wire Wire Line
+	4500 6900 4550 6900
+Wire Wire Line
+	5300 1700 5350 1700
+Wire Wire Line
+	5650 1700 5700 1700
+Wire Wire Line
+	5700 1700 5700 2950
+Wire Wire Line
+	5700 1700 6300 1700
+Connection ~ 5700 1700
+Wire Wire Line
+	3850 5550 3900 5550
+Connection ~ 3900 5550
+$Comp
+L riscv-phone:Q_DUAL_NMOS_S1G1D2S2G2D1 Q1
+U 1 1 5C109376
+P 1400 2300
+F 0 "Q1" H 1606 2346 50  0000 L CNN
+F 1 "Q_DUAL_NMOS_S1G1D2S2G2D1" H 1606 2255 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-363_SC-70-6" H 1600 2300 50  0001 C CNN
+F 3 "https://www.diodes.com/assets/Datasheets/DMN63D8LDW.pdf" H 1600 2300 50  0001 C CNN
+	1    1400 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_FET:IRLML6402 Q2
+U 1 1 5C109BB2
+P 1500 1800
+F 0 "Q2" V 1843 1800 50  0000 C CNN
+F 1 "IRLML6402" V 1752 1800 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 1700 1725 50  0001 L CIN
+F 3 "https://www.infineon.com/dgdl/irlml6402pbf.pdf?fileId=5546d462533600a401535668d5c2263c" H 1500 1800 50  0001 L CNN
+	1    1500 1800
+	0    1    -1   0   
+$EndComp
+$Comp
+L riscv-phone:SiT1533 X1
+U 1 1 5C120F64
+P 6150 6700
+F 0 "X1" H 5900 6750 50  0000 R CNN
+F 1 "SiT1533" H 5900 6650 50  0000 R CNN
+F 2 "riscv-phone:Crystal_SMD_2012-4Pin_2.0x1.2mm" H 6600 6350 50  0001 C CNN
+F 3 "https://www.sitime.com/datasheet/SiT1532" H 6050 6700 50  0001 C CNN
+	1    6150 6700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C18
+U 1 1 5C121B89
+P 5400 6650
+F 0 "C18" H 5515 6696 50  0000 L CNN
+F 1 "0.1uF" H 5515 6605 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 5438 6500 50  0001 C CNN
+F 3 "~" H 5400 6650 50  0001 C CNN
+	1    5400 6650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5400 6400 6150 6400
+Connection ~ 6150 6400
+Wire Wire Line
+	5400 7000 6150 7000
+Connection ~ 6150 7000
+Wire Wire Line
+	5400 6500 5400 6400
+Wire Wire Line
+	5400 6800 5400 7000
+$Comp
+L Device:Crystal_GND24 Y1
+U 1 1 5C148164
+P 3250 3300
+F 0 "Y1" V 3204 3541 50  0000 L CNN
+F 1 "16 MHz" V 3295 3541 50  0000 L CNN
+F 2 "Crystal:Crystal_SMD_3225-4Pin_3.2x2.5mm" H 3250 3300 50  0001 C CNN
+F 3 "~" H 3250 3300 50  0001 C CNN
+	1    3250 3300
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3000 3450 3250 3450
+Wire Wire Line
+	3000 3150 3250 3150
+Connection ~ 3250 3150
+Wire Wire Line
+	3250 3150 3900 3150
+Connection ~ 3250 3450
+Wire Wire Line
+	3250 3450 3900 3450
+Wire Wire Line
+	3050 3300 2500 3300
+Connection ~ 2500 3300
+Wire Wire Line
+	2500 3300 2500 3150
+Wire Wire Line
+	3450 3300 3450 3500
+Wire Wire Line
+	3450 3500 2600 3500
+Wire Wire Line
+	2600 3500 2600 3450
+Connection ~ 2600 3450
+Wire Wire Line
+	2600 3450 2700 3450
+$Comp
+L 74xx:74CBTLV3257 U5
+U 1 1 5C165343
+P 9700 4000
+F 0 "U5" H 9700 4342 50  0000 C CNN
+F 1 "74CBTLV3257" H 9700 4251 50  0000 C CNN
+F 2 "Package_SO:TSSOP-16_4.4x5mm_P0.65mm" H 9650 4000 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/74CBTLV3257.pdf" H 9650 4000 50  0001 C CNN
+	1    9700 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74CBTLV3257 U5
+U 2 1 5C165517
+P 9700 3400
+F 0 "U5" H 9700 3742 50  0000 C CNN
+F 1 "74CBTLV3257" H 9700 3651 50  0000 C CNN
+F 2 "Package_SO:TSSOP-16_4.4x5mm_P0.65mm" H 9650 3400 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/74CBTLV3257.pdf" H 9650 3400 50  0001 C CNN
+	2    9700 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74CBTLV3257 U5
+U 5 1 5C16577D
+P 8400 3550
+F 0 "U5" H 8580 3596 50  0000 L CNN
+F 1 "74CBTLV3257" H 8580 3505 50  0000 L CNN
+F 2 "Package_SO:TSSOP-16_4.4x5mm_P0.65mm" H 8350 3550 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/74CBTLV3257.pdf" H 8350 3550 50  0001 C CNN
+F 4 "1727-4410-1-ND" H 8400 3550 50  0001 C CNN "DigiKey Part Number"
+	5    8400 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74CBTLV3257 U5
+U 4 1 5C165914
+P 9700 4650
+F 0 "U5" H 9700 4992 50  0000 C CNN
+F 1 "74CBTLV3257" H 9700 4901 50  0000 C CNN
+F 2 "Package_SO:TSSOP-16_4.4x5mm_P0.65mm" H 9650 4650 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/74CBTLV3257.pdf" H 9650 4650 50  0001 C CNN
+	4    9700 4650
+	1    0    0    -1  
+$EndComp
+Text Label 7900 3450 2    50   ~ 0
+MUXSEL
+Wire Wire Line
+	7900 3450 8000 3450
+Wire Wire Line
+	8400 4000 8400 3950
+Text Label 8400 3100 0    50   ~ 0
+VDD_3V3_MOFF
+Wire Wire Line
+	8400 3100 8400 3150
+Text HLabel 10350 4100 2    50   Output ~ 0
+DEBUG_RX
+Text HLabel 10350 3900 2    50   Output ~ 0
+MODEM_RX
+Text Label 9350 4000 2    50   ~ 0
+UART0_TX
+Text Label 9350 3400 2    50   ~ 0
+UART0_RX
+Wire Wire Line
+	9350 3400 9400 3400
+Wire Wire Line
+	9350 4000 9400 4000
+Wire Wire Line
+	8000 3650 7950 3650
+$Comp
+L power:GND #PWR032
+U 1 1 5C24EECD
+P 7950 4000
+F 0 "#PWR032" H 7950 3750 50  0001 C CNN
+F 1 "GND" H 7955 3827 50  0000 C CNN
+F 2 "" H 7950 4000 50  0001 C CNN
+F 3 "" H 7950 4000 50  0001 C CNN
+	1    7950 4000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7950 3650 7950 4000
+Wire Wire Line
+	7950 4000 8400 4000
+Connection ~ 7950 4000
+Wire Wire Line
+	10000 3900 10350 3900
+Wire Wire Line
+	10000 4100 10350 4100
+Wire Wire Line
+	10000 3300 10350 3300
+Wire Wire Line
+	10000 3500 10350 3500
+Wire Notes Line
+	11150 2850 11150 4950
+Wire Notes Line
+	11150 4950 7550 4950
+Wire Notes Line
+	7550 4950 7550 2850
+Wire Notes Line
+	7550 2850 11150 2850
+Text HLabel 1950 7000 2    50   Input ~ 0
+KEYPAD_INT
+Wire Wire Line
+	800  6900 800  7000
+Wire Wire Line
+	1150 6450 1300 6450
+Connection ~ 1300 6450
+Wire Wire Line
+	1300 6700 1300 6450
+Wire Wire Line
+	1150 7000 1300 7000
+Connection ~ 1300 7000
+$Comp
+L power:+3V3 #PWR019
+U 1 1 5C16A147
+P 800 6900
+F 0 "#PWR019" H 800 6750 50  0001 C CNN
+F 1 "+3V3" H 815 7073 50  0000 C CNN
+F 2 "" H 800 6900 50  0001 C CNN
+F 3 "" H 800 6900 50  0001 C CNN
+	1    800  6900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	850  7000 800  7000
+$Comp
+L Device:R R9
+U 1 1 5C149C64
+P 1000 7000
+F 0 "R9" H 1070 7046 50  0000 L CNN
+F 1 "100k" H 1070 6955 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 930 7000 50  0001 C CNN
+F 3 "~" H 1000 7000 50  0001 C CNN
+	1    1000 7000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:D D3
+U 1 1 5C149B35
+P 1300 6850
+F 0 "D3" V 1346 6771 50  0000 R CNN
+F 1 "D" V 1255 6771 50  0000 R CNN
+F 2 "" H 1300 6850 50  0001 C CNN
+F 3 "~" H 1300 6850 50  0001 C CNN
+	1    1300 6850
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	1300 6450 1400 6450
+Wire Wire Line
+	1300 7000 1950 7000
+Wire Wire Line
+	700  4400 800  4400
+Wire Wire Line
+	700  4400 700  4750
+Wire Wire Line
+	700  4750 800  4750
+Connection ~ 700  4400
+Wire Wire Line
+	1100 4400 1100 4550
+Connection ~ 1100 4750
+Wire Wire Line
+	1450 4600 1450 4550
+Wire Wire Line
+	1100 4550 1450 4550
+Wire Wire Line
+	1100 4750 1100 4850
+Wire Wire Line
+	700  5400 700  5600
+Wire Wire Line
+	700  5600 800  5600
+Connection ~ 1100 4550
+Wire Wire Line
+	1100 4550 1100 4750
+Wire Wire Line
+	1650 5000 1950 5000
+Wire Notes Line
+	550  4050 550  5900
+Wire Notes Line
+	3200 4050 3200 5900
+Text HLabel 6400 4150 2    50   Input ~ 0
+MODEM_STATUS
+Wire Wire Line
+	6300 4150 6400 4150
+Wire Wire Line
+	3900 5550 5200 5550
+$Comp
+L Switch:SW_Push RST1
+U 1 1 5C1C9490
+P 1950 5350
+F 0 "RST1" V 1996 5302 50  0000 R CNN
+F 1 "Reset" V 1905 5302 50  0000 R CNN
+F 2 "Button_Switch_SMD:SW_SPST_B3U-1000P" H 1950 5550 50  0001 C CNN
+F 3 "" H 1950 5550 50  0001 C CNN
+	1    1950 5350
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R11
+U 1 1 5C13AA95
+P 1900 1950
+F 0 "R11" H 1970 1996 50  0000 L CNN
+F 1 "4.7k" H 1970 1905 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 1830 1950 50  0001 C CNN
+F 3 "~" H 1900 1950 50  0001 C CNN
+	1    1900 1950
+	1    0    0    -1  
+$EndComp
+Connection ~ 1900 1700
+Wire Wire Line
+	1900 1700 2000 1700
+Wire Wire Line
+	1900 1800 1900 1700
+$Comp
+L Device:LED FE_SLP1
+U 1 1 5C144190
+P 2200 2100
+F 0 "FE_SLP1" H 2192 1845 50  0000 C CNN
+F 1 "FE310_SLEEP_LED" H 2192 1936 50  0000 C CNN
+F 2 "LED_SMD:LED_0805_2012Metric" H 2200 2100 50  0001 C CNN
+F 3 "~" H 2200 2100 50  0001 C CNN
+	1    2200 2100
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR022
+U 1 1 5C144414
+P 2500 2100
+F 0 "#PWR022" H 2500 1850 50  0001 C CNN
+F 1 "GND" H 2505 1927 50  0000 C CNN
+F 2 "" H 2500 2100 50  0001 C CNN
+F 3 "" H 2500 2100 50  0001 C CNN
+	1    2500 2100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2350 2100 2500 2100
+Wire Wire Line
+	2050 2100 1900 2100
+NoConn ~ 8950 4750
+NoConn ~ 8950 4550
+NoConn ~ 8350 4650
+$Comp
+L 74xx:74CBTLV3257 U5
+U 3 1 5C16582E
+P 8650 4650
+F 0 "U5" H 8650 4992 50  0000 C CNN
+F 1 "74CBTLV3257" H 8650 4901 50  0000 C CNN
+F 2 "Package_SO:TSSOP-16_4.4x5mm_P0.65mm" H 8600 4650 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/74CBTLV3257.pdf" H 8600 4650 50  0001 C CNN
+	3    8650 4650
+	1    0    0    -1  
+$EndComp
+NoConn ~ 9400 4650
+NoConn ~ 10000 4750
+NoConn ~ 10000 4550
+Text HLabel 1900 4550 2    50   Output ~ 0
+RESET_N_1V8
+Wire Wire Line
+	1450 4550 1900 4550
+Connection ~ 1450 4550
+$Comp
+L Diode:1N4148WT D1
+U 1 1 5C2F7F6C
+P 950 4400
+F 0 "D1" H 950 4617 50  0000 C CNN
+F 1 "1N4148WT" H 950 4526 50  0000 C CNN
+F 2 "Diode_SMD:D_SOD-523" H 950 4225 50  0001 C CNN
+F 3 "https://www.diodes.com/assets/Datasheets/ds30396.pdf" H 950 4400 50  0001 C CNN
+	1    950  4400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:BAT54A D2
+U 1 1 5C2F86A2
+P 1150 5200
+F 0 "D2" H 1150 5425 50  0000 C CNN
+F 1 "BAT54A" H 1150 5334 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 1225 5325 50  0001 L CNN
+F 3 "http://www.diodes.com/_files/datasheets/ds11005.pdf" H 1030 5200 50  0001 C CNN
+	1    1150 5200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1100 5600 1150 5600
+Wire Wire Line
+	850  5200 850  4850
+Wire Wire Line
+	850  4850 1100 4850
+Wire Wire Line
+	1150 5400 1150 5600
+NoConn ~ 1450 5200
+Wire Wire Line
+	1650 5600 1150 5600
+Wire Wire Line
+	1650 5000 1650 5600
+Connection ~ 1150 5600
+Text Notes 700  5850 0    50   ~ 0
+TODO: wtf even are BAT54A
 $EndSCHEMATC

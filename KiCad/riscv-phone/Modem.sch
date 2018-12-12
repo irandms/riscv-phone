@@ -4,7 +4,7 @@ EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 5 9
+Sheet 4 9
 Title ""
 Date ""
 Rev ""
@@ -14,388 +14,623 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-NoConn ~ 4400 1150
-NoConn ~ 4600 1150
-NoConn ~ 4200 1150
-NoConn ~ 3600 4450
-NoConn ~ 3600 4250
-NoConn ~ 3600 4050
-$Comp
-L power:GNDA #GND?
-U 1 1 5C50D487
-P 3500 3850
-AR Path="/5C50D487" Ref="#GND?"  Part="1" 
-AR Path="/5C508A16/5C50D487" Ref="#GND?"  Part="1" 
-F 0 "#GND?" H 3500 3850 50  0001 C CNN
-F 1 "GNDA" V 3500 3781 59  0000 R CNN
-F 2 "" H 3500 3850 50  0001 C CNN
-F 3 "" H 3500 3850 50  0001 C CNN
-	1    3500 3850
-	0    1    1    0   
-$EndComp
-NoConn ~ 3600 3050
-NoConn ~ 3600 2850
-NoConn ~ 3600 2650
-NoConn ~ 3600 2450
-NoConn ~ 3600 2250
-NoConn ~ 3600 2050
-NoConn ~ 7800 3850
-NoConn ~ 7800 4050
 $Comp
 L Device:R R?
 U 1 1 5C50D49D
-P 3100 5050
+P 2950 3850
 AR Path="/5C50D49D" Ref="R?"  Part="1" 
-AR Path="/5C508A16/5C50D49D" Ref="R?"  Part="1" 
-F 0 "R?" V 2893 5050 50  0000 C CNN
-F 1 "22" V 2984 5050 50  0000 C CNN
-F 2 "" V 3030 5050 50  0001 C CNN
-F 3 "~" H 3100 5050 50  0001 C CNN
-	1    3100 5050
+AR Path="/5C508A16/5C50D49D" Ref="R14"  Part="1" 
+F 0 "R14" V 2743 3850 50  0000 C CNN
+F 1 "22" V 2834 3850 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 2880 3850 50  0001 C CNN
+F 3 "~" H 2950 3850 50  0001 C CNN
+	1    2950 3850
 	0    1    1    0   
 $EndComp
 $Comp
 L Device:R R?
 U 1 1 5C50D4A4
-P 3350 4850
+P 3200 3750
 AR Path="/5C50D4A4" Ref="R?"  Part="1" 
-AR Path="/5C508A16/5C50D4A4" Ref="R?"  Part="1" 
-F 0 "R?" V 3143 4850 50  0000 C CNN
-F 1 "22" V 3234 4850 50  0000 C CNN
-F 2 "" V 3280 4850 50  0001 C CNN
-F 3 "~" H 3350 4850 50  0001 C CNN
-	1    3350 4850
+AR Path="/5C508A16/5C50D4A4" Ref="R16"  Part="1" 
+F 0 "R16" V 2993 3750 50  0000 C CNN
+F 1 "22" V 3084 3750 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 3130 3750 50  0001 C CNN
+F 3 "~" H 3200 3750 50  0001 C CNN
+	1    3200 3750
 	0    1    1    0   
 $EndComp
-NoConn ~ 7800 4450
-NoConn ~ 7800 4650
-NoConn ~ 7800 4850
-NoConn ~ 7800 5050
-NoConn ~ 7800 5250
-NoConn ~ 7800 5450
-NoConn ~ 4200 6350
-NoConn ~ 4800 6350
-NoConn ~ 7200 6350
-NoConn ~ 7000 6350
-NoConn ~ 6800 6350
-NoConn ~ 6600 6350
-NoConn ~ 6400 6350
-NoConn ~ 6200 6350
-NoConn ~ 6000 6350
-NoConn ~ 5800 6350
-Text Label 5600 6350 3    50   ~ 0
-MIC2P
-Text Label 5400 6350 3    50   ~ 0
-MIC1P
-Text Label 5200 6350 3    50   ~ 0
-SPK1P
-Text Label 5000 6350 3    50   ~ 0
-SPK1N
 Wire Wire Line
-	4600 6450 4600 6350
-$Comp
-L power:GND #PWR?
-U 1 1 5C50D4F9
-P 4600 6450
-AR Path="/5C50D4F9" Ref="#PWR?"  Part="1" 
-AR Path="/5C508A16/5C50D4F9" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 4600 6200 50  0001 C CNN
-F 1 "GND" H 4605 6277 50  0000 C CNN
-F 2 "" H 4600 6450 50  0001 C CNN
-F 3 "" H 4600 6450 50  0001 C CNN
-	1    4600 6450
-	1    0    0    -1  
-$EndComp
+	2000 4900 2200 4900
 Wire Wire Line
-	2850 6550 3050 6550
-Wire Wire Line
-	2850 6600 2850 6550
+	2000 4950 2000 4900
 $Comp
 L power:GND #PWR?
 U 1 1 5C50D501
-P 2850 6600
+P 2000 4950
 AR Path="/5C50D501" Ref="#PWR?"  Part="1" 
-AR Path="/5C508A16/5C50D501" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 2850 6350 50  0001 C CNN
-F 1 "GND" H 2855 6427 50  0000 C CNN
-F 2 "" H 2850 6600 50  0001 C CNN
-F 3 "" H 2850 6600 50  0001 C CNN
-	1    2850 6600
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4400 6550 4400 6350
-Wire Wire Line
-	3650 6550 4400 6550
-$Comp
-L Switch:SW_DIP_x01 SW?
-U 1 1 5C50D509
-P 3350 6550
-AR Path="/5C50D509" Ref="SW?"  Part="1" 
-AR Path="/5C508A16/5C50D509" Ref="SW?"  Part="1" 
-F 0 "SW?" H 3350 6817 50  0000 C CNN
-F 1 "SW_DIP_x01" H 3350 6726 50  0000 C CNN
-F 2 "" H 3350 6550 50  0001 C CNN
-F 3 "" H 3350 6550 50  0001 C CNN
-	1    3350 6550
+AR Path="/5C508A16/5C50D501" Ref="#PWR033"  Part="1" 
+F 0 "#PWR033" H 2000 4700 50  0001 C CNN
+F 1 "GND" H 2005 4777 50  0000 C CNN
+F 2 "" H 2000 4950 50  0001 C CNN
+F 3 "" H 2000 4950 50  0001 C CNN
+	1    2000 4950
 	1    0    0    -1  
 $EndComp
 $Comp
 L Connector:SIM_Card J?
 U 1 1 5C50D510
-P 1600 5100
+P 2250 3950
 AR Path="/5C50D510" Ref="J?"  Part="1" 
-AR Path="/5C508A16/5C50D510" Ref="J?"  Part="1" 
-F 0 "J?" H 2229 5200 50  0000 L CNN
-F 1 "SIM_Card" H 2229 5109 50  0000 L CNN
-F 2 "" H 1600 5450 50  0001 C CNN
-F 3 " ~" H 1550 5100 50  0001 C CNN
-	1    1600 5100
+AR Path="/5C508A16/5C50D510" Ref="J2"  Part="1" 
+F 0 "J2" H 2879 4050 50  0000 L CNN
+F 1 "SIM_Card" H 2879 3959 50  0000 L CNN
+F 2 "riscv-phone:Nano SIM Card" H 2250 4300 50  0001 C CNN
+F 3 "https://katalog.we-online.de/em/datasheet/693043020611.pdf" H 2200 3950 50  0001 C CNN
+F 4 "732-5954-1-ND" H 2250 3950 50  0001 C CNN "DigiKey Part Number"
+	1    2250 3950
 	-1   0    0    -1  
-$EndComp
-$Comp
-L DIY-Cellphone-cache:DIY-Cellphone-eagle-import_M10_HDWITHOUT_EXCLUSION U?
-U 1 1 5C50D517
-P 5700 3750
-AR Path="/5C50D517" Ref="U?"  Part="1" 
-AR Path="/5C508A16/5C50D517" Ref="U?"  Part="1" 
-F 0 "U?" H 7841 3790 42  0000 L CNN
-F 1 "M10_HDWITHOUT_EXCLUSION" H 7841 3711 42  0000 L CNN
-F 2 "" H 5700 3750 50  0001 C CNN
-F 3 "" H 5700 3750 50  0001 C CNN
-	1    5700 3750
-	1    0    0    -1  
 $EndComp
 $Comp
 L Device:R R?
 U 1 1 5C80A621
-P 2850 5250
+P 2950 4150
 AR Path="/5C80A621" Ref="R?"  Part="1" 
-AR Path="/5C508A16/5C80A621" Ref="R?"  Part="1" 
-F 0 "R?" V 2643 5250 50  0000 C CNN
-F 1 "22" V 2734 5250 50  0000 C CNN
-F 2 "" V 2780 5250 50  0001 C CNN
-F 3 "~" H 2850 5250 50  0001 C CNN
-	1    2850 5250
+AR Path="/5C508A16/5C80A621" Ref="R15"  Part="1" 
+F 0 "R15" V 2743 4150 50  0000 C CNN
+F 1 "22" V 2834 4150 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 2880 4150 50  0001 C CNN
+F 3 "~" H 2950 4150 50  0001 C CNN
+	1    2950 4150
 	0    1    1    0   
 $EndComp
-NoConn ~ 2100 5200
-Text HLabel 4300 900  0    50   Input ~ 0
+Text HLabel 1800 1750 0    50   Input ~ 0
 MODEM_RX
-Text HLabel 4300 750  0    50   Output ~ 0
+Text HLabel 1800 1650 0    50   Output ~ 0
 MODEM_TX
-Text Label 2100 5100 0    50   ~ 0
-GND
-Wire Wire Line
-	2100 4800 2100 4650
-Wire Wire Line
-	2100 4650 3600 4650
-Wire Wire Line
-	3200 4850 2350 4850
-Wire Wire Line
-	2350 4850 2350 5300
-Wire Wire Line
-	2350 5300 2100 5300
-Wire Wire Line
-	3500 4850 3600 4850
-Wire Wire Line
-	3250 5050 3600 5050
-Wire Wire Line
-	2950 5050 2450 5050
-Wire Wire Line
-	2450 5050 2450 5000
-Wire Wire Line
-	2450 5000 2100 5000
-Wire Wire Line
-	3000 5250 3600 5250
-Wire Wire Line
-	2700 5250 2550 5250
-Wire Wire Line
-	2550 5250 2550 4900
-Wire Wire Line
-	2550 4900 2100 4900
-Text Notes 1000 5600 0    50   ~ 0
-Make NANO sim card
+Text HLabel 3700 2400 0    50   Input ~ 0
+VBAT
 $Comp
-L DIY-Cellphone-cache:DIY-Cellphone-eagle-import_SUPERCAPPAS U?
-U 1 1 5C054C6A
-P 3200 5750
-F 0 "U?" H 3250 5800 50  0001 C CNN
-F 1 "SUPERCAP" H 3200 5750 50  0001 C CNN
-F 2 "" H 3200 5750 50  0001 C CNN
-F 3 "" H 3200 5750 50  0001 C CNN
-	1    3200 5750
+L power:GND #PWR035
+U 1 1 5C0774CE
+P 4400 5100
+F 0 "#PWR035" H 4400 4850 50  0001 C CNN
+F 1 "GND" H 4405 4927 50  0000 C CNN
+F 2 "" H 4400 5100 50  0001 C CNN
+F 3 "" H 4400 5100 50  0001 C CNN
+	1    4400 5100
 	1    0    0    -1  
 $EndComp
-Text HLabel 6550 950  0    50   Input ~ 0
-VBAT
-Wire Wire Line
-	4300 900  4800 900 
-Wire Wire Line
-	4800 900  4800 1150
-Wire Wire Line
-	4300 750  5000 750 
-Wire Wire Line
-	5000 750  5000 1150
 $Comp
-L Device:LED D?
-U 1 1 5C07732E
-P 6350 800
-F 0 "D?" H 6342 545 50  0000 C CNN
-F 1 "LED" H 6342 636 50  0000 C CNN
-F 2 "" H 6350 800 50  0001 C CNN
-F 3 "~" H 6350 800 50  0001 C CNN
-	1    6350 800 
-	-1   0    0    1   
+L Device:Antenna AE1
+U 1 1 5C07C6BF
+P 7800 3000
+F 0 "AE1" H 7880 2991 50  0000 L CNN
+F 1 "Antenna" H 7880 2900 50  0000 L CNN
+F 2 "Connector_Coaxial:SMA_Amphenol_132134_Vertical" H 7800 3000 50  0001 C CNN
+F 3 "http://www.taoglas.com/wp-content/uploads/2016/01/PCB.SMAFRA.HT_.pdf" H 7800 3000 50  0001 C CNN
+F 4 "931-1361-ND" H 7800 3000 50  0001 C CNN "DigiKey Part Number"
+	1    7800 3000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3700 2400 3750 2400
+Text HLabel 1800 1150 0    50   Output ~ 0
+RI
+Text HLabel 1800 1550 0    50   Input ~ 0
+DTR
+Text HLabel 9700 3700 2    50   Input ~ 0
+PCM_IN
+Text HLabel 9700 3800 2    50   Output ~ 0
+PCM_OUT
+Text HLabel 9700 3900 2    50   BiDi ~ 0
+PCM_CLK
+Text HLabel 9700 4000 2    50   BiDi ~ 0
+PCM_SYNC
+Text HLabel 1800 1050 0    50   Output ~ 0
+MODEM_STATUS
+$Comp
+L Device:R R13
+U 1 1 5C1643E2
+P 2750 4650
+F 0 "R13" H 2820 4696 50  0000 L CNN
+F 1 "100k" H 2820 4605 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 2680 4650 50  0001 C CNN
+F 3 "~" H 2750 4650 50  0001 C CNN
+	1    2750 4650
+	1    0    0    -1  
+$EndComp
+Text Label 2750 4450 0    50   ~ 0
+VDD_1V8
+Wire Wire Line
+	2750 4450 2750 4500
+Wire Wire Line
+	1800 1650 2000 1650
+Wire Wire Line
+	1800 1750 2000 1750
+Wire Wire Line
+	2800 950  2950 950 
+$Comp
+L power:GND #PWR034
+U 1 1 5C3C906C
+P 2950 1900
+F 0 "#PWR034" H 2950 1650 50  0001 C CNN
+F 1 "GND" H 2955 1727 50  0000 C CNN
+F 2 "" H 2950 1900 50  0001 C CNN
+F 3 "" H 2950 1900 50  0001 C CNN
+	1    2950 1900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2950 950  2950 1850
+Wire Wire Line
+	2500 650  2500 600 
+Wire Wire Line
+	2300 650  2300 600 
+Text HLabel 2100 600  0    50   Input ~ 0
+VDD_3V3_MOFF
+Wire Wire Line
+	2100 600  2300 600 
+Wire Wire Line
+	2400 2050 2800 2050
+Wire Wire Line
+	2800 2050 2800 1850
+Wire Wire Line
+	2800 1850 2950 1850
+Connection ~ 2950 1850
+Wire Wire Line
+	2950 1850 2950 1900
+Wire Wire Line
+	1800 1050 2000 1050
+$Comp
+L Logic_LevelTranslator:TXS0108EPW U6
+U 1 1 5C164327
+P 2400 1350
+F 0 "U6" H 2400 564 50  0000 C CNN
+F 1 "TXS0108EPW" H 2400 473 50  0000 C CNN
+F 2 "Package_SO:TSSOP-20_4.4x6.5mm_P0.65mm" H 2400 600 50  0001 C CNN
+F 3 "www.ti.com/lit/ds/symlink/txs0108e.pdf" H 2400 1250 50  0001 C CNN
+	1    2400 1350
+	-1   0    0    -1  
+$EndComp
+Text Label 2550 600  0    50   ~ 0
+VDD_1V8
+Wire Wire Line
+	2500 600  2550 600 
+$Comp
+L Logic_LevelTranslator:TXS0108EPW U8
+U 1 1 5C423652
+P 9150 4000
+F 0 "U8" H 9150 3214 50  0000 C CNN
+F 1 "TXS0108EPW" H 9150 3123 50  0000 C CNN
+F 2 "Package_SO:TSSOP-20_4.4x6.5mm_P0.65mm" H 9150 3250 50  0001 C CNN
+F 3 "www.ti.com/lit/ds/symlink/txs0108e.pdf" H 9150 3900 50  0001 C CNN
+	1    9150 4000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9050 3300 9050 3250
+Wire Wire Line
+	9250 3300 9250 3250
+Text HLabel 9450 3250 2    50   Input ~ 0
+VDD_3V3
+Wire Wire Line
+	9450 3250 9250 3250
+Text Label 9000 3250 2    50   ~ 0
+VDD_1V8
+Wire Wire Line
+	9050 3250 9000 3250
+$Comp
+L power:GND #PWR037
+U 1 1 5C4255F1
+P 8600 4550
+F 0 "#PWR037" H 8600 4300 50  0001 C CNN
+F 1 "GND" H 8605 4377 50  0000 C CNN
+F 2 "" H 8600 4550 50  0001 C CNN
+F 3 "" H 8600 4550 50  0001 C CNN
+	1    8600 4550
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	8600 3600 8600 4500
+Wire Wire Line
+	8750 4500 8600 4500
+Connection ~ 8600 4500
+Wire Wire Line
+	8600 4500 8600 4550
+Wire Wire Line
+	8750 4500 8750 4700
+Wire Wire Line
+	8750 4700 9150 4700
+Wire Wire Line
+	9700 3700 9550 3700
+Wire Wire Line
+	9700 3800 9550 3800
+Wire Wire Line
+	9700 3900 9550 3900
+Wire Wire Line
+	9700 4000 9550 4000
+Wire Wire Line
+	8750 3600 8600 3600
+Wire Wire Line
+	1800 1150 2000 1150
+Wire Wire Line
+	1800 1550 2000 1550
+$Comp
+L riscv-phone:Quectel_EC21-A U7
+U 1 1 5C11D99C
+P 3300 4000
+F 0 "U7" H 7250 5150 50  0000 R CNN
+F 1 "Quectel_EC21-A" H 6950 5150 50  0000 R CNN
+F 2 "" H 4800 2350 50  0001 C CNN
+F 3 "" H 4800 2350 50  0001 C CNN
+	1    3300 4000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7450 3200 7800 3200
+Wire Wire Line
+	4400 5100 4400 5000
+Wire Wire Line
+	3700 5000 3800 5000
+Wire Wire Line
+	3800 5000 3900 5000
+Connection ~ 3800 5000
+Wire Wire Line
+	3900 5000 4000 5000
+Connection ~ 3900 5000
+Wire Wire Line
+	4000 5000 4100 5000
+Connection ~ 4000 5000
+Wire Wire Line
+	4100 5000 4200 5000
+Connection ~ 4100 5000
+Wire Wire Line
+	4200 5000 4300 5000
+Connection ~ 4200 5000
+Wire Wire Line
+	4300 5000 4400 5000
+Connection ~ 4300 5000
+Connection ~ 4400 5000
+Wire Wire Line
+	4400 5000 4500 5000
+Wire Wire Line
+	4500 5000 4600 5000
+Connection ~ 4500 5000
+Wire Wire Line
+	4600 5000 4700 5000
+Connection ~ 4600 5000
+Wire Wire Line
+	4700 5000 4800 5000
+Connection ~ 4700 5000
+Wire Wire Line
+	4800 5000 4900 5000
+Connection ~ 4800 5000
+Wire Wire Line
+	4900 5000 5000 5000
+Connection ~ 4900 5000
+Wire Wire Line
+	5000 5000 5100 5000
+Connection ~ 5000 5000
+Wire Wire Line
+	3750 2400 3750 2700
+Wire Wire Line
+	3750 2700 3850 2700
+Connection ~ 3750 2700
+Wire Wire Line
+	3850 2700 3950 2700
+Connection ~ 3850 2700
+Wire Wire Line
+	3950 2700 4050 2700
+Connection ~ 3950 2700
+Wire Wire Line
+	4900 2700 4900 2650
+Text Label 4900 2650 1    50   ~ 0
+VDD_1V8
+Wire Wire Line
+	2600 4800 2750 4800
+Wire Wire Line
+	2750 4800 3150 4800
+Wire Wire Line
+	3150 4800 3150 4400
+Wire Wire Line
+	3150 4400 3450 4400
+Connection ~ 2750 4800
+NoConn ~ 3450 4050
+NoConn ~ 2750 4050
+Wire Wire Line
+	2750 3650 3450 3650
+Wire Wire Line
+	3350 3750 3450 3750
+Wire Wire Line
+	3050 3750 2750 3750
+Wire Wire Line
+	2750 3850 2800 3850
+Wire Wire Line
+	3100 3850 3450 3850
+Wire Wire Line
+	2750 3950 3450 3950
+Wire Wire Line
+	3100 4150 3450 4150
+Wire Wire Line
+	2800 4150 2750 4150
+NoConn ~ 3450 3350
+NoConn ~ 3450 3450
+Wire Wire Line
+	7450 3700 8750 3700
+Wire Wire Line
+	7450 3800 8750 3800
+Wire Wire Line
+	8750 3900 7450 3900
+Wire Wire Line
+	7450 4000 8750 4000
+Text HLabel 3350 4600 3    50   Input ~ 0
+RESET_N_1V8
+Wire Wire Line
+	5800 2700 5800 1050
+Wire Wire Line
+	5800 1050 2800 1050
+Wire Wire Line
+	5700 2700 5700 1150
+Wire Wire Line
+	5700 1150 2800 1150
+Wire Wire Line
+	5600 2700 5600 1250
+Wire Wire Line
+	5600 1250 2800 1250
+NoConn ~ 2000 1250
+Wire Wire Line
+	5500 2700 5500 1350
+Wire Wire Line
+	5500 1350 2800 1350
+Wire Wire Line
+	5400 2700 5400 1450
+Wire Wire Line
+	5400 1450 2800 1450
+Wire Wire Line
+	5300 2700 5300 1550
+Wire Wire Line
+	5300 1550 4400 1550
+Wire Wire Line
+	5200 2700 5200 1650
+Wire Wire Line
+	5200 1650 2800 1650
+Wire Wire Line
+	5100 2700 5100 1750
+Wire Wire Line
+	5100 1750 2800 1750
+NoConn ~ 2000 1450
+NoConn ~ 2000 1350
+NoConn ~ 6150 2700
+NoConn ~ 6250 2700
+NoConn ~ 6050 2700
+NoConn ~ 7450 3000
+NoConn ~ 7450 3100
+Wire Wire Line
+	4400 2700 4400 1550
+Connection ~ 4400 1550
+Wire Wire Line
+	4400 1550 2800 1550
+NoConn ~ 4600 2700
+NoConn ~ 4500 2700
+Text Label 6800 1650 2    50   ~ 0
+NET_MODE
+$Comp
+L Transistor_BJT:MMBT3904 Q3
+U 1 1 5C2860D6
+P 7450 1650
+F 0 "Q3" H 7641 1696 50  0000 L CNN
+F 1 "MMBT3904" H 7641 1605 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 7650 1575 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/2N/2N3904.pdf" H 7450 1650 50  0001 L CNN
+	1    7450 1650
+	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R?
-U 1 1 5C077420
-P 6800 800
-F 0 "R?" V 6593 800 50  0000 C CNN
-F 1 "R" V 6684 800 50  0000 C CNN
-F 2 "" V 6730 800 50  0001 C CNN
-F 3 "~" H 6800 800 50  0001 C CNN
-	1    6800 800 
+L Device:R R17
+U 1 1 5C2861A5
+P 7000 1650
+F 0 "R17" V 6793 1650 50  0000 C CNN
+F 1 "4.7k" V 6884 1650 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 6930 1650 50  0001 C CNN
+F 3 "~" H 7000 1650 50  0001 C CNN
+	1    7000 1650
 	0    1    1    0   
 $EndComp
+Wire Wire Line
+	6800 1650 6850 1650
+Wire Wire Line
+	7150 1650 7200 1650
 $Comp
-L power:GND #PWR?
-U 1 1 5C0774CE
-P 7100 800
-F 0 "#PWR?" H 7100 550 50  0001 C CNN
-F 1 "GND" H 7105 627 50  0000 C CNN
-F 2 "" H 7100 800 50  0001 C CNN
-F 3 "" H 7100 800 50  0001 C CNN
-	1    7100 800 
+L Device:R R18
+U 1 1 5C29B59E
+P 7350 2000
+F 0 "R18" V 7143 2000 50  0000 C CNN
+F 1 "47k" V 7234 2000 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 7280 2000 50  0001 C CNN
+F 3 "~" H 7350 2000 50  0001 C CNN
+	1    7350 2000
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7200 2000 7200 1650
+Connection ~ 7200 1650
+Wire Wire Line
+	7200 1650 7250 1650
+Wire Wire Line
+	7500 2000 7550 2000
+Wire Wire Line
+	7550 2000 7550 1850
+$Comp
+L Device:R R19
+U 1 1 5C2A11AC
+P 7550 1200
+F 0 "R19" H 7620 1246 50  0000 L CNN
+F 1 "4.7k" H 7620 1155 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 7480 1200 50  0001 C CNN
+F 3 "~" H 7550 1200 50  0001 C CNN
+	1    7550 1200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D5
+U 1 1 5C2AA572
+P 7550 800
+F 0 "D5" V 7588 683 50  0000 R CNN
+F 1 "LED" V 7497 683 50  0000 R CNN
+F 2 "LED_SMD:LED_0805_2012Metric" H 7550 800 50  0001 C CNN
+F 3 "~" H 7550 800 50  0001 C CNN
+	1    7550 800 
+	0    -1   -1   0   
+$EndComp
+Text Label 7550 600  2    50   ~ 0
+VDD_3V3
+Wire Wire Line
+	7550 600  7550 650 
+Wire Wire Line
+	7550 950  7550 1050
+Wire Wire Line
+	7550 1350 7550 1450
+$Comp
+L power:GND #PWR036
+U 1 1 5C2B38A1
+P 7550 2050
+F 0 "#PWR036" H 7550 1800 50  0001 C CNN
+F 1 "GND" H 7555 1877 50  0000 C CNN
+F 2 "" H 7550 2050 50  0001 C CNN
+F 3 "" H 7550 2050 50  0001 C CNN
+	1    7550 2050
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6950 800  7100 800 
-Wire Wire Line
-	6500 800  6650 800 
-Wire Wire Line
-	6200 800  6200 1150
+	7550 2050 7550 2000
+Connection ~ 7550 2000
+Text Label 8650 1650 2    50   ~ 0
+NET_STATUS
 $Comp
-L power:GNDA #PWR?
-U 1 1 5C0786EA
-P 8100 2050
-F 0 "#PWR?" H 8100 1800 50  0001 C CNN
-F 1 "GNDA" H 8105 1877 50  0000 C CNN
-F 2 "" H 8100 2050 50  0001 C CNN
-F 3 "" H 8100 2050 50  0001 C CNN
-	1    8100 2050
+L Transistor_BJT:MMBT3904 Q4
+U 1 1 5C2B6C34
+P 9300 1650
+F 0 "Q4" H 9491 1696 50  0000 L CNN
+F 1 "MMBT3904" H 9491 1605 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 9500 1575 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/2N/2N3904.pdf" H 9300 1650 50  0001 L CNN
+	1    9300 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R20
+U 1 1 5C2B6C3A
+P 8850 1650
+F 0 "R20" V 8643 1650 50  0000 C CNN
+F 1 "4.7k" V 8734 1650 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 8780 1650 50  0001 C CNN
+F 3 "~" H 8850 1650 50  0001 C CNN
+	1    8850 1650
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8650 1650 8700 1650
+Wire Wire Line
+	9000 1650 9050 1650
+$Comp
+L Device:R R21
+U 1 1 5C2B6C42
+P 9200 2000
+F 0 "R21" V 8993 2000 50  0000 C CNN
+F 1 "47k" V 9084 2000 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 9130 2000 50  0001 C CNN
+F 3 "~" H 9200 2000 50  0001 C CNN
+	1    9200 2000
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	9050 2000 9050 1650
+Connection ~ 9050 1650
+Wire Wire Line
+	9050 1650 9100 1650
+Wire Wire Line
+	9350 2000 9400 2000
+Wire Wire Line
+	9400 2000 9400 1850
+$Comp
+L Device:R R22
+U 1 1 5C2B6C4D
+P 9400 1200
+F 0 "R22" H 9470 1246 50  0000 L CNN
+F 1 "4.7k" H 9470 1155 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 9330 1200 50  0001 C CNN
+F 3 "~" H 9400 1200 50  0001 C CNN
+	1    9400 1200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D6
+U 1 1 5C2B6C53
+P 9400 800
+F 0 "D6" V 9438 683 50  0000 R CNN
+F 1 "LED" V 9347 683 50  0000 R CNN
+F 2 "LED_SMD:LED_0805_2012Metric" H 9400 800 50  0001 C CNN
+F 3 "~" H 9400 800 50  0001 C CNN
+	1    9400 800 
+	0    -1   -1   0   
+$EndComp
+Text Label 9400 600  2    50   ~ 0
+VDD_3V3
+Wire Wire Line
+	9400 600  9400 650 
+Wire Wire Line
+	9400 950  9400 1050
+Wire Wire Line
+	9400 1350 9400 1450
+$Comp
+L power:GND #PWR038
+U 1 1 5C2B6C5D
+P 9400 2050
+F 0 "#PWR038" H 9400 1800 50  0001 C CNN
+F 1 "GND" H 9405 1877 50  0000 C CNN
+F 2 "" H 9400 2050 50  0001 C CNN
+F 3 "" H 9400 2050 50  0001 C CNN
+	1    9400 2050
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	7200 1150 7950 1150
+	9400 2050 9400 2000
+Connection ~ 9400 2000
 Wire Wire Line
-	7950 1150 7950 2050
+	4700 2700 4700 2650
 Wire Wire Line
-	8100 2050 7950 2050
-Wire Wire Line
-	7950 2050 7800 2050
-Connection ~ 7950 2050
-Wire Wire Line
-	7950 2050 7950 2250
-Wire Wire Line
-	7950 2250 7800 2250
-Wire Wire Line
-	7950 2450 7800 2450
-Connection ~ 7950 2250
-Wire Wire Line
-	7800 2650 7950 2650
-Wire Wire Line
-	7950 2250 7950 2450
-Connection ~ 7950 2450
-Wire Wire Line
-	7950 2450 7950 2650
-Wire Wire Line
-	7800 2850 7950 2850
-Wire Wire Line
-	7950 2850 7950 2650
-Connection ~ 7950 2650
-Wire Wire Line
-	7800 3250 7950 3250
-Wire Wire Line
-	7950 3250 7950 2850
-Connection ~ 7950 2850
+	4800 2700 4800 2650
+Text Label 4700 2650 1    50   ~ 0
+NET_MODE
+Text Label 4800 2650 1    50   ~ 0
+NET_STATUS
+Text Notes 7750 2400 0    50   ~ 0
+Network status LEDs\nCut with xacto knife to save power after validation
 $Comp
-L Device:Antenna AE?
-U 1 1 5C07C6BF
-P 8950 2850
-F 0 "AE?" H 9030 2841 50  0000 L CNN
-F 1 "Antenna" H 9030 2750 50  0000 L CNN
-F 2 "" H 8950 2850 50  0001 C CNN
-F 3 "~" H 8950 2850 50  0001 C CNN
-	1    8950 2850
-	1    0    0    -1  
+L Switch:SW_SPDT SW10
+U 1 1 5C2CEA44
+P 2400 4800
+F 0 "SW10" H 2400 5085 50  0000 C CNN
+F 1 "SW_SPDT" H 2400 4994 50  0000 C CNN
+F 2 "" H 2400 4800 50  0001 C CNN
+F 3 "" H 2400 4800 50  0001 C CNN
+	1    2400 4800
+	-1   0    0    -1  
 $EndComp
-Wire Wire Line
-	7800 3050 8950 3050
-Wire Wire Line
-	6550 950  6600 950 
-Wire Wire Line
-	6600 950  6600 1150
-Wire Wire Line
-	6600 950  6800 950 
-Wire Wire Line
-	6800 950  6800 1150
-Connection ~ 6600 950 
-Wire Wire Line
-	6800 950  7000 950 
-Wire Wire Line
-	7000 950  7000 1150
-Connection ~ 6800 950 
-Wire Wire Line
-	3500 3850 3600 3850
-Text Notes 5250 2950 0    50   ~ 0
-NOTE: M10 is being replaced with\neither the EC21, also by Quectel,\nor the  ublox Toby R200
-Text Notes 3750 6850 0    50   ~ 0
-The newer modem will have PCM audio interface, to work with the audio block.
-Wire Wire Line
-	3200 5450 3600 5450
-$Comp
-L power:GND #PWR?
-U 1 1 5C08143F
-P 3200 5950
-F 0 "#PWR?" H 3200 5700 50  0001 C CNN
-F 1 "GND" H 3205 5777 50  0000 C CNN
-F 2 "" H 3200 5950 50  0001 C CNN
-F 3 "" H 3200 5950 50  0001 C CNN
-	1    3200 5950
-	1    0    0    -1  
-$EndComp
-Text HLabel 5950 950  0    50   Output ~ 0
-RI
-Text HLabel 5150 650  0    50   Input ~ 0
-DTR
-Wire Wire Line
-	6000 1150 6000 950 
-Wire Wire Line
-	6000 950  5950 950 
-Wire Wire Line
-	5200 1150 5200 650 
-Wire Wire Line
-	5200 650  5150 650 
-NoConn ~ 3600 3250
-NoConn ~ 5400 1150
-NoConn ~ 5600 1150
-NoConn ~ 5800 1150
-NoConn ~ 6400 1150
-NoConn ~ 7800 4250
-Text Notes 7950 4250 0    50   ~ 0
-Buzzer moved to FE310
-Text HLabel 5050 7050 0    50   Input ~ 0
-PCM_IN
-Text HLabel 5050 7150 0    50   Output ~ 0
-PCM_OUT
-Text HLabel 5050 7250 0    50   BiDi ~ 0
-PCM_CLK
-Text HLabel 5050 7350 0    50   BiDi ~ 0
-PCM_SYNC
-Text Notes 2650 600  0    50   ~ 0
-NOTE: Verify that the UART on the modem is 3.3V tolerant
-Text HLabel 8100 2050 2    50   Input ~ 0
+NoConn ~ 2200 4700
+Text HLabel 3700 5000 0    50   Input ~ 0
 GND
+Wire Wire Line
+	3350 4600 3350 4500
+Wire Wire Line
+	3350 4500 3450 4500
+NoConn ~ 9550 4100
+NoConn ~ 9550 4200
+NoConn ~ 9550 4300
+NoConn ~ 9550 4400
+NoConn ~ 8750 4400
+NoConn ~ 8750 4300
+NoConn ~ 8750 4200
+NoConn ~ 8750 4100
 $EndSCHEMATC
