@@ -14,15 +14,15 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Text Label 1600 5000 2    50   ~ 0
+Text Label 2100 5000 2    50   ~ 0
 RESET_N
 $Comp
 L Connector:Micro_SD_Card J?
 U 1 1 5C50F8F7
 P 9950 5300
 AR Path="/5C50F8F7" Ref="J?"  Part="1" 
-AR Path="/5C50F5D1/5C50F8F7" Ref="J3"  Part="1" 
-F 0 "J3" H 9900 6017 50  0000 C CNN
+AR Path="/5C50F5D1/5C50F8F7" Ref="J4"  Part="1" 
+F 0 "J4" H 9900 6017 50  0000 C CNN
 F 1 "Micro_SD_Card" H 9900 5926 50  0000 C CNN
 F 2 "Connector_Card:microSD_HC_Hirose_DM3AT-SF-PEJM5" H 11100 5600 50  0001 C CNN
 F 3 "http://katalog.we-online.de/em/datasheet/693072010801.pdf" H 9950 5300 50  0001 C CNN
@@ -40,19 +40,19 @@ Wire Wire Line
 $Comp
 L riscv-phone:SC18IS600 U12
 U 1 1 5C80F262
-P 2400 5200
-F 0 "U12" H 2400 6225 50  0000 C CNN
-F 1 "SC18IS600" H 2400 6134 50  0000 C CNN
-F 2 "Package_SO:TSSOP-16_4.4x5mm_P0.65mm" H 2450 5200 50  0001 C CNN
-F 3 "https://assets.nexperia.com/documents/data-sheet/74CBTLV3257.pdf" H 2450 5200 50  0001 C CNN
-	1    2400 5200
+P 2900 5200
+F 0 "U12" H 2900 6225 50  0000 C CNN
+F 1 "SC18IS600" H 2900 6134 50  0000 C CNN
+F 2 "Package_SO:TSSOP-16_4.4x5mm_P0.65mm" H 2950 5200 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/74CBTLV3257.pdf" H 2950 5200 50  0001 C CNN
+	1    2900 5200
 	1    0    0    -1  
 $EndComp
 Text HLabel 8800 1150 2    50   Input ~ 0
 LCD_CS
 Text HLabel 8850 5100 0    50   Input ~ 0
 SD_CS
-Text HLabel 1600 4800 0    50   Input ~ 0
+Text HLabel 2100 4800 0    50   Input ~ 0
 BRIDGE_CS
 Wire Wire Line
 	9050 5600 8950 5600
@@ -60,7 +60,7 @@ Text Label 8950 5600 2    50   ~ 0
 MISO
 Wire Wire Line
 	8850 5100 9050 5100
-Text Notes 5050 650  0    50   ~ 0
+Text Notes 5050 700  0    50   ~ 0
 TODO: Consider using VDD_3V3_MOFF
 Wire Wire Line
 	8950 5200 9050 5200
@@ -69,60 +69,58 @@ Wire Wire Line
 Text Label 8950 5300 2    50   ~ 0
 VDD_3V3
 Wire Wire Line
-	1600 4800 1750 4800
+	2100 4800 2250 4800
 Wire Wire Line
-	1750 4700 1600 4700
+	2250 4700 2100 4700
 Wire Wire Line
-	1750 4600 1600 4600
+	2250 4600 2100 4600
 Wire Wire Line
-	1750 4500 1600 4500
+	2250 4500 2100 4500
 Wire Wire Line
-	1750 4400 1600 4400
-Text Label 1600 4400 2    50   ~ 0
+	2250 4400 2100 4400
+Text Label 2100 4400 2    50   ~ 0
 VDD_3V3
-Text HLabel 1600 4900 0    50   Output ~ 0
+Text HLabel 1150 4900 0    50   Output ~ 0
 BRIDGE_INT
-Wire Wire Line
-	1600 4900 1750 4900
 Text HLabel 1750 1550 0    50   Input ~ 0
 RESET_N
 Wire Wire Line
-	1600 5000 1750 5000
-Text HLabel 3200 5000 2    50   Input ~ 0
+	2100 5000 2250 5000
+Text HLabel 3700 5000 2    50   Input ~ 0
 BRIDGE_WAKEUP
 Wire Wire Line
-	3050 5000 3200 5000
+	3550 5000 3700 5000
 $Comp
-L power:GND #PWR054
+L power:GND #PWR0154
 U 1 1 5C813089
-P 1750 5150
-F 0 "#PWR054" H 1750 4900 50  0001 C CNN
-F 1 "GND" H 1755 4977 50  0000 C CNN
-F 2 "" H 1750 5150 50  0001 C CNN
-F 3 "" H 1750 5150 50  0001 C CNN
-	1    1750 5150
+P 2250 5150
+F 0 "#PWR0154" H 2250 4900 50  0001 C CNN
+F 1 "GND" H 2255 4977 50  0000 C CNN
+F 2 "" H 2250 5150 50  0001 C CNN
+F 3 "" H 2250 5150 50  0001 C CNN
+	1    2250 5150
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1750 5150 1750 5100
+	2250 5150 2250 5100
 Wire Wire Line
 	9050 5500 8650 5500
 Wire Wire Line
 	8650 5500 8650 5600
 $Comp
-L power:GND #PWR056
+L power:GND #PWR0155
 U 1 1 5C813AA6
 P 8650 5600
-F 0 "#PWR056" H 8650 5350 50  0001 C CNN
+F 0 "#PWR0155" H 8650 5350 50  0001 C CNN
 F 1 "GND" H 8655 5427 50  0000 C CNN
 F 2 "" H 8650 5600 50  0001 C CNN
 F 3 "" H 8650 5600 50  0001 C CNN
 	1    8650 5600
 	1    0    0    -1  
 $EndComp
-Text HLabel 3500 4400 2    50   BiDi ~ 0
+Text HLabel 4000 4400 2    50   BiDi ~ 0
 SDA
-Text HLabel 3500 4500 2    50   Output ~ 0
+Text HLabel 4000 4500 2    50   Output ~ 0
 SCL
 Text Label 8800 950  0    50   ~ 0
 VDD_3V3
@@ -145,9 +143,7 @@ Wire Wire Line
 Wire Wire Line
 	8700 1150 8800 1150
 Wire Wire Line
-	8700 1050 8800 1050
-Wire Wire Line
-	8700 950  8800 950 
+	8700 950  8750 950 
 $Comp
 L Device:R R41
 U 1 1 5C81B764
@@ -441,8 +437,6 @@ Connection ~ 5350 5350
 Wire Wire Line
 	5350 5800 5350 6000
 Connection ~ 5350 5800
-Text Notes 1950 750  0    50   ~ 0
-TODO: Consider 1 pin on MCP23S17 per button
 Connection ~ 7000 4700
 Wire Wire Line
 	7000 4700 7000 5150
@@ -597,47 +591,47 @@ Text Label 6150 2100 2    50   ~ 0
 COL1
 Text Label 7000 2100 2    50   ~ 0
 COL2
-NoConn ~ 3050 4800
-NoConn ~ 3050 4900
-NoConn ~ 3050 5100
+NoConn ~ 3550 4800
+NoConn ~ 3550 4900
+NoConn ~ 3550 5100
 Text HLabel 8800 1350 2    50   Input ~ 0
 LCD_DC
-Text Notes 3350 5500 2    50   ~ 0
-TODO: Consider moving nonessential signals to these GPIO
+Text Notes 3850 5500 2    50   ~ 0
+TODO: Consider moving any nonessential signals to these GPIO
 Wire Wire Line
-	3050 4500 3150 4500
+	3550 4500 3650 4500
 Wire Wire Line
-	3150 4500 3150 4150
+	3650 4500 3650 4150
 $Comp
-L Device:R R33
+L Device:R R34
 U 1 1 5C0A1F7C
-P 3150 4000
-F 0 "R33" H 3220 4046 50  0000 L CNN
-F 1 "3.3k" H 3220 3955 50  0000 L CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" V 3080 4000 50  0001 C CNN
-F 3 "~" H 3150 4000 50  0001 C CNN
-	1    3150 4000
+P 3650 4000
+F 0 "R34" H 3720 4046 50  0000 L CNN
+F 1 "2.2k" H 3720 3955 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 3580 4000 50  0001 C CNN
+F 3 "~" H 3650 4000 50  0001 C CNN
+	1    3650 4000
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3150 4500 3500 4500
-Connection ~ 3150 4500
-Text Notes 650  4050 0    50   ~ 0
-SPEC PULLUPS: http://www.ti.com/lit/an/slva689/slva689.pdf
+	3650 4500 4000 4500
+Connection ~ 3650 4500
+Text Notes 1100 4050 0    50   ~ 0
+SPEC PULLUPS: http://www.ti.com/lit/an/slva689/slva689.pdf\n1k recommended, should be fine for 2.2k (lower power)
 $Comp
 L Device:R R35
 U 1 1 5C0BEB8D
-P 3450 4000
-F 0 "R35" H 3520 4046 50  0000 L CNN
-F 1 "3.3k" H 3520 3955 50  0000 L CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" V 3380 4000 50  0001 C CNN
-F 3 "~" H 3450 4000 50  0001 C CNN
-	1    3450 4000
+P 3950 4000
+F 0 "R35" H 4020 4046 50  0000 L CNN
+F 1 "2.2k" H 4020 3955 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 3880 4000 50  0001 C CNN
+F 3 "~" H 3950 4000 50  0001 C CNN
+	1    3950 4000
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3450 4150 3450 4400
-Text Label 3300 3800 0    50   ~ 0
+	3950 4150 3950 4400
+Text Label 3800 3800 0    50   ~ 0
 VDD_3V3
 $Comp
 L riscv-phone:NOKIA5110 U13
@@ -650,15 +644,15 @@ F 3 "" H 8350 1100 50  0001 C CNN
 	1    8200 1300
 	1    0    0    -1  
 $EndComp
-Text Notes 8000 2000 0    50   ~ 0
+Text Notes 7900 2000 0    50   ~ 0
 TODO: Verify that this BJT is correct\n(should match Mellis)
-Connection ~ 3450 4400
+Connection ~ 3950 4400
 Wire Wire Line
-	3450 4400 3500 4400
+	3950 4400 4000 4400
 Wire Wire Line
-	3050 4400 3450 4400
+	3550 4400 3950 4400
 Wire Wire Line
-	3300 3850 3300 3800
+	3800 3850 3800 3800
 $Comp
 L riscv-phone:TCA8418 U11
 U 1 1 5C4D0D8B
@@ -677,8 +671,8 @@ L power:GND #PWR?
 U 1 1 5C4E6EA1
 P 2300 3050
 AR Path="/5C4E6EA1" Ref="#PWR?"  Part="1" 
-AR Path="/5C50F5D1/5C4E6EA1" Ref="#PWR055"  Part="1" 
-F 0 "#PWR055" H 2300 2800 50  0001 C CNN
+AR Path="/5C50F5D1/5C4E6EA1" Ref="#PWR0156"  Part="1" 
+F 0 "#PWR0156" H 2300 2800 50  0001 C CNN
 F 1 "GND" H 2305 2877 50  0000 C CNN
 F 2 "" H 2300 3050 50  0001 C CNN
 F 3 "" H 2300 3050 50  0001 C CNN
@@ -777,10 +771,8 @@ Wire Wire Line
 	2800 2300 2850 2300
 Wire Wire Line
 	2800 2400 2850 2400
-Text HLabel 1750 2600 0    50   Output ~ 0
+Text HLabel 1150 2600 0    50   Output ~ 0
 KEYPAD_INT
-Wire Wire Line
-	1750 2600 1800 2600
 Text Label 1750 2700 2    50   ~ 0
 SDA
 Text Label 1750 2800 2    50   ~ 0
@@ -789,23 +781,21 @@ Wire Wire Line
 	1750 2800 1800 2800
 Wire Wire Line
 	1750 2700 1800 2700
-Text HLabel 1600 4500 0    50   Input ~ 0
+Text HLabel 2100 4500 0    50   Input ~ 0
 MOSI
-Text HLabel 1600 4600 0    50   Output ~ 0
+Text HLabel 2100 4600 0    50   Output ~ 0
 MISO
-Text HLabel 1600 4700 0    50   Input ~ 0
+Text HLabel 2100 4700 0    50   Input ~ 0
 SCK
-Text HLabel 1600 5100 0    50   Input ~ 0
+Text HLabel 2100 5100 0    50   Input ~ 0
 GND
 Wire Wire Line
-	1600 5100 1750 5100
-Connection ~ 1750 5100
-Text HLabel 2850 1500 2    50   Input ~ 0
-BATT_ALRT
+	2100 5100 2250 5100
+Connection ~ 2250 5100
 Wire Wire Line
 	2800 1500 2850 1500
-NoConn ~ 3050 4600
-NoConn ~ 3050 4700
+NoConn ~ 3550 4600
+NoConn ~ 3550 4700
 $Comp
 L Transistor_BJT:MMBT3904 Q5
 U 1 1 5C1FCE03
@@ -817,29 +807,27 @@ F 3 "https://www.fairchildsemi.com/datasheets/2N/2N3904.pdf" H 9400 1750 50  000
 	1    9400 1750
 	0    1    -1   0   
 $EndComp
-Text Notes 9650 1800 0    50   ~ 0
-TODO: Verify this current limiting R
+Text Notes 9650 1900 0    50   ~ 0
+TODO: Verify this current limiting R\nLED Drop is about 2.995V measured
 Text Notes 2600 1250 0    50   ~ 0
 Tie unused to VCC
-Text Notes 7950 2150 0    50   ~ 0
+Text Notes 7900 2150 0    50   ~ 0
 TODO: Consider FET to save power?
 Wire Wire Line
 	2300 2950 2350 2950
 Wire Wire Line
 	2300 2950 2250 2950
 Connection ~ 2300 2950
-Connection ~ 3300 3850
+Connection ~ 3800 3850
 Wire Wire Line
-	3300 3850 3450 3850
+	3800 3850 3950 3850
 Wire Wire Line
-	3150 3850 3300 3850
+	3650 3850 3800 3850
 Wire Wire Line
 	1050 1250 1300 1250
 Wire Wire Line
 	2300 1350 2300 1250
 Connection ~ 2300 1250
-Wire Wire Line
-	2300 1250 3350 1250
 $Comp
 L Device:R R32
 U 1 1 5C258617
@@ -880,22 +868,6 @@ Wire Wire Line
 Wire Wire Line
 	1000 1250 1050 1250
 Connection ~ 1050 1250
-$Comp
-L Device:R R34
-U 1 1 5C2A9C96
-P 3350 1450
-F 0 "R34" H 3280 1404 50  0000 R CNN
-F 1 "100k" H 3280 1495 50  0000 R CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" V 3280 1450 50  0001 C CNN
-F 3 "~" H 3350 1450 50  0001 C CNN
-	1    3350 1450
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	2800 1600 3350 1600
-Wire Wire Line
-	3350 1300 3350 1250
-Connection ~ 3350 1250
 Wire Wire Line
 	2800 1700 3550 1700
 $Comp
@@ -933,8 +905,6 @@ F 3 "~" H 3950 1750 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	3750 1800 2800 1800
-Wire Wire Line
-	3350 1250 3550 1250
 Wire Wire Line
 	3550 1400 3550 1250
 Connection ~ 3550 1250
@@ -985,6 +955,171 @@ Wire Wire Line
 Connection ~ 4150 1250
 Wire Wire Line
 	4350 2100 2800 2100
-Text Notes 9650 6100 0    50   ~ 0
-TODO: Connect shield?
+Text Notes 8850 6300 0    50   ~ 0
+TODO: Connect shield?\nTODO: SD card SPI mode seems like molten garbage,\nconsider an i2c or SPI EEPROM?
+$Comp
+L power:GND #PWR0157
+U 1 1 5C18532A
+P 2050 7150
+F 0 "#PWR0157" H 2050 6900 50  0001 C CNN
+F 1 "GND" H 2055 6977 50  0000 C CNN
+F 2 "" H 2050 7150 50  0001 C CNN
+F 3 "" H 2050 7150 50  0001 C CNN
+	1    2050 7150
+	1    0    0    -1  
+$EndComp
+Text Label 1650 6800 2    50   ~ 0
+SCL
+Wire Wire Line
+	1650 6800 1700 6800
+Text Label 1650 6700 2    50   ~ 0
+SDA
+Wire Wire Line
+	1700 6700 1650 6700
+$Comp
+L Device:R R33
+U 1 1 5C207766
+P 1300 6700
+F 0 "R33" H 1370 6746 50  0000 L CNN
+F 1 "10k" H 1370 6655 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 1230 6700 50  0001 C CNN
+F 3 "~" H 1300 6700 50  0001 C CNN
+	1    1300 6700
+	-1   0    0    1   
+$EndComp
+Text HLabel 2850 1500 2    50   Input ~ 0
+BATT_ALRT
+Wire Wire Line
+	2300 1250 3550 1250
+Text Label 1050 6900 2    50   ~ 0
+LIGHT_INT
+Text Label 2900 1600 0    50   ~ 0
+LIGHT_INT
+Wire Wire Line
+	2800 1600 2900 1600
+Wire Wire Line
+	1300 6900 1300 6850
+$Comp
+L Device:C C38
+U 1 1 5C15FB87
+P 9450 1000
+F 0 "C38" H 9565 1046 50  0000 L CNN
+F 1 "1uF" H 9565 955 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 9488 850 50  0001 C CNN
+F 3 "~" H 9450 1000 50  0001 C CNN
+	1    9450 1000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9450 850  8750 850 
+Wire Wire Line
+	8750 850  8750 950 
+Connection ~ 8750 950 
+Wire Wire Line
+	8750 950  8800 950 
+Wire Wire Line
+	9300 1050 9300 1150
+Wire Wire Line
+	9300 1150 9450 1150
+Wire Wire Line
+	8700 1050 9300 1050
+Text Notes 900  7600 0    50   ~ 0
+Nonessential light sensor.\nTo be used after core functionality is complete
+Wire Wire Line
+	2050 7150 2050 7100
+Wire Wire Line
+	2050 7150 2150 7150
+Wire Wire Line
+	2150 7150 2150 7100
+Connection ~ 2050 7150
+Wire Wire Line
+	1050 6900 1300 6900
+Connection ~ 1300 6900
+$Comp
+L riscv-phone:NOA1305 U10
+U 1 1 5C360FD8
+P 2050 7050
+F 0 "U10" H 2441 7346 50  0000 L CNN
+F 1 "NOA1305" H 2441 7255 50  0000 L CNN
+F 2 "Package_DFN_QFN:DFN-6-1EP_2x2mm_P0.65mm_EP1x1.6mm" H 2050 7050 50  0001 C CNN
+F 3 "" H 2050 7050 50  0001 C CNN
+	1    2050 7050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1300 6900 1700 6900
+Wire Wire Line
+	1300 6500 2050 6500
+Wire Wire Line
+	1300 6500 1300 6550
+$Comp
+L Device:C C37
+U 1 1 5C1EA3BE
+P 2950 6800
+F 0 "C37" V 2698 6800 50  0000 C CNN
+F 1 "10uF" V 2789 6800 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 2988 6650 50  0001 C CNN
+F 3 "~" H 2950 6800 50  0001 C CNN
+	1    2950 6800
+	-1   0    0    1   
+$EndComp
+Connection ~ 2050 6500
+Wire Wire Line
+	2950 6500 2950 6650
+Wire Wire Line
+	2050 6500 2950 6500
+Wire Wire Line
+	2150 7150 2950 7150
+Wire Wire Line
+	2950 7150 2950 6950
+Connection ~ 2150 7150
+Text HLabel 1200 6500 0    50   Input ~ 0
+VDD_3V3_MOFF
+Wire Wire Line
+	1200 6500 1300 6500
+Connection ~ 1300 6500
+$Comp
+L Device:R R52
+U 1 1 5C5334CF
+P 1250 2400
+F 0 "R52" H 1320 2446 50  0000 L CNN
+F 1 "4.7k" H 1320 2355 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 1180 2400 50  0001 C CNN
+F 3 "~" H 1250 2400 50  0001 C CNN
+	1    1250 2400
+	1    0    0    -1  
+$EndComp
+Text Label 1250 2200 2    50   ~ 0
+VDD_3V3
+Wire Wire Line
+	1250 2200 1250 2250
+Wire Wire Line
+	1250 2550 1250 2600
+Wire Wire Line
+	1250 2600 1150 2600
+Wire Wire Line
+	1250 2600 1800 2600
+Connection ~ 1250 2600
+$Comp
+L Device:R R54
+U 1 1 5C5F73E5
+P 1300 4700
+F 0 "R54" H 1370 4746 50  0000 L CNN
+F 1 "4.7k" H 1370 4655 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 1230 4700 50  0001 C CNN
+F 3 "~" H 1300 4700 50  0001 C CNN
+	1    1300 4700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1150 4900 1300 4900
+Wire Wire Line
+	1300 4850 1300 4900
+Wire Wire Line
+	1300 4900 2250 4900
+Connection ~ 1300 4900
+Wire Wire Line
+	1300 4550 1300 4500
+Text Label 1300 4500 2    50   ~ 0
+VDD_3V3
 $EndSCHEMATC
