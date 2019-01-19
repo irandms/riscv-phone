@@ -1,5 +1,4 @@
 EESchema Schematic File Version 4
-LIBS:riscv-phone-cache
 EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
@@ -251,6 +250,10 @@ F 0 "U16" H 4100 2478 50  0000 C CNN
 F 1 "MCP73831-2-OT" H 4100 2387 50  0000 C CNN
 F 2 "Package_TO_SOT_SMD:SOT-23-5" H 4150 1750 50  0001 L CIN
 F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/20001984g.pdf" H 3950 1950 50  0001 C CNN
+F 4 "DigiKey" H 4100 2000 50  0001 C CNN "Supplier"
+F 5 "MCP73831T-2ACI/OTCT-ND" H 4100 2000 50  0001 C CNN "Supplier Part Number"
+F 6 "Microchip" H 4100 2000 50  0001 C CNN "Manufacturer"
+F 7 "MCP73831T-2ACI/OT" H 4100 2000 50  0001 C CNN "Manufacturer Part Number"
 	1    4100 2000
 	1    0    0    -1  
 $EndComp

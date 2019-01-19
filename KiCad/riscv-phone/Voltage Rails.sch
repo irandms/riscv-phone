@@ -1,5 +1,4 @@
 EESchema Schematic File Version 4
-LIBS:riscv-phone-cache
 EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
@@ -26,6 +25,10 @@ F 0 "U3" H 2775 4065 50  0000 C CNN
 F 1 "TPS62290DRVR" H 2775 3974 50  0000 C CNN
 F 2 "riscv-phone:Texas_PWSON-2.0mmx2.0mm" H 2550 3950 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/tps62293.pdf" H 2550 3950 50  0001 C CNN
+F 4 "DigiKey" H 2750 3550 50  0001 C CNN "Supplier"
+F 5 "296-27030-1-ND" H 2750 3550 50  0001 C CNN "Supplier Part Number"
+F 6 "Texas Instruments" H 2750 3550 50  0001 C CNN "Manufacturer"
+F 7 "TPS62290DRVR" H 2750 3550 50  0001 C CNN "Manufacturer Part Number"
 	1    2750 3550
 	1    0    0    -1  
 $EndComp
@@ -367,6 +370,10 @@ F 0 "U4" H 2775 6365 50  0000 C CNN
 F 1 "TPS62290DRVR" H 2775 6274 50  0000 C CNN
 F 2 "riscv-phone:Texas_PWSON-2.0mmx2.0mm" H 2550 6250 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/tps62293.pdf" H 2550 6250 50  0001 C CNN
+F 4 "DigiKey" H 2750 5850 50  0001 C CNN "Supplier"
+F 5 "296-27030-1-ND" H 2750 5850 50  0001 C CNN "Supplier Part Number"
+F 6 "Texas Instruments" H 2750 5850 50  0001 C CNN "Manufacturer"
+F 7 "TPS62290DRVR" H 2750 5850 50  0001 C CNN "Manufacturer Part Number"
 	1    2750 5850
 	1    0    0    -1  
 $EndComp

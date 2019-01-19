@@ -1,5 +1,4 @@
 EESchema Schematic File Version 4
-LIBS:riscv-phone-cache
 EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
@@ -27,7 +26,11 @@ P 4700 3550
 F 0 "U15" H 4700 4065 50  0000 C CNN
 F 1 "MAX17043" H 4700 3974 50  0000 C CNN
 F 2 "Package_DFN_QFN:TDFN-8-1EP_3x2mm_P0.5mm_EP1.80x1.65mm" H 4700 3550 50  0001 C CNN
-F 3 "" H 4700 3550 50  0001 C CNN
+F 3 "https://datasheets.maximintegrated.com/en/ds/MAX17043-MAX17044.pdf" H 4700 3550 50  0001 C CNN
+F 4 "Mouser" H 4700 3550 50  0001 C CNN "Supplier"
+F 5 "700-MAX17043G+U" H 4700 3550 50  0001 C CNN "Supplier Part Number"
+F 6 "Maxim Integrated" H 4700 3550 50  0001 C CNN "Manufacturer"
+F 7 "MAX17043G+U" H 4700 3550 50  0001 C CNN "Manufacturer Part Number"
 	1    4700 3550
 	1    0    0    -1  
 $EndComp
