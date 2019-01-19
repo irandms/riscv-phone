@@ -468,7 +468,7 @@ U 1 1 5C3C95CE
 P 1700 1100
 F 0 "R1" H 1630 1054 50  0000 R CNN
 F 1 "5.1k" H 1630 1145 50  0000 R CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" V 1630 1100 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 1630 1100 50  0001 C CNN
 F 3 "" H 1700 1100 50  0001 C CNN
 	1    1700 1100
 	-1   0    0    1   
@@ -487,7 +487,7 @@ F 3 "" H 950 2450 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	950  2450 950  2350
+	950  2450 950  2400
 Wire Wire Line
 	1700 1650 1700 2400
 Wire Wire Line
@@ -514,18 +514,6 @@ Wire Wire Line
 	1900 850  2000 850 
 Wire Wire Line
 	2000 1400 2000 1900
-$Comp
-L Device:C DNP1
-U 1 1 5C45D1D7
-P 800 2350
-F 0 "DNP1" V 548 2350 50  0000 C CNN
-F 1 "DNP" V 639 2350 50  0000 C CNN
-F 2 "Capacitor_SMD:C_0402_1005Metric" H 838 2200 50  0001 C CNN
-F 3 "~" H 800 2350 50  0001 C CNN
-	1    800  2350
-	0    1    1    0   
-$EndComp
-Connection ~ 950  2350
 Wire Wire Line
 	2000 2800 2200 2800
 Wire Wire Line
@@ -613,4 +601,11 @@ Wire Wire Line
 	7800 5050 9300 5050
 Wire Wire Line
 	7800 5150 9300 5150
+Wire Wire Line
+	650  2350 650  2400
+Wire Wire Line
+	650  2400 950  2400
+Connection ~ 950  2400
+Wire Wire Line
+	950  2400 950  2350
 $EndSCHEMATC
