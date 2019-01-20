@@ -1,5 +1,4 @@
 EESchema Schematic File Version 4
-LIBS:riscv-phone-cache
 EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
@@ -1250,8 +1249,8 @@ Wire Wire Line
 Wire Wire Line
 	2500 6950 2650 6950
 Wire Wire Line
-	4150 7100 4300 7100
-Text Label 4300 7100 0    50   ~ 0
+	2500 7050 2650 7050
+Text Label 2650 7050 0    50   ~ 0
 RI
 Wire Notes Line
 	9400 5100 9400 6400
@@ -1270,65 +1269,8 @@ F 4 "296-1091-1-ND" H 2200 7000 50  0001 C CNN "Digi-Key Part Number"
 	-1   0    0    1   
 $EndComp
 Text Notes 2150 6600 0    50   ~ 0
-KEYPAD_INT is 3.3V, active low\nRI is 1.8V, active high (supposedly?)
+KEYPAD_INT is 3.3V, active low\nRI is 1.8V, active low (?), shifted to 3.3V in the Modem block
 NoConn ~ -6450 -750
-$Comp
-L riscv-phone:Q_DUAL_NMOS_S1G1D2S2G2D1 Q7
-U 1 1 5C5728EF
-P 3950 7100
-F 0 "Q7" H 4156 7054 50  0000 L CNN
-F 1 "Q_DUAL_NMOS_S1G1D2S2G2D1" H 4156 7145 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-363_SC-70-6" H 4150 7100 50  0001 C CNN
-F 3 "https://www.diodes.com/assets/Datasheets/DMN63D8LDW.pdf" H 4150 7100 50  0001 C CNN
-	1    3950 7100
-	-1   0    0    1   
-$EndComp
-$Comp
-L Device:R R53
-U 1 1 5C59D919
-P 3850 6700
-F 0 "R53" H 3920 6746 50  0000 L CNN
-F 1 "20k" H 3920 6655 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 3780 6700 50  0001 C CNN
-F 3 "~" H 3850 6700 50  0001 C CNN
-	1    3850 6700
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3850 6850 3850 6900
-$Comp
-L power:+3V3 #PWR0172
-U 1 1 5C5B31A8
-P 3850 6450
-F 0 "#PWR0172" H 3850 6300 50  0001 C CNN
-F 1 "+3V3" H 3865 6623 50  0000 C CNN
-F 2 "" H 3850 6450 50  0001 C CNN
-F 3 "" H 3850 6450 50  0001 C CNN
-	1    3850 6450
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3850 6450 3850 6550
-$Comp
-L power:GND #PWR0173
-U 1 1 5C5BE0B4
-P 3850 7400
-F 0 "#PWR0173" H 3850 7150 50  0001 C CNN
-F 1 "GND" H 3855 7227 50  0000 C CNN
-F 2 "" H 3850 7400 50  0001 C CNN
-F 3 "" H 3850 7400 50  0001 C CNN
-	1    3850 7400
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3850 7400 3850 7300
-Wire Wire Line
-	3850 6900 3250 6900
-Wire Wire Line
-	3250 6900 3250 7050
-Wire Wire Line
-	3250 7050 2500 7050
-Connection ~ 3850 6900
 Wire Notes Line
 	550  6000 4450 6000
 Wire Notes Line
