@@ -1,5 +1,4 @@
 EESchema Schematic File Version 4
-LIBS:riscv-phone-cache
 EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
@@ -67,7 +66,10 @@ F 0 "J2" H 2879 4050 50  0000 L CNN
 F 1 "SIM_Card" H 2879 3959 50  0000 L CNN
 F 2 "riscv-phone:Nano SIM Card" H 2250 4300 50  0001 C CNN
 F 3 "https://katalog.we-online.de/em/datasheet/693043020611.pdf" H 2200 3950 50  0001 C CNN
-F 4 "732-5954-1-ND" H 2250 3950 50  0001 C CNN "DigiKey Part Number"
+F 4 "DigiKey" H 2250 3950 50  0001 C CNN "Supplier"
+F 5 "732-5954-1-ND" H 2250 3950 50  0001 C CNN "Supplier Part Number"
+F 6 "Wurth Electronics Inc." H 2250 3950 50  0001 C CNN "Manufactuer"
+F 7 "693043020611" H 2250 3950 50  0001 C CNN "Manufactuer Part Number"
 	1    2250 3950
 	-1   0    0    -1  
 $EndComp
@@ -190,6 +192,10 @@ F 0 "U6" H 2400 564 50  0000 C CNN
 F 1 "TXS0108EPW" H 2400 473 50  0000 C CNN
 F 2 "Package_SO:TSSOP-20_4.4x6.5mm_P0.65mm" H 2400 600 50  0001 C CNN
 F 3 "www.ti.com/lit/ds/symlink/txs0108e.pdf" H 2400 1250 50  0001 C CNN
+F 4 "DigiKey" H 2400 1350 50  0001 C CNN "Supplier"
+F 5 "296-23011-1-ND" H 2400 1350 50  0001 C CNN "Supplier Part Number "
+F 6 "Texas Instruments" H 2400 1350 50  0001 C CNN "Manufactuer"
+F 7 "TXS0108EPWR" H 2400 1350 50  0001 C CNN "Manufactuer Part Number"
 	1    2400 1350
 	-1   0    0    -1  
 $EndComp
@@ -205,6 +211,10 @@ F 0 "U8" H 9150 3214 50  0000 C CNN
 F 1 "TXS0108EPW" H 9150 3123 50  0000 C CNN
 F 2 "Package_SO:TSSOP-20_4.4x6.5mm_P0.65mm" H 9150 3250 50  0001 C CNN
 F 3 "www.ti.com/lit/ds/symlink/txs0108e.pdf" H 9150 3900 50  0001 C CNN
+F 4 "DigiKey" H 9150 4000 50  0001 C CNN "Supplier"
+F 5 "296-23011-1-ND" H 9150 4000 50  0001 C CNN "Supplier Part Number"
+F 6 "Texas Instruments" H 9150 4000 50  0001 C CNN "Manufactuer"
+F 7 "TXS0108EPWR" H 9150 4000 50  0001 C CNN "Manufactuer Part Number"
 	1    9150 4000
 	1    0    0    -1  
 $EndComp
