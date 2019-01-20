@@ -491,9 +491,9 @@ Wire Wire Line
 Wire Wire Line
 	4500 3250 5100 3250
 Wire Wire Line
-	4500 3350 5100 3350
+	4500 3350 4700 3350
 Wire Wire Line
-	4500 3450 5100 3450
+	4500 3450 4700 3450
 Wire Wire Line
 	1850 3700 2150 3700
 Wire Wire Line
@@ -667,4 +667,12 @@ F 3 "https://www.vishay.com/docs/85722/1n4448w.pdf" H 1850 3850 50  0001 C CNN
 $EndComp
 Connection ~ 1850 3700
 Connection ~ 1850 4000
+Wire Wire Line
+	4700 3450 4700 3350
+Connection ~ 4700 3450
+Wire Wire Line
+	4700 3450 5100 3450
+Connection ~ 4700 3350
+Wire Wire Line
+	4700 3350 5100 3350
 $EndSCHEMATC
