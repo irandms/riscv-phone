@@ -376,9 +376,11 @@ F 3 "" H 4300 2100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L SJ-2524-SMT:SJ-2524-SMT J5
+L SJ-3524-SMT:SJ-3524-SMT J5
 U 1 1 5C0ACBDE
 P 7050 4700
+AR Path="/5C0ACBDE" Ref="J5"  Part="1" 
+AR Path="/5C50E8FC/5C0ACBDE" Ref="J5"  Part="1" 
 F 0 "J5" H 7155 5167 50  0000 C CNN
 F 1 "SJ-3524-SMT" H 7155 5076 50  0000 C CNN
 F 2 "SJ-3524-SMT:CUI_SJ-3524-SMT" H 7050 4700 50  0001 L BNN
@@ -608,10 +610,6 @@ Wire Wire Line
 Wire Wire Line
 	4500 3350 4700 3350
 Wire Wire Line
-	7550 4500 7550 4600
-Wire Wire Line
-	7550 2750 7550 4500
-Wire Wire Line
 	7100 2750 7550 2750
 Wire Wire Line
 	7550 4700 7800 4700
@@ -656,7 +654,6 @@ Connection ~ 4950 2550
 Connection ~ 4850 2650
 Connection ~ 4300 2050
 Connection ~ 4600 6250
-Connection ~ 7550 4500
 Connection ~ 7800 4700
 Connection ~ 7550 5000
 Connection ~ 4850 2850
@@ -767,4 +764,6 @@ Wire Wire Line
 	1800 4700 1600 4700
 Connection ~ 2500 4100
 Connection ~ 2500 4400
+Wire Wire Line
+	7550 2750 7550 4600
 $EndSCHEMATC
