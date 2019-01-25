@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:riscv-phone-cache
 EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
@@ -393,11 +394,10 @@ F 0 "J5" H 7155 5167 50  0000 C CNN
 F 1 "SJ-2524-SMT" H 7155 5076 50  0000 C CNN
 F 2 "CUI_SJ-2524-SMT" H 7050 4700 50  0001 L BNN
 F 3 "Manufacturer recommendations" H 7050 4700 50  0001 L BNN
-F 4 "CUI Inc" H 7050 4700 50  0001 L BNN "Field4"
-F 5 "SJ-3524-SMT-TR " H 7155 5267 50  0001 C CNN "Manufacturer Part Number"
-F 6 "CUI Inc" H 7155 5267 50  0001 C CNN "Manufacturer"
-F 7 "CP-3524SJCT-ND " H 7155 5267 50  0001 C CNN "Vendor Part Number"
-F 8 "DigiKey" H 7155 5267 50  0001 C CNN "Vendor"
+F 4 "SJ-3524-SMT-TR " H 7155 5267 50  0001 C CNN "Manufacturer Part Number"
+F 5 "CUI Inc" H 7155 5267 50  0001 C CNN "Manufacturer"
+F 6 "CP-3524SJCT-ND " H 7155 5267 50  0001 C CNN "Vendor Part Number"
+F 7 "DigiKey" H 7155 5267 50  0001 C CNN "Vendor"
 	1    7050 4700
 	1    0    0    -1  
 $EndComp

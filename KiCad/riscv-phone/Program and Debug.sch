@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:riscv-phone-cache
 EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
@@ -62,11 +63,10 @@ F 0 "D8" V 1846 3321 50  0000 R CNN
 F 1 "D_TVS" V 1755 3321 50  0000 R CNN
 F 2 "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 1800 3400 50  0001 C CNN
 F 3 "http://www.littelfuse.com/data/en/data_sheets/littelfuse_pulseguard-esd_pgb1.pdf" H 1800 3400 50  0001 C CNN
-F 4 "F4239CT-ND" V 1800 3400 50  0001 C CNN "DigiKey Part Number"
-F 5 "PGB1010603NRHF " H 1846 3421 50  0001 C CNN "Manufacturer Part Number"
-F 6 "Littelfuse Inc." H 1846 3421 50  0001 C CNN "Manufacturer"
-F 7 "F4239CT-ND" H 1846 3421 50  0001 C CNN "Vendor Part Number"
-F 8 "DigiKey" H 1846 3421 50  0001 C CNN "Vendor"
+F 4 "PGB1010603NRHF " H 1846 3421 50  0001 C CNN "Manufacturer Part Number"
+F 5 "Littelfuse Inc." H 1846 3421 50  0001 C CNN "Manufacturer"
+F 6 "F4239CT-ND" H 1846 3421 50  0001 C CNN "Vendor Part Number"
+F 7 "DigiKey" H 1846 3421 50  0001 C CNN "Vendor"
 	1    1800 3400
 	0    -1   -1   0   
 $EndComp
@@ -78,11 +78,10 @@ F 0 "D9" V 2246 3321 50  0000 R CNN
 F 1 "D_TVS" V 2155 3321 50  0000 R CNN
 F 2 "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 2200 3400 50  0001 C CNN
 F 3 "http://www.littelfuse.com/data/en/data_sheets/littelfuse_pulseguard-esd_pgb1.pdf" H 2200 3400 50  0001 C CNN
-F 4 "F4239CT-ND" V 2200 3400 50  0001 C CNN "DigiKey Part Number"
-F 5 "PGB1010603NRHF " H 2246 3421 50  0001 C CNN "Manufacturer Part Number"
-F 6 "Littelfuse Inc." H 2246 3421 50  0001 C CNN "Manufacturer"
-F 7 "F4239CT-ND" H 2246 3421 50  0001 C CNN "Vendor Part Number"
-F 8 "DigiKey" H 2246 3421 50  0001 C CNN "Vendor"
+F 4 "PGB1010603NRHF " H 2246 3421 50  0001 C CNN "Manufacturer Part Number"
+F 5 "Littelfuse Inc." H 2246 3421 50  0001 C CNN "Manufacturer"
+F 6 "F4239CT-ND" H 2246 3421 50  0001 C CNN "Vendor Part Number"
+F 7 "DigiKey" H 2246 3421 50  0001 C CNN "Vendor"
 	1    2200 3400
 	0    -1   -1   0   
 $EndComp
@@ -109,7 +108,7 @@ F 0 "C23" H 2215 5796 50  0000 L CNN
 F 1 "12pF" H 2215 5705 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 2138 5600 50  0001 C CNN
 F 3 "~" H 2100 5750 50  0001 C CNN
-F 4 "CC0603JRNPO9BN120 " H 2215 5896 50  0001 C CNN "Manufacturer Part Number"
+F 4 " CC0603JRNPO9BN120 " H 2215 5896 50  0001 C CNN "Manufacturer Part Number"
 F 5 "Yageo" H 2215 5896 50  0001 C CNN "Manufacturer"
 F 6 "311-1059-1-ND " H 2215 5896 50  0001 C CNN "Vendor Part Number"
 F 7 "DigiKey" H 2215 5896 50  0001 C CNN "Vendor"
@@ -429,11 +428,10 @@ F 0 "FB1" V 2126 900 50  0000 C CNN
 F 1 "600R" V 2217 900 50  0000 C CNN
 F 2 "Inductor_SMD:L_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 2330 900 50  0001 C CNN
 F 3 "https://assets.lairdtech.com/home/brandworld/files/HZ0805E601R-10.pdf" H 2400 900 50  0001 C CNN
-F 4 "240-2399-1-ND" V 2400 900 50  0001 C CNN "DigiKey Part Number"
-F 5 "HZ0805E601R-10 " H 2126 1000 50  0001 C CNN "Manufacturer Part Number"
-F 6 "Laird-Signal Integrity Products" H 2126 1000 50  0001 C CNN "Manufacturer"
-F 7 "240-2399-1-ND" H 2126 1000 50  0001 C CNN "Vendor Part Number"
-F 8 "DigiKey" H 2126 1000 50  0001 C CNN "Vendor"
+F 4 "HZ0805E601R-10 " H 2126 1000 50  0001 C CNN "Manufacturer Part Number"
+F 5 "Laird-Signal Integrity Products" H 2126 1000 50  0001 C CNN "Manufacturer"
+F 6 "240-2399-1-ND" H 2126 1000 50  0001 C CNN "Vendor Part Number"
+F 7 "DigiKey" H 2126 1000 50  0001 C CNN "Vendor"
 	1    2400 900 
 	0    1    1    0   
 $EndComp
@@ -445,11 +443,10 @@ F 0 "FB2" V 2126 1500 50  0000 C CNN
 F 1 "600R" V 2217 1500 50  0000 C CNN
 F 2 "Inductor_SMD:L_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 2330 1500 50  0001 C CNN
 F 3 "https://assets.lairdtech.com/home/brandworld/files/HZ0805E601R-10.pdf" H 2400 1500 50  0001 C CNN
-F 4 "240-2399-1-ND" V 2400 1500 50  0001 C CNN "DigiKey Part Number"
-F 5 "HZ0805E601R-10 " H 2126 1600 50  0001 C CNN "Manufacturer Part Number"
-F 6 "Laird-Signal Integrity Products" H 2126 1600 50  0001 C CNN "Manufacturer"
-F 7 "240-2399-1-ND" H 2126 1600 50  0001 C CNN "Vendor Part Number"
-F 8 "DigiKey" H 2126 1600 50  0001 C CNN "Vendor"
+F 4 "HZ0805E601R-10 " H 2126 1600 50  0001 C CNN "Manufacturer Part Number"
+F 5 "Laird-Signal Integrity Products" H 2126 1600 50  0001 C CNN "Manufacturer"
+F 6 "240-2399-1-ND" H 2126 1600 50  0001 C CNN "Vendor Part Number"
+F 7 "DigiKey" H 2126 1600 50  0001 C CNN "Vendor"
 	1    2400 1500
 	0    1    1    0   
 $EndComp

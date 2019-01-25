@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:riscv-phone-cache
 EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
@@ -36,11 +37,10 @@ F 0 "L1" V 3790 3300 50  0000 C CNN
 F 1 "2.2uH" V 3699 3300 50  0000 C CNN
 F 2 "riscv-phone:L_1206_3216Metric" H 3600 3300 50  0001 C CNN
 F 3 "https://www.murata.com/~/media/webrenewal/products/inductor/chip/tokoproducts/wirewoundmetalalloychiptype/m_dfe252012p.ashx" H 3600 3300 50  0001 C CNN
-F 4 "490-10649-1-ND" V 3600 3300 50  0001 C CNN "DigiKey Part Number"
-F 5 "DFE252012P-2R2M=P2 " H 3790 3400 50  0001 C CNN "Manufacturer Part Number"
-F 6 "Murata Electronics North America" H 3790 3400 50  0001 C CNN "Manufacturer"
-F 7 "490-10649-1-ND" H 3790 3400 50  0001 C CNN "Vendor Part Number"
-F 8 "DigiKey" H 3790 3400 50  0001 C CNN "Vendor"
+F 4 "DFE252012P-2R2M=P2 " H 3790 3400 50  0001 C CNN "Manufacturer Part Number"
+F 5 "Murata Electronics North America" H 3790 3400 50  0001 C CNN "Manufacturer"
+F 6 "490-10649-1-ND" H 3790 3400 50  0001 C CNN "Vendor Part Number"
+F 7 "DigiKey" H 3790 3400 50  0001 C CNN "Vendor"
 	1    3600 3300
 	0    -1   -1   0   
 $EndComp
@@ -149,11 +149,10 @@ F 0 "L2" V 3790 5600 50  0000 C CNN
 F 1 "2.2uH" V 3699 5600 50  0000 C CNN
 F 2 "riscv-phone:L_1206_3216Metric" H 3600 5600 50  0001 C CNN
 F 3 "https://www.murata.com/~/media/webrenewal/products/inductor/chip/tokoproducts/wirewoundmetalalloychiptype/m_dfe252012p.ashx" H 3600 5600 50  0001 C CNN
-F 4 "490-10649-1-ND" V 3600 5600 50  0001 C CNN "DigiKey Part Number"
-F 5 "DFE252012P-2R2M=P2 " H 3790 5700 50  0001 C CNN "Manufacturer Part Number"
-F 6 "Murata Electronics North America" H 3790 5700 50  0001 C CNN "Manufacturer"
-F 7 "490-10649-1-ND" H 3790 5700 50  0001 C CNN "Vendor Part Number"
-F 8 "DigiKey" H 3790 5700 50  0001 C CNN "Vendor"
+F 4 "DFE252012P-2R2M=P2 " H 3790 5700 50  0001 C CNN "Manufacturer Part Number"
+F 5 "Murata Electronics North America" H 3790 5700 50  0001 C CNN "Manufacturer"
+F 6 "490-10649-1-ND" H 3790 5700 50  0001 C CNN "Vendor Part Number"
+F 7 "DigiKey" H 3790 5700 50  0001 C CNN "Vendor"
 	1    3600 5600
 	0    -1   -1   0   
 $EndComp

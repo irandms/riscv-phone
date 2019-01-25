@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:riscv-phone-cache
 EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
@@ -216,11 +217,10 @@ F 0 "D5" V 2504 5429 50  0000 L CNN
 F 1 "D_TVS" V 2595 5429 50  0000 L CNN
 F 2 "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 2550 5350 50  0001 C CNN
 F 3 "http://www.littelfuse.com/data/en/data_sheets/littelfuse_pulseguard-esd_pgb1.pdf" H 2550 5350 50  0001 C CNN
-F 4 " F4239CT-ND " V 2550 5350 50  0001 C CNN "DigiKey Part Number"
-F 5 "PGB1010603NRHF " H 2504 5529 50  0001 C CNN "Manufacturer Part Number"
-F 6 "Littelfuse Inc." H 2504 5529 50  0001 C CNN "Manufacturer"
-F 7 " F4239CT-ND " H 2504 5529 50  0001 C CNN "Vendor Part Number"
-F 8 "DigiKey" H 2504 5529 50  0001 C CNN "Vendor"
+F 4 "PGB1010603NRHF " H 2504 5529 50  0001 C CNN "Manufacturer Part Number"
+F 5 "Littelfuse Inc." H 2504 5529 50  0001 C CNN "Manufacturer"
+F 6 " F4239CT-ND " H 2504 5529 50  0001 C CNN "Vendor Part Number"
+F 7 "DigiKey" H 2504 5529 50  0001 C CNN "Vendor"
 	1    2550 5350
 	0    1    1    0   
 $EndComp
@@ -243,11 +243,10 @@ F 0 "C9" V 3102 3150 50  0000 C CNN
 F 1 "12pF" V 3011 3150 50  0000 C CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 2888 3000 50  0001 C CNN
 F 3 "~" H 2850 3150 50  0001 C CNN
-F 4 "490-5924-1-ND" V 2850 3150 50  0001 C CNN "DigiKey Part Number"
-F 5 "CC0603JRNPO9BN120 " H 3102 3250 50  0001 C CNN "Manufacturer Part Number"
-F 6 "Yageo" H 3102 3250 50  0001 C CNN "Manufacturer"
-F 7 "490-5924-1-ND" H 3102 3250 50  0001 C CNN "Vendor Part Number"
-F 8 "DigiKey" H 3102 3250 50  0001 C CNN "Vendor"
+F 4 "CC0603JRNPO9BN120 " H 3102 3250 50  0001 C CNN "Manufacturer Part Number"
+F 5 "Yageo" H 3102 3250 50  0001 C CNN "Manufacturer"
+F 6 " 311-1059-1-ND" H 3102 3250 50  0001 C CNN "Vendor Part Number"
+F 7 "DigiKey" H 3102 3250 50  0001 C CNN "Vendor"
 	1    2850 3150
 	0    -1   -1   0   
 $EndComp
@@ -259,11 +258,10 @@ F 0 "C10" V 2598 3450 50  0000 C CNN
 F 1 "12pF" V 2689 3450 50  0000 C CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 2888 3300 50  0001 C CNN
 F 3 "" H 2850 3450 50  0001 C CNN
-F 4 "490-5924-1-ND" V 2850 3450 50  0001 C CNN "DigiKey Part Number"
-F 5 "CC0603JRNPO9BN120 " H 2598 3550 50  0001 C CNN "Manufacturer Part Number"
-F 6 "Yageo" H 2598 3550 50  0001 C CNN "Manufacturer"
-F 7 "490-5924-1-ND" H 2598 3550 50  0001 C CNN "Vendor Part Number"
-F 8 "DigiKey" H 2598 3550 50  0001 C CNN "Vendor"
+F 4 "CC0603JRNPO9BN120 " H 2598 3550 50  0001 C CNN "Manufacturer Part Number"
+F 5 "Yageo" H 2598 3550 50  0001 C CNN "Manufacturer"
+F 6 " 311-1059-1-ND " H 2598 3550 50  0001 C CNN "Vendor Part Number"
+F 7 "DigiKey" H 2598 3550 50  0001 C CNN "Vendor"
 	1    2850 3450
 	0    1    -1   0   
 $EndComp
@@ -574,8 +572,8 @@ F 0 "U5" H 9900 4342 50  0000 C CNN
 F 1 "74CBTLV3257" H 9900 4251 50  0000 C CNN
 F 2 "Package_SO:TSSOP-16_4.4x5mm_P0.65mm" H 9850 4000 50  0001 C CNN
 F 3 "https://assets.nexperia.com/documents/data-sheet/74CBTLV3257.pdf" H 9850 4000 50  0001 C CNN
-F 4 " 74CBTLV3257PW,118" H 9900 4442 50  0001 C CNN "Manufacturer Part Number"
-F 5 " Nexperia USA Inc. " H 9900 4442 50  0001 C CNN "Manufacturer"
+F 4 "74CBTLV3257PW,118" H 9900 4442 50  0001 C CNN "Manufacturer Part Number"
+F 5 "Nexperia USA Inc. " H 9900 4442 50  0001 C CNN "Manufacturer"
 F 6 "1727-4410-1-ND" H 9900 4442 50  0001 C CNN "Vendor Part Number"
 F 7 "DigiKey" H 9900 4442 50  0001 C CNN "Vendor"
 	1    9900 4000
@@ -604,11 +602,10 @@ F 0 "U5" H 8830 3596 50  0000 L CNN
 F 1 "74CBTLV3257" H 8830 3505 50  0000 L CNN
 F 2 "Package_SO:TSSOP-16_4.4x5mm_P0.65mm" H 8600 3550 50  0001 C CNN
 F 3 "https://assets.nexperia.com/documents/data-sheet/74CBTLV3257.pdf" H 8600 3550 50  0001 C CNN
-F 4 "1727-4410-1-ND" H 8650 3550 50  0001 C CNN "DigiKey Part Number"
-F 5 " 74CBTLV3257PW,118" H 8830 3696 50  0001 C CNN "Manufacturer Part Number"
-F 6 " Nexperia USA Inc. " H 8830 3696 50  0001 C CNN "Manufacturer"
-F 7 "1727-4410-1-ND" H 8830 3696 50  0001 C CNN "Vendor Part Number"
-F 8 "DigiKey" H 8830 3696 50  0001 C CNN "Vendor"
+F 4 " 74CBTLV3257PW,118" H 8830 3696 50  0001 C CNN "Manufacturer Part Number"
+F 5 " Nexperia USA Inc. " H 8830 3696 50  0001 C CNN "Manufacturer"
+F 6 "1727-4410-1-ND" H 8830 3696 50  0001 C CNN "Vendor Part Number"
+F 7 "DigiKey" H 8830 3696 50  0001 C CNN "Vendor"
 	5    8650 3550
 	1    0    0    -1  
 $EndComp
@@ -803,11 +800,10 @@ F 0 "U17" H 2175 6733 50  0000 C CNN
 F 1 "74AHC1G08" H 2175 6824 50  0000 C CNN
 F 2 "Package_TO_SOT_SMD:SOT-23-5" H 2200 7000 50  0001 C CNN
 F 3 "http://www.ti.com/lit/sg/scyt129e/scyt129e.pdf" H 2200 7000 50  0001 C CNN
-F 4 "296-1091-1-ND" H 2200 7000 50  0001 C CNN "Digi-Key Part Number"
-F 5 "SN74AHC1G08DBVR" H 2175 6833 50  0001 C CNN "Manufacturer Part Number"
-F 6 "Texas Instruments" H 2175 6833 50  0001 C CNN "Manufacturer"
-F 7 "296-1091-1-ND" H 2175 6833 50  0001 C CNN "Vendor Part Number"
-F 8 "DigiKey" H 2175 6833 50  0001 C CNN "Vendor"
+F 4 "SN74AHC1G08DBVR" H 2175 6833 50  0001 C CNN "Manufacturer Part Number"
+F 5 "Texas Instruments" H 2175 6833 50  0001 C CNN "Manufacturer"
+F 6 "296-1091-1-ND" H 2175 6833 50  0001 C CNN "Vendor Part Number"
+F 7 "DigiKey" H 2175 6833 50  0001 C CNN "Vendor"
 	1    2200 7000
 	-1   0    0    1   
 $EndComp
