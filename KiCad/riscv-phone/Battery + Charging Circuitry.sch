@@ -4,7 +4,7 @@ EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 9 9
+Sheet 7 8
 Title ""
 Date ""
 Rev ""
@@ -301,4 +301,182 @@ Connection ~ 5100 1900
 Connection ~ 5850 1900
 Connection ~ 5850 2200
 Connection ~ 4100 1700
+$Comp
+L riscv-phone:MAX17043 U?
+U 1 1 5C4D1932
+P 3100 5900
+AR Path="/5C51014F/5C4D1932" Ref="U?"  Part="1" 
+AR Path="/5C057A3A/5C4D1932" Ref="U15"  Part="1" 
+F 0 "U15" H 3100 6415 50  0000 C CNN
+F 1 "MAX17043" H 3100 6324 50  0000 C CNN
+F 2 "Package_DFN_QFN:TDFN-8-1EP_3x2mm_P0.5mm_EP1.80x1.65mm" H 3100 5900 50  0001 C CNN
+F 3 "https://datasheets.maximintegrated.com/en/ds/MAX17043-MAX17044.pdf" H 3100 5900 50  0001 C CNN
+F 4 "MAX17043G+U" H 3100 5900 50  0001 C CNN "Manufacturer Part Number"
+F 5 "Maxim Integrated" H 3100 5900 50  0001 C CNN "Manufacturer"
+F 6 "700-MAX17043G+U" H 3100 5900 50  0001 C CNN "Vendor Part Number"
+F 7 "Mouser" H 3100 5900 50  0001 C CNN "Vendor"
+	1    3100 5900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5C4D193D
+P 2400 5400
+AR Path="/5C51014F/5C4D193D" Ref="R?"  Part="1" 
+AR Path="/5C057A3A/5C4D193D" Ref="R47"  Part="1" 
+F 0 "R47" H 2470 5446 50  0000 L CNN
+F 1 "1K" H 2470 5355 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 2330 5400 50  0001 C CNN
+F 3 "~" H 2400 5400 50  0001 C CNN
+F 4 "RR0816P-102-D " H 2470 5546 50  0001 C CNN "Manufacturer Part Number"
+F 5 "Susumu" H 2470 5546 50  0001 C CNN "Manufacturer"
+F 6 "RR08P1.0KDCT-ND " H 2470 5546 50  0001 C CNN "Vendor Part Number"
+F 7 "DigiKey" H 2470 5546 50  0001 C CNN "Vendor"
+	1    2400 5400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5C4D1948
+P 2400 5800
+AR Path="/5C51014F/5C4D1948" Ref="C?"  Part="1" 
+AR Path="/5C057A3A/5C4D1948" Ref="C53"  Part="1" 
+F 0 "C53" H 2515 5846 50  0000 L CNN
+F 1 "1uF" H 2515 5755 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 2438 5650 50  0001 C CNN
+F 3 "~" H 2400 5800 50  0001 C CNN
+F 4 "CL10A105KQ8NNNC " H 2515 5946 50  0001 C CNN "Manufacturer Part Number"
+F 5 "Samsung Electro-Mechanics" H 2515 5946 50  0001 C CNN "Manufacturer"
+F 6 "1276-1036-1-ND " H 2515 5946 50  0001 C CNN "Vendor Part Number"
+F 7 "DigiKey" H 2515 5946 50  0001 C CNN "Vendor"
+	1    2400 5800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5C4D194F
+P 3100 6500
+AR Path="/5C51014F/5C4D194F" Ref="#PWR?"  Part="1" 
+AR Path="/5C057A3A/5C4D194F" Ref="#PWR0180"  Part="1" 
+F 0 "#PWR0180" H 3100 6250 50  0001 C CNN
+F 1 "GND" H 3105 6327 50  0000 C CNN
+F 2 "" H 3100 6500 50  0001 C CNN
+F 3 "" H 3100 6500 50  0001 C CNN
+	1    3100 6500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5C4D1959
+P 3650 5400
+AR Path="/5C51014F/5C4D1959" Ref="R?"  Part="1" 
+AR Path="/5C057A3A/5C4D1959" Ref="R48"  Part="1" 
+F 0 "R48" H 3720 5446 50  0000 L CNN
+F 1 "150" H 3720 5355 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 3580 5400 50  0001 C CNN
+F 3 "~" H 3650 5400 50  0001 C CNN
+F 4 "CRGCQ0603F150R " H 3720 5546 50  0001 C CNN "Manufacturer Part Number"
+F 5 "TE Connectivity Passive Product" H 3720 5546 50  0001 C CNN "Manufacturer"
+F 6 "A129678CT-ND " H 3720 5546 50  0001 C CNN "Vendor Part Number"
+F 7 "DigiKey" H 3720 5546 50  0001 C CNN "Vendor"
+	1    3650 5400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5C4D1964
+P 3650 6350
+AR Path="/5C51014F/5C4D1964" Ref="C?"  Part="1" 
+AR Path="/5C057A3A/5C4D1964" Ref="C54"  Part="1" 
+F 0 "C54" H 3765 6396 50  0000 L CNN
+F 1 "10nF" H 3765 6305 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 3688 6200 50  0001 C CNN
+F 3 "~" H 3650 6350 50  0001 C CNN
+F 4 "CL10B103KB8NCNC " H 3765 6496 50  0001 C CNN "Manufacturer Part Number"
+F 5 "Samsung Electro-Mechanics" H 3765 6496 50  0001 C CNN "Manufacturer"
+F 6 "1276-1921-1-ND " H 3765 6496 50  0001 C CNN "Vendor Part Number"
+F 7 "DigiKey" H 3765 6496 50  0001 C CNN "Vendor"
+	1    3650 6350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5C4D196F
+P 3950 5500
+AR Path="/5C51014F/5C4D196F" Ref="R?"  Part="1" 
+AR Path="/5C057A3A/5C4D196F" Ref="R49"  Part="1" 
+F 0 "R49" H 4020 5546 50  0000 L CNN
+F 1 "10k" H 4020 5455 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 3880 5500 50  0001 C CNN
+F 3 "~" H 3950 5500 50  0001 C CNN
+F 4 "RNCP0603FTD10K0 " H 4020 5646 50  0001 C CNN "Manufacturer Part Number"
+F 5 "Stackpole Electronics Inc" H 4020 5646 50  0001 C CNN "Manufacturer"
+F 6 "RNCP0603FTD10K0CT-ND " H 4020 5646 50  0001 C CNN "Vendor Part Number"
+F 7 "DigiKey" H 4020 5646 50  0001 C CNN "Vendor"
+	1    3950 5500
+	1    0    0    -1  
+$EndComp
+Text HLabel 2100 5250 0    50   Input ~ 0
+VBAT
+Text HLabel 4050 6100 2    50   Input ~ 0
+SCL
+Text HLabel 4050 5950 2    50   BiDi ~ 0
+SDA
+Text HLabel 4050 5800 2    50   Output ~ 0
+BATT_ALRT
+Text Notes 3700 5150 0    50   ~ 0
+TODO: Be careful that this voltage is not too large for MCU
+Text HLabel 4300 5250 2    50   Input ~ 0
+VDD_3V3
+Wire Wire Line
+	2400 5650 2700 5650
+Wire Wire Line
+	2400 5650 2400 5550
+Wire Wire Line
+	2400 5250 2100 5250
+Wire Wire Line
+	2400 5250 3650 5250
+Wire Wire Line
+	3500 5650 3650 5650
+Wire Wire Line
+	3650 5650 3650 5550
+Wire Wire Line
+	3650 6200 3650 5650
+Wire Wire Line
+	3500 5950 4050 5950
+Wire Wire Line
+	3500 6100 4050 6100
+Wire Wire Line
+	2400 6500 3100 6500
+Wire Wire Line
+	3650 6500 3100 6500
+Wire Wire Line
+	3500 5800 3950 5800
+Wire Wire Line
+	3950 5350 3950 5250
+Wire Wire Line
+	3950 5250 4300 5250
+Wire Wire Line
+	3950 5650 3950 5800
+Wire Wire Line
+	3950 5800 4050 5800
+Wire Wire Line
+	2400 5950 2400 6100
+Wire Wire Line
+	2700 5800 2700 5950
+Wire Wire Line
+	2700 5950 2700 6100
+Wire Wire Line
+	2700 6100 2400 6100
+Wire Wire Line
+	2400 6100 2400 6500
+Connection ~ 2400 5650
+Connection ~ 2400 5250
+Connection ~ 3650 5650
+Connection ~ 3100 6500
+Connection ~ 3950 5800
+Connection ~ 2700 5950
+Connection ~ 2700 6100
+Connection ~ 2400 6100
+NoConn ~ 8300 2000
 $EndSCHEMATC

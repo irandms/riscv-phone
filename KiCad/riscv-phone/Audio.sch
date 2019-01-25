@@ -4,7 +4,7 @@ EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 7 9
+Sheet 5 8
 Title ""
 Date ""
 Rev ""
@@ -145,14 +145,14 @@ $EndComp
 $Comp
 L Device:Speaker LS?
 U 1 1 5C50EE86
-P 8600 2900
+P 8450 2600
 AR Path="/5C50EE86" Ref="LS?"  Part="1" 
 AR Path="/5C50E8FC/5C50EE86" Ref="LS1"  Part="1" 
-F 0 "LS1" H 8770 2896 50  0000 L CNN
-F 1 "Speaker" H 8770 2805 50  0000 L CNN
-F 2 "" H 8600 2700 50  0001 C CNN
-F 3 "~" H 8590 2850 50  0001 C CNN
-	1    8600 2900
+F 0 "LS1" H 8620 2596 50  0000 L CNN
+F 1 "Speaker" H 8620 2505 50  0000 L CNN
+F 2 "" H 8450 2400 50  0001 C CNN
+F 3 "~" H 8440 2550 50  0001 C CNN
+	1    8450 2600
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -376,17 +376,6 @@ F 3 "" H 4300 2100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR0164
-U 1 1 5C0AACCC
-P 1850 4600
-F 0 "#PWR0164" H 1850 4350 50  0001 C CNN
-F 1 "GND" H 1855 4427 50  0000 C CNN
-F 2 "" H 1850 4600 50  0001 C CNN
-F 3 "" H 1850 4600 50  0001 C CNN
-	1    1850 4600
-	1    0    0    -1  
-$EndComp
-$Comp
 L SJ-2524-SMT:SJ-2524-SMT J5
 U 1 1 5C0ACBDE
 P 7050 4700
@@ -411,32 +400,6 @@ F 2 "" H 7550 5050 50  0001 C CNN
 F 3 "" H 7550 5050 50  0001 C CNN
 	1    7550 5050
 	1    0    0    -1  
-$EndComp
-$Comp
-L Device:Buzzer BZ1
-U 1 1 5C21BB82
-P 2250 3850
-F 0 "BZ1" H 2403 3879 50  0000 L CNN
-F 1 "Buzzer" H 2403 3788 50  0000 L CNN
-F 2 "riscv-phone:SMT-0540-T-2-R" V 2225 3950 50  0001 C CNN
-F 3 "~" V 2225 3950 50  0001 C CNN
-	1    2250 3850
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R43
-U 1 1 5C222C75
-P 1300 4300
-F 0 "R43" V 1093 4300 50  0000 C CNN
-F 1 "4.7k" V 1184 4300 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 1230 4300 50  0001 C CNN
-F 3 "~" H 1300 4300 50  0001 C CNN
-F 4 "RC0603JR-074K7L " H 1093 4400 50  0001 C CNN "Manufacturer Part Number"
-F 5 "Yageo" H 1093 4400 50  0001 C CNN "Manufacturer"
-F 6 "311-4.7KGRCT-ND " H 1093 4400 50  0001 C CNN "Vendor Part Number"
-F 7 "DigiKey" H 1093 4400 50  0001 C CNN "Vendor"
-	1    1300 4300
-	0    1    1    0   
 $EndComp
 $Comp
 L Device:R R46
@@ -468,46 +431,14 @@ F 7 "DigiKey" H 7915 4996 50  0001 C CNN "Vendor"
 	1    7800 4850
 	1    0    0    -1  
 $EndComp
-$Comp
-L Transistor_BJT:MMBT3904 Q6
-U 1 1 5C2A9FB7
-P 1750 4300
-F 0 "Q6" H 1941 4346 50  0000 L CNN
-F 1 "MMBT3904" H 1941 4255 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23" H 1950 4225 50  0001 L CIN
-F 3 "https://www.fairchildsemi.com/datasheets/2N/2N3904.pdf" H 1750 4300 50  0001 L CNN
-F 4 "MMBT3904 " H 1941 4446 50  0001 C CNN "Manufacturer Part Number"
-F 5 "ON Semiconductor" H 1941 4446 50  0001 C CNN "Manufacturer"
-F 6 "MMBT3904FSCT-ND " H 1941 4446 50  0001 C CNN "Vendor Part Number"
-F 7 "DigiKey" H 1941 4446 50  0001 C CNN "Vendor"
-	1    1750 4300
-	1    0    0    -1  
-$EndComp
-$Comp
-L Diode:1N4448W D10
-U 1 1 5C1DE39C
-P 1850 3850
-F 0 "D10" V 1804 3930 50  0000 L CNN
-F 1 "1N4448W" V 1895 3930 50  0000 L CNN
-F 2 "Diode_SMD:D_SOD-123" H 1850 3675 50  0001 C CNN
-F 3 "https://www.vishay.com/docs/85722/1n4448w.pdf" H 1850 3850 50  0001 C CNN
-F 4 "1N4448W-TP " H 1804 4030 50  0001 C CNN "Manufacturer Part Number"
-F 5 "Micro Commercial Co" H 1804 4030 50  0001 C CNN "Manufacturer"
-F 6 "1N4448WTPMSCT-ND " H 1804 4030 50  0001 C CNN "Vendor Part Number"
-F 7 "DigiKey" H 1804 4030 50  0001 C CNN "Vendor"
-	1    1850 3850
-	0    1    1    0   
-$EndComp
 Text Label 5750 4050 1    50   ~ 0
 MIC-
 Text Label 5350 4050 1    50   ~ 0
 MIC+
-Text Label 8100 2900 2    50   ~ 0
+Text Label 7950 2600 2    50   ~ 0
 SPK+
-Text Label 8100 3000 2    50   ~ 0
+Text Label 7950 2700 2    50   ~ 0
 SPK-
-Text HLabel 950  4300 0    50   Input ~ 0
-BUZZER
 Text HLabel 4500 3050 0    50   Output ~ 0
 ADCOUT
 Text HLabel 4500 3150 0    50   Input ~ 0
@@ -516,8 +447,6 @@ Text HLabel 4500 3250 0    50   BiDi ~ 0
 FS
 Text HLabel 4500 3350 0    50   BiDi ~ 0
 BCLK
-Text HLabel 4500 3450 0    50   BiDi ~ 0
-MCLK
 Text HLabel 6600 2550 2    50   Input ~ 0
 SCLK
 Text HLabel 6600 2650 2    50   BiDi ~ 0
@@ -538,10 +467,8 @@ Text Label 6400 3150 0    50   ~ 0
 VDD_3V3
 Text Label 4200 1750 2    50   ~ 0
 VDD_3V3
-Text Notes 4800 1600 2    50   ~ 0
+Text Notes 3700 1650 0    50   ~ 0
 Place one near VDDSPK, one near VDDD
-Text Label 1800 3300 2    50   ~ 0
-VDD_3V3
 Text HLabel 8050 4700 2    50   Output ~ 0
 HEADPHONE_DETECT
 Text Notes 7100 5650 0    50   ~ 0
@@ -554,8 +481,6 @@ Text Label 7800 4300 0    50   ~ 0
 VDD_3V3
 Text Notes 9350 2250 2    50   ~ 0
 TODO: Verify that we will get proper logic levels for both the I2C (3.3V) and PCM (1.8V raised to 3.3V) signals
-Text Notes 2100 4550 0    50   ~ 0
-TODO: Consider FET to save power?
 Wire Wire Line
 	5300 5900 5350 5900
 Wire Wire Line
@@ -595,9 +520,9 @@ Wire Wire Line
 Wire Wire Line
 	5000 5650 5000 5400
 Wire Wire Line
-	8400 2900 8100 2900
+	8250 2600 7950 2600
 Wire Wire Line
-	8400 3000 8100 3000
+	8250 2700 7950 2700
 Wire Wire Line
 	5350 5400 5350 4350
 Wire Wire Line
@@ -683,20 +608,6 @@ Wire Wire Line
 Wire Wire Line
 	4500 3350 4700 3350
 Wire Wire Line
-	4500 3450 4700 3450
-Wire Wire Line
-	1850 3700 2150 3700
-Wire Wire Line
-	1850 4000 2150 4000
-Wire Wire Line
-	1850 3700 1850 3300
-Wire Wire Line
-	1850 3300 1800 3300
-Wire Wire Line
-	1850 4000 1850 4100
-Wire Wire Line
-	1850 4600 1850 4500
-Wire Wire Line
 	7550 4500 7550 4600
 Wire Wire Line
 	7550 2750 7550 4500
@@ -704,14 +615,6 @@ Wire Wire Line
 	7100 2750 7550 2750
 Wire Wire Line
 	7550 4700 7800 4700
-Wire Wire Line
-	2150 3950 2150 4000
-Wire Wire Line
-	2150 3750 2150 3700
-Wire Wire Line
-	1450 4300 1550 4300
-Wire Wire Line
-	1150 4300 950  4300
 Wire Wire Line
 	7800 4650 7800 4700
 Wire Wire Line
@@ -757,9 +660,111 @@ Connection ~ 7550 4500
 Connection ~ 7800 4700
 Connection ~ 7550 5000
 Connection ~ 4850 2850
-Connection ~ 1850 3700
-Connection ~ 1850 4000
-Connection ~ 4700 3450
 Connection ~ 4700 3350
 NoConn ~ 5850 4450
+$Comp
+L power:GND #PWR0182
+U 1 1 5C64B17C
+P 2500 5000
+AR Path="/5C50E8FC/5C64B17C" Ref="#PWR0182"  Part="1" 
+AR Path="/5C508A16/5C64B17C" Ref="#PWR?"  Part="1" 
+F 0 "#PWR0182" H 2500 4750 50  0001 C CNN
+F 1 "GND" H 2505 4827 50  0000 C CNN
+F 2 "" H 2500 5000 50  0001 C CNN
+F 3 "" H 2500 5000 50  0001 C CNN
+	1    2500 5000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Buzzer BZ1
+U 1 1 5C64B182
+P 2900 4250
+AR Path="/5C50E8FC/5C64B182" Ref="BZ1"  Part="1" 
+AR Path="/5C508A16/5C64B182" Ref="BZ?"  Part="1" 
+F 0 "BZ1" H 3053 4279 50  0000 L CNN
+F 1 "Buzzer" H 3053 4188 50  0000 L CNN
+F 2 "riscv-phone:SMT-0540-T-2-R" V 2875 4350 50  0001 C CNN
+F 3 "~" V 2875 4350 50  0001 C CNN
+	1    2900 4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R43
+U 1 1 5C64B18D
+P 1950 4700
+AR Path="/5C50E8FC/5C64B18D" Ref="R43"  Part="1" 
+AR Path="/5C508A16/5C64B18D" Ref="R?"  Part="1" 
+F 0 "R43" V 1743 4700 50  0000 C CNN
+F 1 "4.7k" V 1834 4700 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 1880 4700 50  0001 C CNN
+F 3 "~" H 1950 4700 50  0001 C CNN
+F 4 "RC0603JR-074K7L " H 1743 4800 50  0001 C CNN "Manufacturer Part Number"
+F 5 "Yageo" H 1743 4800 50  0001 C CNN "Manufacturer"
+F 6 "311-4.7KGRCT-ND " H 1743 4800 50  0001 C CNN "Vendor Part Number"
+F 7 "DigiKey" H 1743 4800 50  0001 C CNN "Vendor"
+	1    1950 4700
+	0    1    1    0   
+$EndComp
+$Comp
+L Transistor_BJT:MMBT3904 Q6
+U 1 1 5C64B198
+P 2400 4700
+AR Path="/5C50E8FC/5C64B198" Ref="Q6"  Part="1" 
+AR Path="/5C508A16/5C64B198" Ref="Q?"  Part="1" 
+F 0 "Q6" H 2591 4746 50  0000 L CNN
+F 1 "MMBT3904" H 2591 4655 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 2600 4625 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/2N/2N3904.pdf" H 2400 4700 50  0001 L CNN
+F 4 "MMBT3904 " H 2591 4846 50  0001 C CNN "Manufacturer Part Number"
+F 5 "ON Semiconductor" H 2591 4846 50  0001 C CNN "Manufacturer"
+F 6 "MMBT3904FSCT-ND " H 2591 4846 50  0001 C CNN "Vendor Part Number"
+F 7 "DigiKey" H 2591 4846 50  0001 C CNN "Vendor"
+	1    2400 4700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:1N4448W D10
+U 1 1 5C64B1A3
+P 2500 4250
+AR Path="/5C50E8FC/5C64B1A3" Ref="D10"  Part="1" 
+AR Path="/5C508A16/5C64B1A3" Ref="D?"  Part="1" 
+F 0 "D10" V 2454 4330 50  0000 L CNN
+F 1 "1N4448W" V 2545 4330 50  0000 L CNN
+F 2 "Diode_SMD:D_SOD-123" H 2500 4075 50  0001 C CNN
+F 3 "https://www.vishay.com/docs/85722/1n4448w.pdf" H 2500 4250 50  0001 C CNN
+F 4 "1N4448W-TP " H 2454 4430 50  0001 C CNN "Manufacturer Part Number"
+F 5 "Micro Commercial Co" H 2454 4430 50  0001 C CNN "Manufacturer"
+F 6 "1N4448WTPMSCT-ND " H 2454 4430 50  0001 C CNN "Vendor Part Number"
+F 7 "DigiKey" H 2454 4430 50  0001 C CNN "Vendor"
+	1    2500 4250
+	0    1    1    0   
+$EndComp
+Text HLabel 1600 4700 0    50   Input ~ 0
+BUZZER
+Text Label 2450 3700 2    50   ~ 0
+VDD_3V3
+Text Notes 1800 5400 0    50   ~ 0
+TODO: Consider FET to save power?
+Wire Wire Line
+	2500 4100 2800 4100
+Wire Wire Line
+	2500 4400 2800 4400
+Wire Wire Line
+	2500 4100 2500 3700
+Wire Wire Line
+	2500 3700 2450 3700
+Wire Wire Line
+	2500 4400 2500 4500
+Wire Wire Line
+	2500 5000 2500 4900
+Wire Wire Line
+	2800 4350 2800 4400
+Wire Wire Line
+	2800 4150 2800 4100
+Wire Wire Line
+	2100 4700 2200 4700
+Wire Wire Line
+	1800 4700 1600 4700
+Connection ~ 2500 4100
+Connection ~ 2500 4400
 $EndSCHEMATC
