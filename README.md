@@ -1,1 +1,1 @@
-# RISCV-Dumbphone
+# RISCV-phone
