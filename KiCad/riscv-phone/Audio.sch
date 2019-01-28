@@ -395,42 +395,42 @@ $EndComp
 $Comp
 L power:GND #PWR0165
 U 1 1 5C0B2A1E
-P 7550 5050
-F 0 "#PWR0165" H 7550 4800 50  0001 C CNN
-F 1 "GND" H 7555 4877 50  0000 C CNN
-F 2 "" H 7550 5050 50  0001 C CNN
-F 3 "" H 7550 5050 50  0001 C CNN
-	1    7550 5050
+P 7950 4500
+F 0 "#PWR0165" H 7950 4250 50  0001 C CNN
+F 1 "GND" H 7955 4327 50  0000 C CNN
+F 2 "" H 7950 4500 50  0001 C CNN
+F 3 "" H 7950 4500 50  0001 C CNN
+	1    7950 4500
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:R R46
 U 1 1 5C22B4FE
-P 7800 4500
-F 0 "R46" H 7870 4546 50  0000 L CNN
-F 1 "100k" H 7870 4455 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 7730 4500 50  0001 C CNN
-F 3 "~" H 7800 4500 50  0001 C CNN
-F 4 "RR0816P-104-D " H 7870 4646 50  0001 C CNN "Manufacturer Part Number"
-F 5 "Susumu" H 7870 4646 50  0001 C CNN "Manufacturer"
-F 6 "RR08P100KDCT-ND " H 7870 4646 50  0001 C CNN "Vendor Part Number"
-F 7 "DigiKey" H 7870 4646 50  0001 C CNN "Vendor"
-	1    7800 4500
+P 8150 4500
+F 0 "R46" H 8220 4546 50  0000 L CNN
+F 1 "100k" H 8220 4455 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 8080 4500 50  0001 C CNN
+F 3 "~" H 8150 4500 50  0001 C CNN
+F 4 "RR0816P-104-D " H 8220 4646 50  0001 C CNN "Manufacturer Part Number"
+F 5 "Susumu" H 8220 4646 50  0001 C CNN "Manufacturer"
+F 6 "RR08P100KDCT-ND " H 8220 4646 50  0001 C CNN "Vendor Part Number"
+F 7 "DigiKey" H 8220 4646 50  0001 C CNN "Vendor"
+	1    8150 4500
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:C C52
 U 1 1 5C2A0978
-P 7800 4850
-F 0 "C52" H 7915 4896 50  0000 L CNN
-F 1 "33pF" H 7915 4805 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 7838 4700 50  0001 C CNN
-F 3 "" H 7800 4850 50  0001 C CNN
-F 4 "CC0603JRNPO9BN330 " H 7915 4996 50  0001 C CNN "Manufacturer Part Number"
-F 5 "Yageo" H 7915 4996 50  0001 C CNN "Manufacturer"
-F 6 "311-1064-1-ND " H 7915 4996 50  0001 C CNN "Vendor Part Number"
-F 7 "DigiKey" H 7915 4996 50  0001 C CNN "Vendor"
-	1    7800 4850
+P 8150 4850
+F 0 "C52" H 8265 4896 50  0000 L CNN
+F 1 "33pF" H 8265 4805 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 8188 4700 50  0001 C CNN
+F 3 "" H 8150 4850 50  0001 C CNN
+F 4 "CC0603JRNPO9BN330 " H 8265 4996 50  0001 C CNN "Manufacturer Part Number"
+F 5 "Yageo" H 8265 4996 50  0001 C CNN "Manufacturer"
+F 6 "311-1064-1-ND " H 8265 4996 50  0001 C CNN "Vendor Part Number"
+F 7 "DigiKey" H 8265 4996 50  0001 C CNN "Vendor"
+	1    8150 4850
 	1    0    0    -1  
 $EndComp
 Text Label 5750 4050 1    50   ~ 0
@@ -471,15 +471,15 @@ Text Label 4200 1750 2    50   ~ 0
 VDD_3V3
 Text Notes 3700 1650 0    50   ~ 0
 Place one near VDDSPK, one near VDDD
-Text HLabel 8050 4700 2    50   Output ~ 0
+Text HLabel 8400 4700 2    50   Output ~ 0
 HEADPHONE_DETECT
 Text Notes 7100 5650 0    50   ~ 0
 Verify functionality of switch logic level changing\n(need normally open switch),\nthis circuit should give a logic 0 when headphones are connected,\nlogical 1 for disconnected
-Text Notes 8100 4550 0    50   ~ 0
+Text Notes 8450 4550 0    50   ~ 0
 TODO: Consider using a mono audio jack\n (check if driving stereo impedance with MOUT is fine)
-Text Notes 7950 5050 0    50   ~ 0
+Text Notes 8300 5050 0    50   ~ 0
 TODO: Capacitor sufficient for debouncing?
-Text Label 7800 4300 0    50   ~ 0
+Text Label 8150 4300 0    50   ~ 0
 VDD_3V3
 Text Notes 9350 2250 2    50   ~ 0
 TODO: Verify that we will get proper logic levels for both the I2C (3.3V) and PCM (1.8V raised to 3.3V) signals
@@ -610,21 +610,11 @@ Wire Wire Line
 Wire Wire Line
 	4500 3350 4700 3350
 Wire Wire Line
-	7100 2750 7550 2750
+	8150 4650 8150 4700
 Wire Wire Line
-	7550 4700 7800 4700
+	8150 4700 8400 4700
 Wire Wire Line
-	7800 4650 7800 4700
-Wire Wire Line
-	7800 4700 8050 4700
-Wire Wire Line
-	7800 4350 7800 4300
-Wire Wire Line
-	7550 4800 7550 5000
-Wire Wire Line
-	7550 5000 7800 5000
-Wire Wire Line
-	7550 5000 7550 5050
+	8150 4350 8150 4300
 Wire Wire Line
 	4850 2850 4850 3700
 Wire Wire Line
@@ -654,8 +644,7 @@ Connection ~ 4950 2550
 Connection ~ 4850 2650
 Connection ~ 4300 2050
 Connection ~ 4600 6250
-Connection ~ 7800 4700
-Connection ~ 7550 5000
+Connection ~ 8150 4700
 Connection ~ 4850 2850
 Connection ~ 4700 3350
 NoConn ~ 5850 4450
@@ -765,5 +754,31 @@ Wire Wire Line
 Connection ~ 2500 4100
 Connection ~ 2500 4400
 Wire Wire Line
-	7550 2750 7550 4600
+	7550 4800 7750 4800
+Wire Wire Line
+	7750 4800 7750 4600
+Wire Wire Line
+	7750 4600 7550 4600
+Wire Wire Line
+	7750 4600 7750 2750
+Wire Wire Line
+	7100 2750 7750 2750
+Connection ~ 7750 4600
+$Comp
+L power:GND #PWR?
+U 1 1 5C546AE5
+P 8150 5100
+F 0 "#PWR?" H 8150 4850 50  0001 C CNN
+F 1 "GND" H 8155 4927 50  0000 C CNN
+F 2 "" H 8150 5100 50  0001 C CNN
+F 3 "" H 8150 5100 50  0001 C CNN
+	1    8150 5100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7550 4500 7950 4500
+Wire Wire Line
+	8150 5000 8150 5100
+Wire Wire Line
+	7550 4700 8150 4700
 $EndSCHEMATC
