@@ -4,7 +4,7 @@ EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 8 8
+Sheet 7 8
 Title ""
 Date ""
 Rev ""
@@ -15,27 +15,14 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L Connector:Micro_SD_Card J?
-U 1 1 5C50F8F7
-P 9950 5300
-AR Path="/5C50F8F7" Ref="J?"  Part="1" 
-AR Path="/5C50F5D1/5C50F8F7" Ref="J4"  Part="1" 
-F 0 "J4" H 9900 6017 50  0000 C CNN
-F 1 "Micro_SD_Card" H 9900 5926 50  0000 C CNN
-F 2 "Connector_Card:microSD_HC_Hirose_DM3AT-SF-PEJM5" H 11100 5600 50  0001 C CNN
-F 3 "http://katalog.we-online.de/em/datasheet/693072010801.pdf" H 9950 5300 50  0001 C CNN
-	1    9950 5300
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:GND #PWR0155
 U 1 1 5C813AA6
-P 8650 5600
-F 0 "#PWR0155" H 8650 5350 50  0001 C CNN
-F 1 "GND" H 8655 5427 50  0000 C CNN
-F 2 "" H 8650 5600 50  0001 C CNN
-F 3 "" H 8650 5600 50  0001 C CNN
-	1    8650 5600
+P 9200 4300
+F 0 "#PWR0155" H 9200 4050 50  0001 C CNN
+F 1 "GND" H 9205 4127 50  0000 C CNN
+F 2 "" H 9200 4300 50  0001 C CNN
+F 3 "" H 9200 4300 50  0001 C CNN
+	1    9200 4300
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -589,12 +576,10 @@ F 7 "DigiKey" H 1320 2546 50  0001 C CNN "Vendor"
 $EndComp
 Text HLabel 8800 1150 2    50   Input ~ 0
 LCD_CS
-Text HLabel 8850 5100 0    50   Input ~ 0
+Text HLabel 8700 4050 0    50   Input ~ 0
 SD_CS
 Text Notes 5050 700  0    50   ~ 0
 TODO: Consider using VDD_3V3_MOFF
-Text Label 8950 5300 2    50   ~ 0
-VDD_3V3
 Text HLabel 1750 1550 0    50   Input ~ 0
 RESET_N
 Text Label 8800 950  0    50   ~ 0
@@ -661,8 +646,6 @@ Text Notes 2600 1250 0    50   ~ 0
 Tie unused to VCC
 Text Notes 7900 2150 0    50   ~ 0
 TODO: Consider FET to save power?
-Text Notes 8850 6300 0    50   ~ 0
-TODO: Connect shield?\nTODO: SD card SPI mode seems like molten garbage,\nconsider an i2c or SPI EEPROM?
 Text Label 1650 6800 2    50   ~ 0
 SCL
 Text Label 1650 6700 2    50   ~ 0
@@ -679,20 +662,6 @@ Text HLabel 1200 6500 0    50   Input ~ 0
 VDD_3V3_MOFF
 Text Label 1250 2200 2    50   ~ 0
 VDD_3V3
-Wire Wire Line
-	8950 5400 9050 5400
-Wire Wire Line
-	9050 5600 8950 5600
-Wire Wire Line
-	8850 5100 9050 5100
-Wire Wire Line
-	8950 5200 9050 5200
-Wire Wire Line
-	9050 5300 8950 5300
-Wire Wire Line
-	9050 5500 8650 5500
-Wire Wire Line
-	8650 5500 8650 5600
 Wire Wire Line
 	8700 1550 8800 1550
 Wire Wire Line
@@ -1111,13 +1080,11 @@ Connection ~ 2050 6500
 Connection ~ 2150 7150
 Connection ~ 1300 6500
 Connection ~ 1250 2600
-NoConn ~ 9050 5000
-NoConn ~ 9050 5700
-Text HLabel 8950 5400 0    50   Input ~ 0
+Text HLabel 9750 3850 2    50   Input ~ 0
 SCK
-Text HLabel 8950 5200 0    50   Input ~ 0
+Text HLabel 9750 3950 2    50   Input ~ 0
 MOSI
-Text HLabel 8950 5600 0    50   Output ~ 0
+Text HLabel 9750 4050 2    50   Output ~ 0
 MISO
 Text HLabel 1750 2800 0    50   Input ~ 0
 SCL
@@ -1130,5 +1097,37 @@ Wire Wire Line
 Connection ~ 2300 3000
 Wire Wire Line
 	2300 3000 2300 3050
-NoConn ~ 10750 5900
+$Comp
+L Memory_EEPROM:M95256-WMN6P U?
+U 1 1 5C4FAABF
+P 9200 3950
+F 0 "U?" H 9200 4500 50  0000 C CNN
+F 1 "M95256-WMN6P" H 9200 4400 50  0000 C CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 9200 3950 50  0001 C CNN
+F 3 "http://www.st.com/content/ccc/resource/technical/document/datasheet/9d/75/f0/3e/76/00/4c/0b/CD00103810.pdf/files/CD00103810.pdf/jcr:content/translations/en.CD00103810.pdf" H 9200 3950 50  0001 C CNN
+	1    9200 3950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8700 4050 8800 4050
+Wire Wire Line
+	9750 3950 9600 3950
+Wire Wire Line
+	9600 4050 9750 4050
+Wire Wire Line
+	9200 4300 9200 4250
+Text Label 8800 3600 2    50   ~ 0
+VDD_3V3
+Wire Wire Line
+	8800 3950 8800 3850
+Connection ~ 8800 3850
+Wire Wire Line
+	8800 3600 8800 3650
+Wire Wire Line
+	9200 3650 8800 3650
+Connection ~ 8800 3650
+Wire Wire Line
+	8800 3650 8800 3850
+Wire Wire Line
+	9600 3850 9750 3850
 $EndSCHEMATC

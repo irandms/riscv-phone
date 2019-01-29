@@ -2,9 +2,9 @@ EESchema Schematic File Version 4
 LIBS:riscv-phone-cache
 EELAYER 26 0
 EELAYER END
-$Descr A3 16535 11693
+$Descr A4 11693 8268
 encoding utf-8
-Sheet 7 8
+Sheet 6 8
 Title ""
 Date ""
 Rev ""
@@ -1348,7 +1348,7 @@ Wire Wire Line
 Wire Wire Line
 	7650 3150 8650 3150
 Wire Wire Line
-	1150 7000 1600 7000
+	1150 7000 1250 7000
 Wire Wire Line
 	1300 6450 1300 6750
 Wire Wire Line
@@ -1593,4 +1593,18 @@ Text Label 8750 1700 2    50   ~ 0
 SCK
 Text Label 8750 1600 2    50   ~ 0
 MISO
+$Comp
+L power:VCC #PWR?
+U 1 1 5C54FF53
+P 1250 7000
+F 0 "#PWR?" H 1250 6850 50  0001 C CNN
+F 1 "VCC" H 1267 7173 50  0000 C CNN
+F 2 "" H 1250 7000 50  0001 C CNN
+F 3 "" H 1250 7000 50  0001 C CNN
+	1    1250 7000
+	1    0    0    -1  
+$EndComp
+Connection ~ 1250 7000
+Wire Wire Line
+	1250 7000 1600 7000
 $EndSCHEMATC

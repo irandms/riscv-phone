@@ -1,4 +1,4 @@
-update=Mon 03 Dec 2018 10:02:45 PM PST
+update=Sun 27 Jan 2019 10:44:31 PM PST
 version=1
 last_client=kicad
 [general]
@@ -34,7 +34,7 @@ LibDir=
 [schematic_editor]
 version=1
 PageLayoutDescrFile=
-PlotDirectoryName=../../../../44x/
+PlotDirectoryName=../../../../
 SubpartIdSeparator=0
 SubpartFirstId=65
 NetFmtName=
