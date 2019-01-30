@@ -1188,8 +1188,6 @@ Wire Notes Line
 Wire Wire Line
 	5700 7350 5700 7400
 Wire Wire Line
-	5700 6400 6050 6400
-Wire Wire Line
 	4700 6400 5700 6400
 Wire Wire Line
 	4700 6400 4700 7000
@@ -1588,10 +1586,10 @@ SCK
 Text Label 8750 1600 2    50   ~ 0
 MISO
 $Comp
-L power:VCC #PWR?
+L power:VCC #PWR01
 U 1 1 5C54FF53
 P 650 7000
-F 0 "#PWR?" H 650 6850 50  0001 C CNN
+F 0 "#PWR01" H 650 6850 50  0001 C CNN
 F 1 "VCC" H 667 7173 50  0000 C CNN
 F 2 "" H 650 7000 50  0001 C CNN
 F 3 "" H 650 7000 50  0001 C CNN
@@ -1608,8 +1606,8 @@ L power:GND #PWR?
 U 1 1 5C577193
 P 8450 6100
 AR Path="/5C50F5D1/5C577193" Ref="#PWR?"  Part="1" 
-AR Path="/5C1083B4/5C577193" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 8450 5850 50  0001 C CNN
+AR Path="/5C1083B4/5C577193" Ref="#PWR02"  Part="1" 
+F 0 "#PWR02" H 8450 5850 50  0001 C CNN
 F 1 "GND" H 8455 5927 50  0000 C CNN
 F 2 "" H 8450 6100 50  0001 C CNN
 F 3 "" H 8450 6100 50  0001 C CNN
@@ -1621,8 +1619,8 @@ L Memory_EEPROM:M95256-WMN6P U?
 U 1 1 5C57719D
 P 8450 5750
 AR Path="/5C50F5D1/5C57719D" Ref="U?"  Part="1" 
-AR Path="/5C1083B4/5C57719D" Ref="U?"  Part="1" 
-F 0 "U?" H 8450 6300 50  0000 C CNN
+AR Path="/5C1083B4/5C57719D" Ref="U18"  Part="1" 
+F 0 "U18" H 8450 6300 50  0000 C CNN
 F 1 "M95256-WMN6P" H 8450 6200 50  0000 C CNN
 F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 8450 5750 50  0001 C CNN
 F 3 "http://www.st.com/content/ccc/resource/technical/document/datasheet/9d/75/f0/3e/76/00/4c/0b/CD00103810.pdf/files/CD00103810.pdf/jcr:content/translations/en.CD00103810.pdf" H 8450 5750 50  0001 C CNN
@@ -1663,23 +1661,8 @@ Text Label 6400 4050 0    50   ~ 0
 EEPROM_CS
 Text Label 6400 3750 0    50   ~ 0
 MISO
-$Comp
-L Device:C C?
-U 1 1 5C586CB1
-P 7400 5800
-F 0 "C?" H 7200 5850 50  0000 L CNN
-F 1 "C" H 7200 5750 50  0000 L CNN
-F 2 "" H 7438 5650 50  0001 C CNN
-F 3 "~" H 7400 5800 50  0001 C CNN
-	1    7400 5800
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	7400 5650 7400 5450
 Wire Wire Line
 	7400 5450 8050 5450
-Wire Wire Line
-	7400 5950 7400 6050
 Wire Wire Line
 	7400 6050 8450 6050
 Connection ~ 8450 6050
@@ -1693,4 +1676,43 @@ Wire Notes Line
 	7150 5100 9250 5100
 Text Notes 7200 5200 0    50   ~ 0
 EEPROM
+Wire Wire Line
+	5700 6400 6400 6400
+Wire Wire Line
+	6400 6700 6400 6800
+Connection ~ 6400 6800
+$Comp
+L Device:C C59
+U 1 1 5C548073
+P 7400 5650
+F 0 "C59" H 7515 5696 50  0000 L CNN
+F 1 "0.1uF" H 7515 5605 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 7438 5500 50  0001 C CNN
+F 3 "~" H 7400 5650 50  0001 C CNN
+F 4 "CL10B104KO8NNNC " H 7515 5796 50  0001 C CNN "Manufacturer Part Number"
+F 5 "Samsung Electro-Mechanics" H 7515 5796 50  0001 C CNN "Manufacturer"
+F 6 "1276-1005-1-ND " H 7515 5796 50  0001 C CNN "Vendor Part Number"
+F 7 "DigiKey" H 7515 5796 50  0001 C CNN "Vendor"
+	1    7400 5650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R53
+U 1 1 5C548482
+P 6400 6550
+F 0 "R53" H 6470 6596 50  0000 L CNN
+F 1 "100k" H 6470 6505 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 6330 6550 50  0001 C CNN
+F 3 "~" H 6400 6550 50  0001 C CNN
+F 4 "RR0816P-104-D " H 6470 6696 50  0001 C CNN "Manufacturer Part Number"
+F 5 "Susumu" H 6470 6696 50  0001 C CNN "Manufacturer"
+F 6 "RR08P100KDCT-ND " H 6470 6696 50  0001 C CNN "Vendor Part Number"
+F 7 "DigiKey" H 6470 6696 50  0001 C CNN "Vendor"
+	1    6400 6550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7400 5500 7400 5450
+Wire Wire Line
+	7400 5800 7400 6050
 $EndSCHEMATC
