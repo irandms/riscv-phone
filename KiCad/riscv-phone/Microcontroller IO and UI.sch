@@ -15,17 +15,6 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L power:GND #PWR0155
-U 1 1 5C813AA6
-P 9200 4300
-F 0 "#PWR0155" H 9200 4050 50  0001 C CNN
-F 1 "GND" H 9205 4127 50  0000 C CNN
-F 2 "" H 9200 4300 50  0001 C CNN
-F 3 "" H 9200 4300 50  0001 C CNN
-	1    9200 4300
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:R R41
 U 1 1 5C81B764
 P 9400 2200
@@ -576,8 +565,6 @@ F 7 "DigiKey" H 1320 2546 50  0001 C CNN "Vendor"
 $EndComp
 Text HLabel 8800 1150 2    50   Input ~ 0
 LCD_CS
-Text HLabel 8700 4050 0    50   Input ~ 0
-SD_CS
 Text Notes 5050 700  0    50   ~ 0
 TODO: Consider using VDD_3V3_MOFF
 Text HLabel 1750 1550 0    50   Input ~ 0
@@ -588,10 +575,6 @@ Text Label 8800 1050 0    50   ~ 0
 GND
 Text Label 8800 1250 0    50   ~ 0
 RESET_N
-Text Label 8800 1450 0    50   ~ 0
-MOSI
-Text Label 8800 1550 0    50   ~ 0
-SCK
 Text Label 10100 1650 0    50   ~ 0
 VDD_3V3
 Text HLabel 9300 2450 0    50   Input ~ 0
@@ -1080,12 +1063,6 @@ Connection ~ 2050 6500
 Connection ~ 2150 7150
 Connection ~ 1300 6500
 Connection ~ 1250 2600
-Text HLabel 9750 3850 2    50   Input ~ 0
-SCK
-Text HLabel 9750 3950 2    50   Input ~ 0
-MOSI
-Text HLabel 9750 4050 2    50   Output ~ 0
-MISO
 Text HLabel 1750 2800 0    50   Input ~ 0
 SCL
 Text HLabel 1750 2700 0    50   BiDi ~ 0
@@ -1097,37 +1074,8 @@ Wire Wire Line
 Connection ~ 2300 3000
 Wire Wire Line
 	2300 3000 2300 3050
-$Comp
-L Memory_EEPROM:M95256-WMN6P U?
-U 1 1 5C4FAABF
-P 9200 3950
-F 0 "U?" H 9200 4500 50  0000 C CNN
-F 1 "M95256-WMN6P" H 9200 4400 50  0000 C CNN
-F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 9200 3950 50  0001 C CNN
-F 3 "http://www.st.com/content/ccc/resource/technical/document/datasheet/9d/75/f0/3e/76/00/4c/0b/CD00103810.pdf/files/CD00103810.pdf/jcr:content/translations/en.CD00103810.pdf" H 9200 3950 50  0001 C CNN
-	1    9200 3950
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	8700 4050 8800 4050
-Wire Wire Line
-	9750 3950 9600 3950
-Wire Wire Line
-	9600 4050 9750 4050
-Wire Wire Line
-	9200 4300 9200 4250
-Text Label 8800 3600 2    50   ~ 0
-VDD_3V3
-Wire Wire Line
-	8800 3950 8800 3850
-Connection ~ 8800 3850
-Wire Wire Line
-	8800 3600 8800 3650
-Wire Wire Line
-	9200 3650 8800 3650
-Connection ~ 8800 3650
-Wire Wire Line
-	8800 3650 8800 3850
-Wire Wire Line
-	9600 3850 9750 3850
+Text HLabel 8800 1450 2    50   Input ~ 0
+MOSI
+Text HLabel 8800 1550 2    50   Input ~ 0
+SCK
 $EndSCHEMATC

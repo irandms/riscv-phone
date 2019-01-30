@@ -855,12 +855,8 @@ Text HLabel 6400 3550 2    50   Output ~ 0
 LCD_CS
 Text HLabel 6400 3650 2    50   Output ~ 0
 MOSI
-Text HLabel 6400 3750 2    50   Input ~ 0
-MISO
 Text HLabel 6400 3850 2    50   Output ~ 0
 SCK
-Text HLabel 6400 4050 2    50   Output ~ 0
-SD_CS
 Text HLabel 6400 4250 2    50   Input ~ 0
 KEYPAD_INT
 Text HLabel 10550 3500 2    50   Input ~ 0
@@ -1607,4 +1603,94 @@ Wire Wire Line
 Wire Wire Line
 	650  7000 800  7000
 Connection ~ 800  7000
+$Comp
+L power:GND #PWR?
+U 1 1 5C577193
+P 8450 6100
+AR Path="/5C50F5D1/5C577193" Ref="#PWR?"  Part="1" 
+AR Path="/5C1083B4/5C577193" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 8450 5850 50  0001 C CNN
+F 1 "GND" H 8455 5927 50  0000 C CNN
+F 2 "" H 8450 6100 50  0001 C CNN
+F 3 "" H 8450 6100 50  0001 C CNN
+	1    8450 6100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Memory_EEPROM:M95256-WMN6P U?
+U 1 1 5C57719D
+P 8450 5750
+AR Path="/5C50F5D1/5C57719D" Ref="U?"  Part="1" 
+AR Path="/5C1083B4/5C57719D" Ref="U?"  Part="1" 
+F 0 "U?" H 8450 6300 50  0000 C CNN
+F 1 "M95256-WMN6P" H 8450 6200 50  0000 C CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 8450 5750 50  0001 C CNN
+F 3 "http://www.st.com/content/ccc/resource/technical/document/datasheet/9d/75/f0/3e/76/00/4c/0b/CD00103810.pdf/files/CD00103810.pdf/jcr:content/translations/en.CD00103810.pdf" H 8450 5750 50  0001 C CNN
+	1    8450 5750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7950 5850 8050 5850
+Wire Wire Line
+	9000 5750 8850 5750
+Wire Wire Line
+	8850 5850 9000 5850
+Wire Wire Line
+	8450 6100 8450 6050
+Text Label 8050 5400 2    50   ~ 0
+VDD_3V3
+Wire Wire Line
+	8050 5750 8050 5650
+Connection ~ 8050 5650
+Wire Wire Line
+	8050 5400 8050 5450
+Wire Wire Line
+	8450 5450 8050 5450
+Connection ~ 8050 5450
+Wire Wire Line
+	8050 5450 8050 5650
+Wire Wire Line
+	8850 5650 9000 5650
+Text Label 9000 5850 0    50   ~ 0
+MISO
+Text Label 9000 5750 0    50   ~ 0
+MOSI
+Text Label 9000 5650 0    50   ~ 0
+SCK
+Text Label 7950 5850 2    50   ~ 0
+EEPROM_CS
+Text Label 6400 4050 0    50   ~ 0
+EEPROM_CS
+Text Label 6400 3750 0    50   ~ 0
+MISO
+$Comp
+L Device:C C?
+U 1 1 5C586CB1
+P 7400 5800
+F 0 "C?" H 7200 5850 50  0000 L CNN
+F 1 "C" H 7200 5750 50  0000 L CNN
+F 2 "" H 7438 5650 50  0001 C CNN
+F 3 "~" H 7400 5800 50  0001 C CNN
+	1    7400 5800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7400 5650 7400 5450
+Wire Wire Line
+	7400 5450 8050 5450
+Wire Wire Line
+	7400 5950 7400 6050
+Wire Wire Line
+	7400 6050 8450 6050
+Connection ~ 8450 6050
+Wire Notes Line
+	9250 5100 9250 6400
+Wire Notes Line
+	9250 6400 7150 6400
+Wire Notes Line
+	7150 6400 7150 5100
+Wire Notes Line
+	7150 5100 9250 5100
+Text Notes 7200 5200 0    50   ~ 0
+EEPROM
 $EndSCHEMATC
