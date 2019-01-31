@@ -186,27 +186,27 @@ $EndComp
 $Comp
 L Device:R R7
 U 1 1 5C1B8C5F
-P 950 5600
-F 0 "R7" H 1020 5646 50  0000 L CNN
-F 1 "100k" H 1020 5555 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 880 5600 50  0001 C CNN
-F 3 "~" H 950 5600 50  0001 C CNN
-F 4 "RR0816P-104-D " H 1020 5746 50  0001 C CNN "Manufacturer Part Number"
-F 5 "Susumu" H 1020 5746 50  0001 C CNN "Manufacturer"
-F 6 "RR08P100KDCT-ND " H 1020 5746 50  0001 C CNN "Vendor Part Number"
-F 7 "DigiKey" H 1020 5746 50  0001 C CNN "Vendor"
-	1    950  5600
-	0    -1   -1   0   
+P 2550 4800
+F 0 "R7" H 2620 4846 50  0000 L CNN
+F 1 "100k" H 2620 4755 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 2480 4800 50  0001 C CNN
+F 3 "~" H 2550 4800 50  0001 C CNN
+F 4 "RR0816P-104-D " H 2620 4946 50  0001 C CNN "Manufacturer Part Number"
+F 5 "Susumu" H 2620 4946 50  0001 C CNN "Manufacturer"
+F 6 "RR08P100KDCT-ND " H 2620 4946 50  0001 C CNN "Vendor Part Number"
+F 7 "DigiKey" H 2620 4946 50  0001 C CNN "Vendor"
+	1    2550 4800
+	1    0    0    -1  
 $EndComp
 $Comp
 L power:+3V3 #PWR0124
 U 1 1 5C1C5E23
-P 700 5400
-F 0 "#PWR0124" H 700 5250 50  0001 C CNN
-F 1 "+3V3" H 715 5573 50  0000 C CNN
-F 2 "" H 700 5400 50  0001 C CNN
-F 3 "" H 700 5400 50  0001 C CNN
-	1    700  5400
+P 2550 4600
+F 0 "#PWR0124" H 2550 4450 50  0001 C CNN
+F 1 "+3V3" H 2565 4773 50  0000 C CNN
+F 2 "" H 2550 4600 50  0001 C CNN
+F 3 "" H 2550 4600 50  0001 C CNN
+	1    2550 4600
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -833,8 +833,6 @@ Text Notes 4500 850  0    50   ~ 0
 TODO: Change 3V3 rails to 3V3_MOFF (mostly off)
 Text Notes 2950 6100 0    50   ~ 0
 Wakeup from Keypad/Modem Interrupt
-Text Label 2350 5000 0    50   ~ 0
-RESET
 Text HLabel 2700 5000 2    50   BiDi ~ 0
 RESET
 Text Notes 3150 4150 2    50   ~ 0
@@ -1298,10 +1296,6 @@ Wire Wire Line
 Wire Wire Line
 	1100 4750 1100 4850
 Wire Wire Line
-	700  5400 700  5600
-Wire Wire Line
-	700  5600 800  5600
-Wire Wire Line
 	1100 4550 1100 4750
 Wire Wire Line
 	1650 5000 1950 5000
@@ -1321,8 +1315,6 @@ Wire Wire Line
 	2050 1400 1900 1400
 Wire Wire Line
 	1450 4550 1900 4550
-Wire Wire Line
-	1100 5600 1150 5600
 Wire Wire Line
 	850  5200 850  4850
 Wire Wire Line
@@ -1407,7 +1399,6 @@ Connection ~ 1100 4750
 Connection ~ 1100 4550
 Connection ~ 1900 1000
 Connection ~ 1450 4550
-Connection ~ 1150 5600
 Connection ~ 8650 3150
 Connection ~ 1600 7000
 NoConn ~ 9150 4750
@@ -1501,7 +1492,7 @@ F 7 "DigiKey" H 8020 1846 50  0001 C CNN "Vendor"
 	1    0    0    -1  
 $EndComp
 Text Label 8750 2000 2    50   ~ 0
-RESET_N
+RESET
 Text Label 8750 1400 2    50   ~ 0
 VDD_3V3
 Text HLabel 10650 1400 2    50   BiDi ~ 0
@@ -1715,4 +1706,8 @@ Wire Wire Line
 	7400 5500 7400 5450
 Wire Wire Line
 	7400 5800 7400 6050
+Wire Wire Line
+	2550 4650 2550 4600
+Wire Wire Line
+	2550 4950 2550 5000
 $EndSCHEMATC
