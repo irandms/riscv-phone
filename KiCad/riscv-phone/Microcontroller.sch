@@ -945,7 +945,7 @@ Text Label 9550 3400 2    50   ~ 0
 UART0_RX
 Text HLabel 2650 6950 2    50   Input ~ 0
 KEYPAD_INT
-Text HLabel 6400 4150 2    50   Input ~ 0
+Text HLabel 10300 1600 2    50   Input ~ 0
 MODEM_STATUS
 Text HLabel 1900 4550 2    50   Output ~ 0
 RESET_N_1V8
@@ -1304,7 +1304,7 @@ Wire Notes Line
 Wire Notes Line
 	3200 4050 3200 5900
 Wire Wire Line
-	6300 4150 6400 4150
+	10200 1600 10300 1600
 Wire Wire Line
 	3900 5550 5200 5550
 Wire Wire Line
@@ -1556,8 +1556,6 @@ Connection ~ 7950 1900
 NoConn ~ 10200 1800
 NoConn ~ 10200 1900
 NoConn ~ 10200 2100
-NoConn ~ 10200 1600
-NoConn ~ 10200 1700
 Text Label 8750 1800 2    50   ~ 0
 BRIDGE_CS
 Text Label 7800 1900 2    50   ~ 0
@@ -1710,4 +1708,8 @@ Wire Wire Line
 	2550 4650 2550 4600
 Wire Wire Line
 	2550 4950 2550 5000
+Text HLabel 6400 4150 2    50   Output ~ 0
+LCD_RST
+Wire Wire Line
+	6300 4150 6400 4150
 $EndSCHEMATC

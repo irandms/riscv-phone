@@ -573,8 +573,6 @@ Text Label 8800 950  0    50   ~ 0
 VDD_3V3
 Text Label 8800 1050 0    50   ~ 0
 GND
-Text Label 8800 1250 0    50   ~ 0
-RESET_N
 Text Label 10100 1650 0    50   ~ 0
 VDD_3V3
 Text HLabel 9300 2450 0    50   Input ~ 0
@@ -1078,4 +1076,6 @@ Text HLabel 8800 1450 2    50   Input ~ 0
 MOSI
 Text HLabel 8800 1550 2    50   Input ~ 0
 SCK
+Text HLabel 8800 1250 2    50   Input ~ 0
+LCD_RST
 $EndSCHEMATC
