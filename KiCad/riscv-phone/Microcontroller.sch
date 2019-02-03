@@ -1560,8 +1560,6 @@ Text Label 8750 1800 2    50   ~ 0
 BRIDGE_CS
 Text Label 7800 1900 2    50   ~ 0
 BRIDGE_INT
-Text Label 6400 3950 0    50   ~ 0
-BRIDGE_CS
 Text Label 6400 5050 0    50   ~ 0
 BRIDGE_INT
 Text Label 6400 5150 0    50   ~ 0
@@ -1712,4 +1710,10 @@ Text HLabel 6400 4150 2    50   Output ~ 0
 LCD_RST
 Wire Wire Line
 	6300 4150 6400 4150
+Text HLabel 10300 1700 2    50   Output ~ 0
+MODEM_RST
+Wire Wire Line
+	10300 1700 10200 1700
+Text Label 6400 3950 0    50   ~ 0
+BRIDGE_CS
 $EndSCHEMATC
