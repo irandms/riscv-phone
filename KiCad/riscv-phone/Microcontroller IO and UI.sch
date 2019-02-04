@@ -1065,4 +1065,5 @@ Wire Wire Line
 	5750 4550 5750 4500
 Text Notes 4500 1500 0    50   ~ 0
 NOTE: Change to 10k before final order
+NoConn ~ 7000 6000
 $EndSCHEMATC

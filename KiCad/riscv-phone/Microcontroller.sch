@@ -1477,23 +1477,23 @@ $EndComp
 $Comp
 L Device:R R?
 U 1 1 5C4F74FC
-P 7950 1700
+P 8150 1600
 AR Path="/5C50F5D1/5C4F74FC" Ref="R?"  Part="1" 
 AR Path="/5C1083B4/5C4F74FC" Ref="R54"  Part="1" 
-F 0 "R54" H 8020 1746 50  0000 L CNN
-F 1 "4.7k" H 8020 1655 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 7880 1700 50  0001 C CNN
-F 3 "~" H 7950 1700 50  0001 C CNN
-F 4 "RC0603JR-074K7L " H 8020 1846 50  0001 C CNN "Manufacturer Part Number"
-F 5 "Yageo" H 8020 1846 50  0001 C CNN "Manufacturer"
-F 6 "311-4.7KGRCT-ND " H 8020 1846 50  0001 C CNN "Vendor Part Number"
-F 7 "DigiKey" H 8020 1846 50  0001 C CNN "Vendor"
-	1    7950 1700
+F 0 "R54" H 8220 1646 50  0000 L CNN
+F 1 "4.7k" H 8220 1555 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 8080 1600 50  0001 C CNN
+F 3 "~" H 8150 1600 50  0001 C CNN
+F 4 "RC0603JR-074K7L " H 8220 1746 50  0001 C CNN "Manufacturer Part Number"
+F 5 "Yageo" H 8220 1746 50  0001 C CNN "Manufacturer"
+F 6 "311-4.7KGRCT-ND " H 8220 1746 50  0001 C CNN "Vendor Part Number"
+F 7 "DigiKey" H 8220 1746 50  0001 C CNN "Vendor"
+	1    8150 1600
 	1    0    0    -1  
 $EndComp
 Text Label 8750 2000 2    50   ~ 0
 RESET
-Text Label 8750 1400 2    50   ~ 0
+Text Label 7550 1400 2    50   ~ 0
 VDD_3V3
 Text HLabel 10650 1400 2    50   BiDi ~ 0
 SDA
@@ -1505,8 +1505,6 @@ Text Notes 7750 1050 0    50   ~ 0
 SPEC PULLUPS: http://www.ti.com/lit/an/slva689/slva689.pdf\n1k recommended, should be fine for 2.2k (lower power)
 Text Label 10450 800  0    50   ~ 0
 VDD_3V3
-Text Label 7950 1500 2    50   ~ 0
-VDD_3V3
 Wire Wire Line
 	8750 1800 8900 1800
 Wire Wire Line
@@ -1515,8 +1513,6 @@ Wire Wire Line
 	8900 1600 8750 1600
 Wire Wire Line
 	8900 1500 8750 1500
-Wire Wire Line
-	8900 1400 8750 1400
 Wire Wire Line
 	8750 2000 8900 2000
 Wire Wire Line
@@ -1541,24 +1537,15 @@ Wire Wire Line
 	10450 850  10600 850 
 Wire Wire Line
 	10300 850  10450 850 
-Wire Wire Line
-	7800 1900 7950 1900
-Wire Wire Line
-	7950 1850 7950 1900
-Wire Wire Line
-	7950 1900 8900 1900
-Wire Wire Line
-	7950 1550 7950 1500
 Connection ~ 10300 1500
 Connection ~ 10600 1400
 Connection ~ 10450 850 
-Connection ~ 7950 1900
 NoConn ~ 10200 1800
 NoConn ~ 10200 1900
 NoConn ~ 10200 2100
 Text Label 8750 1800 2    50   ~ 0
 BRIDGE_CS
-Text Label 7800 1900 2    50   ~ 0
+Text Label 8100 1900 2    50   ~ 0
 BRIDGE_INT
 Text Label 6400 5050 0    50   ~ 0
 BRIDGE_INT
@@ -1644,7 +1631,7 @@ Text Label 9000 5650 0    50   ~ 0
 SCK
 Text Label 7950 5850 2    50   ~ 0
 EEPROM_CS
-Text Label 6400 4050 0    50   ~ 0
+Text Label 6400 3950 0    50   ~ 0
 EEPROM_CS
 Text Label 6400 3750 0    50   ~ 0
 MISO
@@ -1714,6 +1701,45 @@ Text HLabel 10300 1700 2    50   Output ~ 0
 MODEM_RST
 Wire Wire Line
 	10300 1700 10200 1700
-Text Label 6400 3950 0    50   ~ 0
+Text Label 6400 4050 0    50   ~ 0
 BRIDGE_CS
+Wire Wire Line
+	8150 1400 8150 1450
+Wire Wire Line
+	8150 1400 8900 1400
+Connection ~ 8150 1400
+Wire Wire Line
+	8900 1900 8150 1900
+Wire Wire Line
+	8150 1750 8150 1900
+Wire Wire Line
+	8100 1900 8150 1900
+Connection ~ 8150 1900
+Wire Wire Line
+	7550 1400 7600 1400
+$Comp
+L Device:C C60
+U 1 1 5CBF895D
+P 7600 1600
+F 0 "C60" H 7715 1646 50  0000 L CNN
+F 1 "0.1uF" H 7715 1555 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 7638 1450 50  0001 C CNN
+F 3 "~" H 7600 1600 50  0001 C CNN
+F 4 "CL10B104KO8NNNC " H 7715 1746 50  0001 C CNN "Manufacturer Part Number"
+F 5 "Samsung Electro-Mechanics" H 7715 1746 50  0001 C CNN "Manufacturer"
+F 6 "1276-1005-1-ND " H 7715 1746 50  0001 C CNN "Vendor Part Number"
+F 7 "DigiKey" H 7715 1746 50  0001 C CNN "Vendor"
+	1    7600 1600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7600 1450 7600 1400
+Connection ~ 7600 1400
+Wire Wire Line
+	7600 1400 8150 1400
+Wire Wire Line
+	7600 1750 7600 2100
+Wire Wire Line
+	7600 2100 8900 2100
+Connection ~ 8900 2100
 $EndSCHEMATC
