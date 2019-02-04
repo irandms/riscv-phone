@@ -523,7 +523,7 @@ LCD_CS
 Text Notes 5050 700  0    50   ~ 0
 TODO: Consider using VDD_3V3_MOFF
 Text HLabel 1750 1550 0    50   Input ~ 0
-RESET_N
+RESET
 Text Label 8800 950  0    50   ~ 0
 VDD_3V3
 Text Label 8800 1050 0    50   ~ 0
