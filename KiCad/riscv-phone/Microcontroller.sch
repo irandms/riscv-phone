@@ -679,16 +679,16 @@ $EndComp
 $Comp
 L Device:R R11
 U 1 1 5C13AA95
-P 1900 1250
-F 0 "R11" H 1970 1296 50  0000 L CNN
-F 1 "4.7k" H 1970 1205 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 1830 1250 50  0001 C CNN
-F 3 "~" H 1900 1250 50  0001 C CNN
-F 4 "RC0603JR-074K7L " H 1970 1396 50  0001 C CNN "Manufacturer Part Number"
-F 5 "Yageo" H 1970 1396 50  0001 C CNN "Manufacturer"
-F 6 "311-4.7KGRCT-ND " H 1970 1396 50  0001 C CNN "Vendor Part Number"
-F 7 "DigiKey" H 1970 1396 50  0001 C CNN "Vendor"
-	1    1900 1250
+P 1950 1250
+F 0 "R11" H 2020 1296 50  0000 L CNN
+F 1 "4.7k" H 2020 1205 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 1880 1250 50  0001 C CNN
+F 3 "~" H 1950 1250 50  0001 C CNN
+F 4 "RC0603JR-074K7L " H 2020 1396 50  0001 C CNN "Manufacturer Part Number"
+F 5 "Yageo" H 2020 1396 50  0001 C CNN "Manufacturer"
+F 6 "311-4.7KGRCT-ND " H 2020 1396 50  0001 C CNN "Vendor Part Number"
+F 7 "DigiKey" H 2020 1396 50  0001 C CNN "Vendor"
+	1    1950 1250
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1134,8 +1134,6 @@ Wire Wire Line
 Wire Wire Line
 	1100 1350 1500 1350
 Wire Wire Line
-	1700 1000 1900 1000
-Wire Wire Line
 	5700 7300 5700 7350
 Wire Wire Line
 	4700 7350 5700 7350
@@ -1308,11 +1306,7 @@ Wire Wire Line
 Wire Wire Line
 	3900 5550 5200 5550
 Wire Wire Line
-	1900 1000 2000 1000
-Wire Wire Line
-	1900 1100 1900 1000
-Wire Wire Line
-	2050 1400 1900 1400
+	1950 1100 1950 1000
 Wire Wire Line
 	1450 4550 1900 4550
 Wire Wire Line
@@ -1397,7 +1391,6 @@ Connection ~ 1300 6450
 Connection ~ 700  4400
 Connection ~ 1100 4750
 Connection ~ 1100 4550
-Connection ~ 1900 1000
 Connection ~ 1450 4550
 Connection ~ 8650 3150
 Connection ~ 1600 7000
@@ -1742,4 +1735,45 @@ Wire Wire Line
 Wire Wire Line
 	7600 2100 8900 2100
 Connection ~ 8900 2100
+$Comp
+L power:PWR_FLAG #FLG0107
+U 1 1 5C6F2EEA
+P 6300 1700
+F 0 "#FLG0107" H 6300 1775 50  0001 C CNN
+F 1 "PWR_FLAG" H 6300 1874 50  0000 C CNN
+F 2 "" H 6300 1700 50  0001 C CNN
+F 3 "~" H 6300 1700 50  0001 C CNN
+	1    6300 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG0108
+U 1 1 5C6F4246
+P 1950 1000
+F 0 "#FLG0108" H 1950 1075 50  0001 C CNN
+F 1 "PWR_FLAG" H 1950 1174 50  0000 C CNN
+F 2 "" H 1950 1000 50  0001 C CNN
+F 3 "~" H 1950 1000 50  0001 C CNN
+	1    1950 1000
+	1    0    0    -1  
+$EndComp
+Connection ~ 1950 1000
+Wire Wire Line
+	1950 1000 2000 1000
+Wire Wire Line
+	1700 1000 1950 1000
+Wire Wire Line
+	2050 1400 1950 1400
+$Comp
+L power:PWR_FLAG #FLG0109
+U 1 1 5C7139C1
+P 6300 2050
+F 0 "#FLG0109" H 6300 2125 50  0001 C CNN
+F 1 "PWR_FLAG" V 6300 2178 50  0000 L CNN
+F 2 "" H 6300 2050 50  0001 C CNN
+F 3 "~" H 6300 2050 50  0001 C CNN
+	1    6300 2050
+	0    -1   -1   0   
+$EndComp
+Connection ~ 6300 2050
 $EndSCHEMATC
