@@ -24,3 +24,8 @@ _autosave-*
 # Exported BOM files
 *.xml
 *.csv
+
+# Firmware/Rust
+/target
+**/*.rs.bk
+Cargo.lock

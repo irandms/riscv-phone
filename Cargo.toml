@@ -1,0 +1,42 @@
+[package]
+name = "riscv_phone_sw"
+version = "0.1.0"
+authors = ["Spencer Moss <radio@another.computer>"]
+edition = "2018"
+
+[dependencies]
+nb = "0.1"
+riscv = "0.5"
+riscv-rt = "0.5"
+e310x = "0.4"
+e310x-hal = "0.4"
+hifive1 = { version = "0.4", features = ["board-hifive1"] }
+pcd8544 = "0.1"
+panic-halt = "0.2"
+embedded-hal = "0.2"
+atomiqueue = { git = "https://github.com/Inityx/atomiqueue.git" }
+#riscv-alloc = { git = "https://github.com/riscv-rust/riscv-alloc.git" }
+
+[dependencies.shared-bus]
+git = "https://github.com/irandms/shared-bus.git"
+features = ["risc-v"]
+
+[dev-dependencies]
+stlog = "0.3"
+
+[build-dependencies]
+cc = "1.0"
+
+[profile.release]
+opt-level = 3
+debug = true
+lto = true
+codegen-units = 1
+incremental = false
+
+[profile.dev]
+opt-level = 0
+debug = true
+lto = false
+codegen-units = 1
+incremental = false
