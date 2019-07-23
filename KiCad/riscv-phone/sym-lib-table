@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name riscv-phone)(type Legacy)(uri ${KIPRJMOD}/riscv-phone.lib)(options "")(descr ""))
+  (lib (name SJ-3524-SMT)(type Legacy)(uri ${KIPRJMOD}/SJ-3524-SMT.lib)(options "")(descr ""))
+)
